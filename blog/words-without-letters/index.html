@@ -2,30 +2,29 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<title>Getting Started Developing Qt with VS Code Development Containers as Simple as Possible | MareNostrum</title>
+<title>Words Without Letters | MareNostrum</title>
 <meta name=description content>
-<meta property="og:title" content="Getting Started Developing Qt with VS Code Development Containers as Simple as Possible">
-<meta property="og:description" content="Disclaimer — This is just my humble opinion and maybe there is more convenient way out there for this purpose.
-For this purpose I already prepared a repo on GitHub1. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.
-Requirements  Any Linux Distribution (tested on Debian 11) with Wayland Display Manager Docker daemon VS Code with Remote Container extension.">
+<meta property="og:title" content="Words Without Letters">
+<meta property="og:description" content="Words without letters
+Standing in the shadow of the doors
+1Q84, Haruki Muarakami">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://erturk.me/blog/getting-started-qt-with-vs-code/"><meta property="og:image" content="https://erturk.me/blog/assets/getting-started-qt-with-vs-code-thumbnail.jpg"><meta property="article:section" content="blog">
-<meta property="article:published_time" content="2022-01-05T17:47:00+03:00">
-<meta property="article:modified_time" content="2022-01-05T17:47:00+03:00">
-<meta property="og:see_also" content="https://erturk.me/blog/a-collection-related-femm-magnetic/"><meta property="og:see_also" content="https://erturk.me/blog/how-did-we-get-here/">
-<meta itemprop=name content="Getting Started Developing Qt with VS Code Development Containers as Simple as Possible">
-<meta itemprop=description content="Disclaimer — This is just my humble opinion and maybe there is more convenient way out there for this purpose.
-For this purpose I already prepared a repo on GitHub1. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.
-Requirements  Any Linux Distribution (tested on Debian 11) with Wayland Display Manager Docker daemon VS Code with Remote Container extension."><meta itemprop=datePublished content="2022-01-05T17:47:00+03:00">
-<meta itemprop=dateModified content="2022-01-05T17:47:00+03:00">
-<meta itemprop=wordCount content="156"><meta itemprop=image content="https://erturk.me/blog/assets/getting-started-qt-with-vs-code-thumbnail.jpg">
-<meta itemprop=keywords content="qt,">
+<meta property="og:url" content="https://erturk.me/blog/words-without-letters/"><meta property="og:image" content="https://erturk.me/blog/assets/photography/words-without-letters.jpg"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2022-01-07T16:12:24+03:00">
+<meta property="article:modified_time" content="2022-01-07T16:12:24+03:00">
+<meta itemprop=name content="Words Without Letters">
+<meta itemprop=description content="Words without letters
+Standing in the shadow of the doors
+1Q84, Haruki Muarakami"><meta itemprop=datePublished content="2022-01-07T16:12:24+03:00">
+<meta itemprop=dateModified content="2022-01-07T16:12:24+03:00">
+<meta itemprop=wordCount content="13"><meta itemprop=image content="https://erturk.me/blog/assets/photography/words-without-letters.jpg">
+<meta itemprop=keywords content="Haruki Murakami,1Q84,">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://erturk.me/blog/assets/getting-started-qt-with-vs-code-thumbnail.jpg">
-<meta name=twitter:title content="Getting Started Developing Qt with VS Code Development Containers as Simple as Possible">
-<meta name=twitter:description content="Disclaimer — This is just my humble opinion and maybe there is more convenient way out there for this purpose.
-For this purpose I already prepared a repo on GitHub1. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.
-Requirements  Any Linux Distribution (tested on Debian 11) with Wayland Display Manager Docker daemon VS Code with Remote Container extension.">
+<meta name=twitter:image content="https://erturk.me/blog/assets/photography/words-without-letters.jpg">
+<meta name=twitter:title content="Words Without Letters">
+<meta name=twitter:description content="Words without letters
+Standing in the shadow of the doors
+1Q84, Haruki Muarakami">
 <meta name=twitter:site content="@ierturk"><!--[if IE]><script src=//html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
 <link rel="shortcut icon" href="/img/favicon.ico?v=0" type=image/x-icon>
 <link rel=icon href="/img/favicon.ico?v=0" type=image/x-icon>
@@ -48,60 +47,19 @@ Requirements  Any Linux Distribution (tested on Debian 11) with Wayland Display 
 <section class="page-content mw7 center">
 <article class="post-content pa0 ph4-l">
 <header class=post-header>
-<h1 class="f1 lh-solid measure-narrow mb3">Getting Started Developing Qt with VS Code Development Containers as Simple as Possible</h1>
-<p class="f6 measure lh-copy mv1">By Ibrahim ERTURK in <a href=https://erturk.me/categories/programming>Programming</a> </p>
-<p class="f7 db mv0 ttu">January 5, 2022</p>
+<h1 class="f1 lh-solid measure-narrow mb3">Words Without Letters</h1>
+<p class="f6 measure lh-copy mv1">By Ibrahim ERTURK in <a href=https://erturk.me/categories/photography>Photography</a> </p>
+<p class="f7 db mv0 ttu">January 7, 2022</p>
 </header>
 <section class="post-body pt5 pb4">
-<h2 id=getting-started-qt-with-vs-code-featureblogassetsgetting-started-qt-with-vs-code-thumbnailjpg><img src=/blog/assets/getting-started-qt-with-vs-code-thumbnail.jpg alt="Getting Started Qt with VS Code Feature"></h2>
-<p><em>Disclaimer</em> — This is just my humble opinion and maybe there is more convenient way out there for this purpose.<br>
-For this purpose I already prepared a repo on GitHub<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.</p>
-<h3 id=requirements>Requirements</h3>
-<ul>
-<li>Any <code>Linux</code> Distribution (tested on <code>Debian 11</code>) with <code>Wayland Display Manager</code></li>
-<li><code>Docker</code> daemon</li>
-<li><code>VS Code</code> with <code>Remote Container</code> extension. Or alternatively it can be used <code>Remote SSH</code></li>
-</ul>
-<h3 id=run-just-as-follow>Run Just as Follow</h3>
-<ul>
-<li>Clone the repos as follow</li>
-</ul>
-<div class=highlight><div style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git clone https://github.com/ierturk/qt-qml-ai-collection.git
-$ git submodule update --init
-</code></pre></td></tr></table>
-</div>
-</div><p>Just open the cloned folder in <code>VS Code</code></p>
-<ul>
-<li>Reopen in the development container</li>
-<li>Build with <code>CMake</code></li>
-<li>Run any target built by <code>CMake</code></li>
-</ul>
-<p>For more information including building development containers you can refer the links below</p>
-<p>The repo used for demonstration<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>
-Development Container Sources<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p>
-<p>That’s all</p>
-<section class=footnotes role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn:1 role=doc-endnote>
-<p><a href=https://github.com/ierturk/qt-qml-ai-collection>The repo used for demonstration</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:2 role=doc-endnote>
-<p><a href=https://github.com/ierturk/dev-containers>Development Container Sources</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+<p><img src=/blog/assets/photography/words-without-letters.jpg alt="Words Witout Letters"></p>
+<p>Words without letters<br>
+Standing in the shadow of the doors</p>
+<p><em>1Q84, Haruki Muarakami</em></p>
 </section>
 <footer class=post-footer>
 <div class="post-pagination dt w-100 mt4 mb2">
-<a class="prev dtc pr2 tl v-top fw6" href=https://erturk.me/blog/a-collection-related-femm-magnetic/>&larr; A Collection Related FEMM Magnetic</a>
-<a class="next dtc pl2 tr v-top fw6" href=https://erturk.me/blog/words-without-letters/>Words Without Letters &rarr;</a>
+<a class="prev dtc pr2 tl v-top fw6" href=https://erturk.me/blog/getting-started-qt-with-vs-code/>&larr; Getting Started Developing Qt with VS Code Development Containers as Simple as Possible</a>
 </div>
 </footer>
 </article>
@@ -122,23 +80,23 @@ Development Container Sources<sup id=fnref:2><a href=#fn:2 class=footnote-ref ro
 <details open class="f6 fw7 input-reset">
 <dl class="f6 lh-copy">
 <dt class=fw7>Posted on:</dt>
-<dd class="fw5 ml0">January 5, 2022</dd>
+<dd class="fw5 ml0">January 7, 2022</dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>Length:</dt>
-<dd class="fw5 ml0">1 minute read, 156 words</dd>
+<dd class="fw5 ml0">1 minute read, 13 words</dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>Categories:</dt>
-<dd class="fw5 ml0"> <a href=https://erturk.me/categories/programming>Programming</a> </dd>
+<dd class="fw5 ml0"> <a href=https://erturk.me/categories/photography>Photography</a> </dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>Series:</dt>
-<dd class="fw5 ml0"> <a href=https://erturk.me/series/getting-started>Getting Started</a> </dd>
+<dd class="fw5 ml0"> <a href=https://erturk.me/series/book-photography>Book Photography</a> </dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>Tags:</dt>
-<dd class="fw5 ml0"> <a href=https://erturk.me/tags/qt>qt</a> </dd>
+<dd class="fw5 ml0"> <a href=https://erturk.me/tags/haruki-murakami>Haruki Murakami</a> <a href=https://erturk.me/tags/1q84>1Q84</a> </dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>See Also:</dt>
