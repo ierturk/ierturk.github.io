@@ -1,3 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on MareNostrum</title><link>https://erturk.me/categories/engineering/</link><description>Recent content in Engineering on MareNostrum</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Jan 2022 17:21:33 +0300</lastBuildDate><atom:link href="https://erturk.me/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>A Collection Related FEMM Magnetic</title><link>https://erturk.me/blog/a-collection-related-femm-magnetic/</link><pubDate>Wed, 05 Jan 2022 17:21:33 +0300</pubDate><guid>https://erturk.me/blog/a-collection-related-femm-magnetic/</guid><description>The collection of FEMM software examples and Libraries can be cloned from as follow.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering on MareNostrum</title><link>https://erturk.me/categories/engineering/</link><description>Recent content in Engineering on MareNostrum</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 19 Jul 2022 00:15:04 +0300</lastBuildDate><atom:link href="https://erturk.me/categories/engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>SciPowerLab Updated</title><link>https://erturk.me/blog/scipowerlab-updated/</link><pubDate>Tue, 19 Jul 2022 00:15:04 +0300</pubDate><guid>https://erturk.me/blog/scipowerlab-updated/</guid><description>SciPowerLab Scilab Power Electronics ToolBox
+Author ierturk ierturk@ieee.org @ ErturkMe
+Version 0.3.0
+Date 12-Jul-2022
+Brief Scilab Power Electronics ToolBox
+Module uses Scilab
+SciPowerLab Toolbox ErturkMe - Power Electronics and Electrical Machines
+XCPL (0.3) - Update for New Scilab 6 API for Xcos block
+Usage
+Run builder.sce in root folder
+Run loader.sce created by builder macro
+Available Blocks</description></item><item><title>A Collection Related FEMM Magnetic</title><link>https://erturk.me/blog/a-collection-related-femm-magnetic/</link><pubDate>Wed, 05 Jan 2022 17:21:33 +0300</pubDate><guid>https://erturk.me/blog/a-collection-related-femm-magnetic/</guid><description>The collection of FEMM software examples and Libraries can be cloned from as follow.
 1 $ git clone https://github.com/ierturk/femm-magnetic-collection.git FEMM Finite Element Analysis Software is available freely from here1
 The Collection BLDC Machine Analysis Generating animated images from FEMM solutions Java FEMM Link and Java PowerLab integration Java FEMM Link for acces to FEMM from Java programs SciCos FEMM Link. The SciCos is the predecessor of SciLab/XCos.</description></item></channel></rss>
