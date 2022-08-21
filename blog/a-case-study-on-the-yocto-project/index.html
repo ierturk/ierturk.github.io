@@ -1,0 +1,181 @@
+<!doctype html><html lang=en dir=ltr><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>A Case Study on the Yocto Project | MareNostrum</title>
+<meta name=description content>
+<meta property="og:title" content="A Case Study on the Yocto Project">
+<meta property="og:description" content="In this post, it&rsquo;ll be tried to explain what is Yocto Project by building a real world example - a barcode reader. So let&rsquo;s start!
+ Introduction Following excerpt is taken from the Wikipedia article 1 on the Yocto Project.
+ The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://erturk.me/blog/a-case-study-on-the-yocto-project/"><meta property="og:image" content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg"><meta property="og:image" content="https://erturk.me"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2022-08-20T00:29:04+03:00">
+<meta property="article:modified_time" content="2022-08-20T00:29:04+03:00">
+<meta itemprop=name content="A Case Study on the Yocto Project">
+<meta itemprop=description content="In this post, it&rsquo;ll be tried to explain what is Yocto Project by building a real world example - a barcode reader. So let&rsquo;s start!
+ Introduction Following excerpt is taken from the Wikipedia article 1 on the Yocto Project.
+ The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware."><meta itemprop=datePublished content="2022-08-20T00:29:04+03:00">
+<meta itemprop=dateModified content="2022-08-20T00:29:04+03:00">
+<meta itemprop=wordCount content="764"><meta itemprop=image content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg"><meta itemprop=image content="https://erturk.me">
+<meta itemprop=keywords content>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg">
+<meta name=twitter:title content="A Case Study on the Yocto Project">
+<meta name=twitter:description content="In this post, it&rsquo;ll be tried to explain what is Yocto Project by building a real world example - a barcode reader. So let&rsquo;s start!
+ Introduction Following excerpt is taken from the Wikipedia article 1 on the Yocto Project.
+ The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware.">
+<meta name=twitter:site content="@ierturk"><!--[if IE]><script src=//html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+<link rel="shortcut icon" href="/img/favicon.ico?v=0" type=image/x-icon>
+<link rel=icon href="/img/favicon.ico?v=0" type=image/x-icon>
+<link rel=stylesheet href=https://erturk.me/style.main.min.b52cc5a38904dedf3c2d9e69c0a6560b3a3513492f64c4412093d96a5eec16f2.css integrity="sha256-tSzFo4kE3t88LZ5pwKZWCzo1E0kvZMRBIJPZal7sFvI=" media=screen>
+</head>
+<body>
+<div class="grid-container single"><header class="site-header pa4 bb b--transparent" role=banner>
+<nav class="site-nav db dt-l w-100" role=nav>
+<a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href=https://erturk.me title=Home>
+<img src=/img/logo.jpeg class="dib db-l h2 w-auto" alt=MareNostrum>
+</a>
+<div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l">
+<a class="link f6 f5-l dib pv1 ph2" href=/ title="Home Page">Home</a>
+<a class="link f6 f5-l dib pv1 ph2" href=/blog/ title=Blog>Blog</a>
+<a class="link f6 f5-l dib pv1 ph2" href=/contact/ title="Contact Form">Contact</a>
+</div>
+</nav>
+</header>
+<main class="page-main pa4" role=main>
+<section class="page-content mw7 center">
+<article class="post-content pa0 ph4-l">
+<header class=post-header>
+<h1 class="f1 lh-solid measure-narrow mb3">A Case Study on the Yocto Project</h1>
+<h4 class="f4 mt0 mb4 lh-title measure">Building a Barcode Reader From Beginning to End</h4>
+<p class="f6 measure lh-copy mv1">By Ibrahim ERTURK</p>
+<p class="f7 db mv0 ttu">August 20, 2022</p>
+</header>
+<section class="post-body pt5 pb4">
+<p><img src=/blog/assets/yocto-project/yocto-project.jpeg alt="Yocto Project"></p>
+<p>In this post, it&rsquo;ll be tried to explain what is Yocto Project by building a real world example - a barcode reader. So let&rsquo;s start!</p>
+<hr>
+<h3 id=introduction>Introduction</h3>
+<p>Following excerpt is taken from the Wikipedia article <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> on the Yocto Project.</p>
+<blockquote>
+<p>The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware. The project was announced by the Linux Foundation in 2010 and launched in March, 2011, in collaboration with 22 organizations, including OpenEmbedded.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p>
+</blockquote>
+<p>This directly leads us to OpenEmbedded <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> build system. So what is OpenEmbedded and OpenEmbedded build system? Following excerpt is taken from the Wikipedia article <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> on the OpenEmbedded.</p>
+<blockquote>
+<p>OpenEmbedded is a build automation framework and cross-compile environment used to create Linux distributions for embedded devices. The OpenEmbedded framework is developed by the OpenEmbedded community, which was formally established in 2003. OpenEmbedded is the recommended build system of the Yocto Project, which is a Linux Foundation workgroup that assists commercial companies in the development of Linux-based systems for embedded products.</p>
+<p>The build system is based on BitBake &ldquo;recipes&rdquo;, which specify how a particular package is built but also include lists of dependencies and source code locations, as well as for instructions on how to install and remove a compiled package. OpenEmbedded tools use these recipes to fetch and patch source code, compile and link binaries, produce binary packages (ipk, deb, rpm), and create bootable images.</p>
+</blockquote>
+<p>As can be seen from the above quotes about Yocto Project and OpenEmbedded, they are different from each other. However, they are often used interchangeably. In short;</p>
+<blockquote>
+<p><strong>Yocto is an umbrella project for building your own Linux Embedded distro</strong></p>
+<p><strong>OpenEmbedded is a build system for Yocto</strong></p>
+</blockquote>
+<p>OpenEmbedded utilizes the tool <strong>BitBake</strong> for everthing as can be seen from above excerpt. In the next section, it&rsquo;ll be tried to explain how to get OpenEmbedded build system <strong>BitBake</strong>.</p>
+<hr>
+<h3 id=how-to-prepare-the-host-system>How to Prepare the Host System</h3>
+<p>Due to target system is Linux OS, the <strong>BitBake</strong> requires a Linux OS as host especially Debian/Ubuntu. A Linux VM On Windows or MacOS, or WSL on Windows can be used as build machine but not recommended due to performance issues and high demand for disk space. In any case, a Linux machine is required even virtual or native one. From now on, we have two options to install the build system on the host Linux machine.</p>
+<ul>
+<li>Directly installing the tools on the host.</li>
+<li>Using Docker to get whole build system.</li>
+</ul>
+<p>The later option is used within this tutorial because while the first method mess the host system, the second method provides an isolated system. On Linux, both methods work with same performance because the Docker does not add an additional layer to work. However on Window adn MacOS, the Docker needs an additional Linux VM therefore the performance will be decreased.</p>
+<p>From now on, we assume that we have a Debian/Ubuntu Linux Machine (Native or Virtual) and we have an access to machine over SSH console. If you don&rsquo;t feel comfortable with the console, you can use teh VS Code Remote SSH plugin <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p>
+<p>For the firts method you can follow the document Yocto Project Quick Build <sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p>
+<p>For the second method, the Docker engine needs to be installed first. For this, you can follow the document Install Docker Engine on Debian <sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>. Also we need the <strong>git</strong> versioning tools. It can be installed as follow</p>
+<pre tabindex=0><code>$ sudo apt-get update
+$ sudo apt-get install git
+</code></pre><hr>
+<h3 id=how-to-get-the-openembedded-build-system>How to Get the OpenEmbedded Build System</h3>
+<p>Now we have all required base tools on host, and we can get the <strong>BitBake</strong> from the <strong>Poky</strong> project as follow</p>
+<pre tabindex=0><code># Create a working directory
+$ mkdir -p /mnt/Work/PROJs/rpi/yocto/src
+$ cd /mnt/Work/PROJs/rpi/yocto/src
+
+# getting latest stable build system branch kirkstone from yocto project repos
+$ git clone git://git.yoctoproject.org/poky -b kirkstone
+
+# return to yocto directory and run docker
+$ cd ..
+$ docker run --rm -it -v $(pwd):/workspace --workdir /workspace crops/poky:latest
+</code></pre><p>After the last command was issued, if the container images could not be found on local it will be downlaoded automatically from the <strong>Docker Hub</strong> and run the container, then you drop into container command line prompt. Now we have a whole build system but no source to build. We will get the sources in next section.</p>
+<hr>
+<h3 id=how-to-get-the-bitbake-layers>How to Get the BitBake Layers</h3>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p><a href=https://en.wikipedia.org/wiki/Yocto_Project title="Yocto Project article on Wikipedia">Yocto Project article on Wikipedia</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p><a href=https://www.openembedded.org title="OpenEmbedded Build System">OpenEmbedded Build System</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p><a href=https://en.wikipedia.org/wiki/OpenEmbedded title="OpenEmbedded article on Wikipedia">OpenEmbedded article on Wikipedia</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p><a href=https://code.visualstudio.com/docs/remote/ssh title="VS Code Remote SSH plugin">VS Code Remote SSH plugin</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:5 role=doc-endnote>
+<p><a href=https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html title="Yocto Project Quick Build">Yocto Project Quick Build</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:6 role=doc-endnote>
+<p><a href=https://docs.docker.com/engine/install/debian/ title="Install Docker Engine on Debian">Install Docker Engine on Debian</a>&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+<details closed class="f6 fw7 input-reset">
+<dl class="f6 lh-copy">
+<dt class=fw7>Posted on:</dt>
+<dd class="fw5 ml0">August 20, 2022</dd>
+</dl>
+<dl class="f6 lh-copy">
+<dt class=fw7>Length:</dt>
+<dd class="fw5 ml0">4 minute read, 764 words</dd>
+</dl>
+<dl class="f6 lh-copy">
+<dt class=fw7>See Also:</dt>
+</dl>
+</details>
+</section>
+<footer class=post-footer>
+<div class="post-pagination dt w-100 mt4 mb2">
+<a class="prev dtc pr2 tl v-top fw6" href=https://erturk.me/blog/scipowerlab-updated/>&larr; SciPowerLab Updated</a>
+</div>
+</footer>
+</article>
+</section>
+</main>
+<footer class="site-footer pa4 bt b--transparent" role=contentinfo>
+<nav class="db dt-l w-100">
+<p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+&copy; 2022 MareNostrum
+<br>
+Based on <span xmlns:dct=http://purl.org/dc/terms/ property="dct:title"><a xmlns:dct=http://purl.org/dc/terms/ href=https://github.com/formspree/blogophonic-hugo rel=dct:source>Blogophonic</a></span> by <a xmlns:cc=http://creativecommons.org/ns# href=https://formspree.io property="cc:attributionName" rel=cc:attributionurl>Formspree</a>.
+</p>
+<div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+<div class=social-icon-links>
+<a class="link dim dib h1 w1 mh1" href=https://facebook.com/ierturk title=Facebook target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117.0H.883C.395.0.0.395.0.883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883.0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.476-1.195 1.176v1.54h2.39l-.31 2.416h-2.08V16h4.077c.488.0.883-.395.883-.883V.883C16 .395 15.605.0 15.117.0" fill-rule="nonzero"/></svg>
+</a>
+<a class="link dim dib h1 w1 mh1" href=https://instagram.com/ilibridiabe title=Instagram target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827.0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555.0 5.827.0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173.0 8 0zm0 1.44c2.136.0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598s.453.546.598.92c.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.048 3.233c-.036.78-.166 1.203-.276 1.485-.145.374-.318.64-.598.92-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.097.047-3.233.047s-2.39-.01-3.233-.048c-.78-.036-1.203-.166-1.485-.276-.374-.145-.64-.318-.92-.598-.28-.28-.453-.546-.598-.92-.11-.282-.24-.705-.276-1.485C1.45 10.39 1.44 10.136 1.44 8s.01-2.39.048-3.233c.036-.78.166-1.203.276-1.485.145-.374.318-.64.598-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276C5.61 1.45 5.864 1.44 8 1.44zm0 2.452c-2.27.0-4.108 1.84-4.108 4.108.0 2.27 1.84 4.108 4.108 4.108 2.27.0 4.108-1.84 4.108-4.108.0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473.0-2.667-1.194-2.667-2.667.0-1.473 1.194-2.667 2.667-2.667 1.473.0 2.667 1.194 2.667 2.667.0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
+</a>
+<a class="link dim dib h1 w1 mh1" href=https://youtube.com/IbrahimErturk title=YouTube target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9.0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+</a>
+<a class="link dim dib h1 w1 mh1" href=https://twitter.com/ierturk title=Twitter target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812.0-3.282 1.468-3.282 3.28.0.258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21.0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265.0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038.0 9.34-5 9.34-9.338.0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+</a>
+<a class="link dim dib h1 w1 mh1" href=https://github.com/ierturk title=GitHub target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58.0.0 3.582.0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385.0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953.0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117.0.0.672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147.0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48.0 1.07-.01 1.933-.01 2.195.0.215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+</a>
+<a class="link dim black-90 dib h1 w1 mh1" href=https://medium.com/@ierturk title=Medium target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278.0.467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003.0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016.0-.03-.01-.047-.01-.184.0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68.59 1.608c-.085-.042-.166-.062-.24-.062-.206.0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257.0.438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z"/></svg>
+</a>
+<a class="link dim black-90 dib h1 w1 mh1" href=https://www.linkedin.com/in/ierturk title=LinkedIn target=_blank><svg fill="currentcolor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853.0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601.0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144.0-2.063-.926-2.063-2.065.0-1.138.92-2.063 2.063-2.063 1.14.0 2.064.925 2.064 2.063.0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225.0H1.771C.792.0.0.774.0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2.0 22.222.0h.003z"/></svg>
+</a>
+</div>
+</div>
+<div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+<a class="dib pv1 ph2 link" href=/index.xml title="RSS Feed">RSS</a>
+</div>
+</nav>
+</footer>
+</div>
+</body>
+</html>
