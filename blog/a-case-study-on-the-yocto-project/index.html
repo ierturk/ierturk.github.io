@@ -17,7 +17,7 @@
  Introduction Following excerpt is taken from the Wikipedia article 1 on the Yocto Project.
  The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware."><meta itemprop=datePublished content="2022-08-20T00:29:04+03:00">
 <meta itemprop=dateModified content="2022-08-20T00:29:04+03:00">
-<meta itemprop=wordCount content="764"><meta itemprop=image content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg"><meta itemprop=image content="https://erturk.me">
+<meta itemprop=wordCount content="2003"><meta itemprop=image content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg"><meta itemprop=image content="https://erturk.me">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://erturk.me/blog/assets/yocto-project/yocto-project.jpeg">
@@ -93,14 +93,269 @@ $ mkdir -p /mnt/Work/PROJs/rpi/yocto/src
 $ cd /mnt/Work/PROJs/rpi/yocto/src
 
 # getting latest stable build system branch kirkstone from yocto project repos
-$ git clone git://git.yoctoproject.org/poky -b kirkstone
+$ git clone https://git.yoctoproject.org/poky -b kirkstone
 
 # return to yocto directory and run docker
 $ cd ..
 $ docker run --rm -it -v $(pwd):/workspace --workdir /workspace crops/poky:latest
+
+# exit to return host command prompt
+$ exit
+
 </code></pre><p>After the last command was issued, if the container images could not be found on local it will be downlaoded automatically from the <strong>Docker Hub</strong> and run the container, then you drop into container command line prompt. Now we have a whole build system but no source to build. We will get the sources in next section.</p>
 <hr>
 <h3 id=how-to-get-the-bitbake-layers>How to Get the BitBake Layers</h3>
+<p>In <strong>BitBake</strong> concept, every group of source provides same functionality is called as <strong>Layer</strong> or <strong>Meta-Layer</strong>. Indeed, they are not a regular source code to build. They are some script in <strong>BitBake</strong> language that defines how to get sources, patch them, build them, their dependencies, and integrate into final target image. We need following Layers for our project.</p>
+<ul>
+<li><strong>meta-extra</strong> - a custom layer to add a regular sudo user</li>
+<li><strong>meta-raspberrypi</strong> - the RPI board support package</li>
+<li><strong>meta-openembedded</strong> - additional Linux tools</li>
+<li><strong>meta-virtualization</strong> - the Docker support packages</li>
+</ul>
+<p>The sources can be downloaded from relevant locations as follow</p>
+<pre tabindex=0><code># goto source folder
+$ cd /mnt/Work/PROJs/rpi/yocto/src
+
+# meta-extra
+$ git clone https://github.com/ierturk/yocto-meta-extra.git -b kirkstone meta-extra
+
+# meta-raspberrypi
+$ git clone https://git.yoctoproject.org/meta-raspberrypi -b kirkstone
+
+# meta-openembedded
+$ git clone https://git.openembedded.org/meta-openembedded -b kirkstone
+
+# meta-virtualization
+$ git clone https://git.yoctoproject.org/meta-virtualization -b kirkstone
+</code></pre><p>Now we have all the source to build the target image.</p>
+<hr>
+<h3 id=configuring-and-building-target-image>Configuring and Building Target Image</h3>
+<p>Our target images will be used for developing, it will have lots of tools which will not have an productions image, therefore it will be larger then a production image. However we will follow a different appraching to develop an application. We will use the Docker for the applications and all the required packages which are not included in base image will be included within the Docker containers.</p>
+<p>Now we can start to configure and build the image</p>
+<pre tabindex=0><code># goto yocto directory and run Docker
+$ cd /mnt/Work/PROJs/rpi/yocto/src
+$ docker run --rm -it -v $(pwd):/workspace --workdir /workspace crops/poky:latest
+
+# We will drop into container command promt.
+# Now the directory /mnt/Work/PROJs/rpi/yocto/src will be mounted
+# as /workspace within the container, and we are in this directory.
+
+# Following command start a new build directory,
+# and automatically drop into build directory
+$ . src/poky/oe-init-build-env
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake &lt;target&gt;'
+
+Common targets are:
+    core-image-minimal
+    core-image-full-cmdline
+    core-image-sato
+    core-image-weston
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+</code></pre><p>Then you should have a following directory tree under the directory <strong>yocto</strong>.</p>
+<pre tabindex=0><code>|-- build
+|   |-- conf
+|   |   |-- bblayers.conf
+|   |   |-- local.conf
+|   |   `-- templateconf.cfg
+`-- src
+    |-- meta-extra
+    |-- meta-openembedded
+    |-- meta-raspberrypi
+    |-- meta-virtualization
+    `-- poky
+</code></pre><p>Now we need to edit the files <strong>bblayers.conf</strong> and <strong>local.conf</strong>. They are created with the contents, and needs to be applied following patches.</p>
+<p>The patch for <strong>bblayers.conf</strong></p>
+<pre tabindex=0><code>diff initial/bblayers.conf final/bblayers.conf 
+11a12,19
+&gt;   ${TOPDIR}/../src/meta-raspberrypi \
+&gt;   ${TOPDIR}/../src/meta-openembedded/meta-oe \
+&gt;   ${TOPDIR}/../src/meta-openembedded/meta-multimedia \
+&gt;   ${TOPDIR}/../src/meta-openembedded/meta-networking \
+&gt;   ${TOPDIR}/../src/meta-openembedded/meta-python \
+&gt;   ${TOPDIR}/../src/meta-openembedded/meta-filesystems \
+&gt;   ${TOPDIR}/../src/meta-virtualization \
+&gt;   ${TOPDIR}/../src/meta-extra \
+</code></pre><p>The patch for <strong>local.conf</strong></p>
+<pre tabindex=0><code>diff initial/local.conf final/local.conf 
+36a37,38
+&gt; MACHINE ?= &quot;raspberrypi3-64&quot;
+&gt; #
+108c110
+&lt; PACKAGE_CLASSES ?= &quot;package_rpm&quot;
+---
+&gt; PACKAGE_CLASSES ?= &quot;package_ipk&quot;
+276a279,344
+&gt; 
+&gt; # IMAGE_ROOTFS_EXTRA_SPACE = &quot;16777216&quot;
+&gt; 
+&gt; # Systemd enable
+&gt; DISTRO_FEATURES:append = &quot; systemd&quot;
+&gt; VIRTUAL-RUNTIME_init_manager = &quot;systemd&quot;
+&gt; DISTRO_FEATURES_BACKFILL_CONSIDERED = &quot;sysvinit&quot;
+&gt; VIRTUAL-RUNTIME_initscripts = &quot;&quot;
+&gt; 
+&gt; # Extra Users
+&gt; DISTRO_FEATURES:append = &quot; pam&quot;
+&gt; IMAGE_INSTALL:append = &quot; extra-sudo&quot;
+&gt; IMAGE_INSTALL:append = &quot; extra-user&quot;
+&gt; 
+&gt; # Image features
+&gt; IMAGE_FEATURES:append = &quot; hwcodecs bash-completion-pkgs&quot;
+&gt; 
+&gt; # Kernel Modules All
+&gt; # IMAGE_INSTALL:append = &quot; kernel-modules&quot;
+&gt; # IMAGE_INSTALL:append = &quot; linux-firmware&quot;
+&gt; 
+&gt; # OpenGL
+&gt; DISTRO_FEATURES:append = &quot; opengl&quot;
+&gt; 
+&gt; # Dev Tools
+&gt; IMAGE_FEATURES:append = &quot; tools-debug&quot;
+&gt; EXTRA_IMAGE_FEATURES:append = &quot; ssh-server-openssh&quot;
+&gt; 
+&gt; # Virtualization
+&gt; DISTRO_FEATURES:append = &quot; virtualization&quot;
+&gt; IMAGE_INSTALL:append = &quot; docker-ce&quot;
+&gt; IMAGE_INSTALL:append = &quot; python3-docker-compose&quot;
+&gt; IMAGE_INSTALL:append = &quot; python3-distutils&quot;
+&gt; 
+&gt; # Network manager
+&gt; IMAGE_INSTALL:append = &quot; wpa-supplicant&quot;
+&gt; IMAGE_INSTALL:append = &quot; networkmanager&quot; 
+&gt; IMAGE_INSTALL:append = &quot; modemmanager&quot;
+&gt; IMAGE_INSTALL:append = &quot; networkmanager-nmcli&quot;
+&gt; IMAGE_INSTALL:append = &quot; networkmanager-nmtui&quot;
+&gt; 
+&gt; # USB Camera
+&gt; IMAGE_INSTALL:append = &quot; kernel-module-uvcvideo&quot;
+&gt; IMAGE_INSTALL:append = &quot; v4l-utils&quot;
+&gt; 
+&gt; # RPi
+&gt; ENABLE_UART = &quot;1&quot;
+&gt; 
+&gt; # Date Time Daemon
+&gt; # IMAGE_INSTALL:append = &quot; ntpdate&quot;
+&gt; 
+&gt; # Tools
+&gt; IMAGE_INSTALL:append = &quot; git&quot;
+&gt; IMAGE_INSTALL:append = &quot; curl&quot;
+&gt; IMAGE_INSTALL:append = &quot; wget&quot;
+&gt; IMAGE_INSTALL:append = &quot; rsync&quot;
+&gt; IMAGE_INSTALL:append = &quot; sudo&quot;
+&gt; IMAGE_INSTALL:append = &quot; nano&quot;
+&gt; IMAGE_INSTALL:append = &quot; socat&quot;
+&gt; IMAGE_INSTALL:append = &quot; tzdata&quot;
+&gt; IMAGE_INSTALL:append = &quot; e2fsprogs-resize2fs gptfdisk parted util-linux udev&quot;
+&gt; 
+&gt; # VS Code reqs
+&gt; IMAGE_INSTALL:append = &quot; ldd&quot;
+&gt; IMAGE_INSTALL:append = &quot; glibc&quot;
+&gt; IMAGE_INSTALL:append = &quot; libstdc++&quot;
+</code></pre><p>Now just type following command and then you need to wait some quite considerable time to get the target image.</p>
+<pre tabindex=0><code>$ bitbake core-image-base
+</code></pre><hr>
+<h3 id=flashing-the-image>Flashing the Image</h3>
+<p>You will find the image as <strong>build/tmp/deploy/images/raspberrypi3-64/core-image-base-raspberrypi3-64.wic.bz2</strong>. The image can be flashed as follow in a <strong>Unix</strong> system.</p>
+<pre tabindex=0><code># Unzip image
+$ bzip2 -d -f ./core-image-base-raspberrypi3-64.wic.bz2
+
+# Flash to SD Card
+# Here you need to change sdX with your SD Card reader device.
+$ sudo dd if=./core-image-base-raspberrypi3.wic of=/dev/sdX bs=1m 
+</code></pre><hr>
+<h3 id=the-first-run>The First Run</h3>
+<p>Finally you have an SD Card has <strong>RPI3-64 bit OS</strong> image. Just plug into your <strong>RPI3</strong>, then power up. If you already know your RPI IP address you can login as root without password over SSH console, or with the user <strong>ierturk</strong> wit the defult password <strong>1200</strong>. At first login the system request to change password for the user <strong>ierturk</strong>. This user also is a <strong>sudo</strong> user.</p>
+<hr>
+<h3 id=additional-tune-up>Additional Tune Up</h3>
+<p>For retain the image size to be smaller and fits to any SD Card, the root file system was retained as small as possible. Now it needs to be expanded as follow.</p>
+<pre tabindex=0><code># login as root user over SSH
+$ ssh root@ip_address_of_the_rpi
+
+# following command list your memory blocks
+$ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+mmcblk0     179:0    0  XXXG  0 disk 
+|-mmcblk0p1 179:1    0 69.1M  0 part /boot
+`-mmcblk0p2 179:2    0   XXG  0 part /
+
+# here mmcblk0p2 needs to be expanded to its max
+$ parted /dev/mmcblk0 resizepart 2 100%
+$ resize2fs /dev/mmcblk0p2
+
+# then it looks like as follow
+$ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+mmcblk0     179:0    0 29.1G  0 disk 
+|-mmcblk0p1 179:1    0 69.1M  0 part /boot
+`-mmcblk0p2 179:2    0   29G  0 part /
+</code></pre><p>Finally everythink is OK. Now type following command to test your Docker installation</p>
+<pre tabindex=0><code>$ docker info
+Client:
+ Context:    default
+ Debug Mode: false
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 2
+ Server Version: 20.10.12-ce
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: d12516713c315ea9e651eb1df89cf32ff7c8137c.m
+ runc version: v1.1.2-9-gb507e2da-dirty
+ init version: b9f42a0-dirty
+ Kernel Version: 5.15.34-v8
+ Operating System: Poky (Yocto Project Reference Distro) 4.0.2 (kirkstone)
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 4
+ Total Memory: 909MiB
+ Name: raspberrypi3-64
+ ID: SKCZ:5JOV:CLCE:ECSC:UJ46:VGCH:YAFW:TNOF:J3FN:WO26:FHIO:BHRR
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+WARNING: No memory limit support
+WARNING: No swap limit support
+WARNING: No kernel memory TCP limit support
+WARNING: No oom kill disable support
+WARNING: No blkio throttle.read_bps_device support
+WARNING: No blkio throttle.write_bps_device support
+WARNING: No blkio throttle.read_iops_device support
+WARNING: No blkio throttle.write_iops_device support
+</code></pre><p>Now we have a base system without any <strong>Desktop</strong> to develop an application using <strong>Docker</strong>.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -131,7 +386,7 @@ $ docker run --rm -it -v $(pwd):/workspace --workdir /workspace crops/poky:lates
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>Length:</dt>
-<dd class="fw5 ml0">4 minute read, 764 words</dd>
+<dd class="fw5 ml0">10 minute read, 2003 words</dd>
 </dl>
 <dl class="f6 lh-copy">
 <dt class=fw7>See Also:</dt>
