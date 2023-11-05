@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mare Nostrum - book</title>
+    <subtitle>It&#x27;s me!</subtitle>
+    <link href="https://erturk.me/tags/book/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://erturk.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-06-26T12:13:02+03:00</updated>
+    <id>https://erturk.me/tags/book/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The Book Cellar</title>
+        <published>2022-06-26T12:13:02+03:00</published>
+        <updated>2022-06-26T12:13:02+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-book-cellar/" type="text/html"/>
+        <id>https://erturk.me/blog/the-book-cellar/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Discreet Shadow</title>
+        <published>2022-06-26T12:12:30+03:00</published>
+        <updated>2022-06-26T12:12:30+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-discreet-shadow/" type="text/html"/>
+        <id>https://erturk.me/blog/the-discreet-shadow/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;All previous crimes of the Russian empire…&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I Have No Mission</title>
+        <published>2022-06-26T12:09:36+03:00</published>
+        <updated>2022-06-26T12:09:36+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/i-have-no-mission/" type="text/html"/>
+        <id>https://erturk.me/blog/i-have-no-mission/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;I have no mission. No one has.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>When the Heart Speaks</title>
+        <published>2022-06-26T12:05:16+03:00</published>
+        <updated>2022-06-26T12:05:16+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/when-the-heart-speaks/" type="text/html"/>
+        <id>https://erturk.me/blog/when-the-heart-speaks/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;When the heart speaks, the mind finds it indecent to object. &lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Not Even Your Own</title>
+        <published>2022-01-08T02:31:22+03:00</published>
+        <updated>2022-01-08T02:31:22+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/not-even-your-own/" type="text/html"/>
+        <id>https://erturk.me/blog/not-even-your-own/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;No heart can ever be truly understood. Not even your own.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;Red Queen, Victoria Aveyard&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mare Nostrum - 1q84</title>
+    <subtitle>It&#x27;s me!</subtitle>
+    <link href="https://erturk.me/tags/1q84/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://erturk.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-01-08T02:29:46+03:00</updated>
+    <id>https://erturk.me/tags/1q84/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Because of You</title>
+        <published>2022-01-08T02:29:46+03:00</published>
+        <updated>2022-01-08T02:29:46+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/because-of-you/" type="text/html"/>
+        <id>https://erturk.me/blog/because-of-you/</id>
+        
+        <summary type="html">&lt;p&gt;my heart still beats with the most distant stars &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Words Without Letters</title>
+        <published>2022-01-07T16:12:24+03:00</published>
+        <updated>2022-01-07T16:12:24+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/words-without-letters/" type="text/html"/>
+        <id>https://erturk.me/blog/words-without-letters/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Words without letters&lt;br &#x2F;&gt;
+Standing in the shadow of the doors&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;1Q84, Haruki Muarakami&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

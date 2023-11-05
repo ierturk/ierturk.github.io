@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mare Nostrum - physics</title>
+    <subtitle>It&#x27;s me!</subtitle>
+    <link href="https://erturk.me/tags/physics/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://erturk.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-02-05T15:44:41+03:00</updated>
+    <id>https://erturk.me/tags/physics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Don&#x27;t Regret Anything in Life</title>
+        <published>2022-02-05T15:44:41+03:00</published>
+        <updated>2022-02-05T15:44:41+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/dont-regret-anything-in-life/" type="text/html"/>
+        <id>https://erturk.me/blog/dont-regret-anything-in-life/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Don’t regret anything in life. If it’s good, it’s wonderful. If it’s bad, it’s experience!
+When you win, you win. When you lose, you learn.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;Richard Phillips Feynman&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
