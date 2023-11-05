@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mare Nostrum</title>
+    <subtitle>It&#x27;s me!</subtitle>
+    <link href="https://erturk.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://erturk.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-09-06T00:35:51+03:00</updated>
+    <id>https://erturk.me/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Angina Pectoris</title>
+        <published>2023-09-06T00:35:51+03:00</published>
+        <updated>2023-09-06T00:35:51+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/angina-pectoris/" type="text/html"/>
+        <id>https://erturk.me/blog/angina-pectoris/</id>
+        
+        <summary type="html">&lt;p&gt;my heart still beats with the most distant stars &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Gratitude</title>
+        <published>2023-07-24T12:32:02+03:00</published>
+        <updated>2023-07-24T12:32:02+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/gratitude/" type="text/html"/>
+        <id>https://erturk.me/blog/gratitude/</id>
+        
+        <summary type="html">&lt;p&gt;Har icinde biten gonca gule minnet eylemem &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>If We Pay Attention...</title>
+        <published>2023-07-24T12:32:02+03:00</published>
+        <updated>2023-07-24T12:32:02+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/if-we-pay-attention/" type="text/html"/>
+        <id>https://erturk.me/blog/if-we-pay-attention/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Renegade</title>
+        <published>2023-07-03T16:31:46+03:00</published>
+        <updated>2023-07-03T16:31:46+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/renegade/" type="text/html"/>
+        <id>https://erturk.me/blog/renegade/</id>
+        
+        <summary type="html">&lt;p&gt;Seyh Bedrettin Destani &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A Case Study on the Yocto Project</title>
+        <published>2022-08-20T00:29:04+03:00</published>
+        <updated>2022-08-20T00:29:04+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/a-case-study-on-the-yocto-project/" type="text/html"/>
+        <id>https://erturk.me/projects/a-case-study-on-the-yocto-project/</id>
+        
+        <summary type="html">&lt;p&gt;Building a Barcode Reader From Beginning to End&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SciPowerLab Updated</title>
+        <published>2022-08-20T00:29:04+03:00</published>
+        <updated>2022-08-20T00:29:04+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/sci-power-lab-updated/" type="text/html"/>
+        <id>https://erturk.me/projects/sci-power-lab-updated/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;scipowerlab&quot;&gt;SciPowerLab&lt;a class=&quot;zola-anchor&quot; href=&quot;#scipowerlab&quot; aria-label=&quot;Anchor link for: scipowerlab&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h1&gt;
+&lt;p&gt;Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Author&lt;&#x2F;strong&gt; ierturk &lt;a href=&quot;mailto:ierturk@ieee.org&quot;&gt;me [at] erturk.me&lt;&#x2F;a&gt; @ &lt;a href=&quot;http:&#x2F;&#x2F;erturk.me&quot;&gt;ErturkMe&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+&lt;strong&gt;Version&lt;&#x2F;strong&gt; 0.3.0&lt;br &#x2F;&gt;
+&lt;strong&gt;Date&lt;&#x2F;strong&gt; 12-Jul-2022&lt;br &#x2F;&gt;
+&lt;strong&gt;Brief&lt;&#x2F;strong&gt; Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Module uses Scilab&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SciPowerLab Toolbox
+ErturkMe - Power Electronics and Electrical Machines&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;XCPL (0.3) - Update for New Scilab 6 API for Xcos block&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+Run builder.sce in root folder&lt;br &#x2F;&gt;
+Run loader.sce created by builder macro&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Blocks&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;xcpl_BLDC&lt;br &#x2F;&gt;
+Brushless DC Machine in abc frame&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_BLSC&lt;br &#x2F;&gt;
+Brushless DC Machine Sensored Controller&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_PMSM&lt;br &#x2F;&gt;
+Permanent Magnet Synchronous Machine in dq frame&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_PMSC&lt;br &#x2F;&gt;
+Permanent Magnet Synchronous Machine FOC Controller&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_IMPU&lt;br &#x2F;&gt;
+Induction Machine Per-Unit Model in dq frame&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_SVPWM&lt;br &#x2F;&gt;
+Space Vector PWM generator&lt;&#x2F;li&gt;
+&lt;li&gt;xcpl_PSDINV&lt;br &#x2F;&gt;
+Pseudo Inverter (It does not support three-state switching case)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Demos&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Field Oriented Controlling Permanent Magnet Synchronous Machine&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;&#x2F;strong&gt;
+The toolbox can be downloaded from following links or can be installed directly within SciLab.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;atoms.scilab.org&#x2F;toolboxes&#x2F;XCPL&#x2F;0.3.0&quot;&gt;Scilab ATOMS - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;SciPowerLab&quot;&gt;GitHub - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Citation&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+@software{Erturk_Scilab_Xcos_Power_Electronics,
+author = {Erturk, Ibrahim},
+title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
+}&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;COPYRIGHT 2011-2022 ErturkMe&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Identifying Livestock With Yolo V3 Object Detection Using Pytorch</title>
+        <published>2022-06-26T13:57:40+03:00</published>
+        <updated>2022-06-26T13:57:40+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/" type="text/html"/>
+        <id>https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;hr &#x2F;&gt;
+&lt;div &gt;
+    &lt;iframe
+        src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;mNQ21kzEskE&quot;
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen&gt;
+    &lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Oylesine</title>
+        <published>2022-06-26T13:25:30+03:00</published>
+        <updated>2022-06-26T13:25:30+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/oylesine/" type="text/html"/>
+        <id>https://erturk.me/blog/oylesine/</id>
+        
+        <summary type="html">&lt;p&gt;my heart still beats with the most distant stars &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Once Upon a Time</title>
+        <published>2022-06-26T13:15:34+03:00</published>
+        <updated>2022-06-26T13:15:34+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/once-upon-a-time/" type="text/html"/>
+        <id>https://erturk.me/blog/once-upon-a-time/</id>
+        
+        <summary type="html">&lt;p&gt;my heart still beats with the most distant stars &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>June Night</title>
+        <published>2022-06-26T12:14:39+03:00</published>
+        <updated>2022-06-26T12:14:39+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/june-night/" type="text/html"/>
+        <id>https://erturk.me/blog/june-night/</id>
+        
+        <summary type="html">&lt;p&gt;They took away the blues &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Vagabond Istanbul</title>
+        <published>2022-06-26T12:13:57+03:00</published>
+        <updated>2022-06-26T12:13:57+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-vagabond-istanbul/" type="text/html"/>
+        <id>https://erturk.me/blog/the-vagabond-istanbul/</id>
+        
+        <summary type="html">&lt;p&gt;if this city is beautiful it id because of you &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Book Cellar</title>
+        <published>2022-06-26T12:13:02+03:00</published>
+        <updated>2022-06-26T12:13:02+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-book-cellar/" type="text/html"/>
+        <id>https://erturk.me/blog/the-book-cellar/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Discreet Shadow</title>
+        <published>2022-06-26T12:12:30+03:00</published>
+        <updated>2022-06-26T12:12:30+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-discreet-shadow/" type="text/html"/>
+        <id>https://erturk.me/blog/the-discreet-shadow/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;All previous crimes of the Russian empire…&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Wild Fire</title>
+        <published>2022-06-26T12:11:39+03:00</published>
+        <updated>2022-06-26T12:11:39+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/the-wild-fire/" type="text/html"/>
+        <id>https://erturk.me/blog/the-wild-fire/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Istanbul Will Appear if You Get Out of My Way</title>
+        <published>2022-06-26T12:10:45+03:00</published>
+        <updated>2022-06-26T12:10:45+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/" type="text/html"/>
+        <id>https://erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I Have No Mission</title>
+        <published>2022-06-26T12:09:36+03:00</published>
+        <updated>2022-06-26T12:09:36+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/i-have-no-mission/" type="text/html"/>
+        <id>https://erturk.me/blog/i-have-no-mission/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;I have no mission. No one has.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Let the Ships Sail Without You</title>
+        <published>2022-06-26T12:08:56+03:00</published>
+        <updated>2022-06-26T12:08:56+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/let-the-ships-sail-without-you/" type="text/html"/>
+        <id>https://erturk.me/blog/let-the-ships-sail-without-you/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>If I Died I Would Die Perfectly</title>
+        <published>2022-06-26T12:08:03+03:00</published>
+        <updated>2022-06-26T12:08:03+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/if-i-died-i-would-die-perfectly/" type="text/html"/>
+        <id>https://erturk.me/blog/if-i-died-i-would-die-perfectly/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>When the Heart Speaks</title>
+        <published>2022-06-26T12:05:16+03:00</published>
+        <updated>2022-06-26T12:05:16+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/when-the-heart-speaks/" type="text/html"/>
+        <id>https://erturk.me/blog/when-the-heart-speaks/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;When the heart speaks, the mind finds it indecent to object. &lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I Already Know</title>
+        <published>2022-06-26T10:57:50+03:00</published>
+        <updated>2022-06-26T10:57:50+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/i-already-know/" type="text/html"/>
+        <id>https://erturk.me/blog/i-already-know/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Don&#x27;t Regret Anything in Life</title>
+        <published>2022-02-05T15:44:41+03:00</published>
+        <updated>2022-02-05T15:44:41+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/dont-regret-anything-in-life/" type="text/html"/>
+        <id>https://erturk.me/blog/dont-regret-anything-in-life/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Don’t regret anything in life. If it’s good, it’s wonderful. If it’s bad, it’s experience!
+When you win, you win. When you lose, you learn.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;Richard Phillips Feynman&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Those Who Died Where They Were Born</title>
+        <published>2022-01-14T14:54:59+03:00</published>
+        <updated>2022-01-14T14:54:59+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/those-who-died-where-they-were-born/" type="text/html"/>
+        <id>https://erturk.me/blog/those-who-died-where-they-were-born/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Those who died where they were born…&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;Zulfu Livaneli&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Not Even Your Own</title>
+        <published>2022-01-08T02:31:22+03:00</published>
+        <updated>2022-01-08T02:31:22+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/not-even-your-own/" type="text/html"/>
+        <id>https://erturk.me/blog/not-even-your-own/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;No heart can ever be truly understood. Not even your own.&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;Red Queen, Victoria Aveyard&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Because of You</title>
+        <published>2022-01-08T02:29:46+03:00</published>
+        <updated>2022-01-08T02:29:46+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/because-of-you/" type="text/html"/>
+        <id>https://erturk.me/blog/because-of-you/</id>
+        
+        <summary type="html">&lt;p&gt;my heart still beats with the most distant stars &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A Wall Never Seen the Sun</title>
+        <published>2022-01-08T02:28:00+03:00</published>
+        <updated>2022-01-08T02:28:00+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/a-wall-never-seen-the-sun/" type="text/html"/>
+        <id>https://erturk.me/blog/a-wall-never-seen-the-sun/</id>
+        
+        <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Words Without Letters</title>
+        <published>2022-01-07T16:12:24+03:00</published>
+        <updated>2022-01-07T16:12:24+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/blog/words-without-letters/" type="text/html"/>
+        <id>https://erturk.me/blog/words-without-letters/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Words without letters&lt;br &#x2F;&gt;
+Standing in the shadow of the doors&lt;&#x2F;p&gt;
+&lt;p&gt; &lt;em&gt;1Q84, Haruki Muarakami&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Getting Started Developing Qt with VS Code Development Containers as Simple as Possible</title>
+        <published>2022-01-05T17:47:00+03:00</published>
+        <updated>2022-01-05T17:47:00+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/getting-started-qt-with-vs-code/" type="text/html"/>
+        <id>https://erturk.me/projects/getting-started-qt-with-vs-code/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer&lt;&#x2F;em&gt; — This is just my humble opinion and maybe there is more convenient way out there for this purpose.&lt;br &#x2F;&gt;
+For this purpose I already prepared a repo on GitHub&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;a class=&quot;zola-anchor&quot; href=&quot;#requirements&quot; aria-label=&quot;Anchor link for: requirements&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Any &lt;code&gt;Linux&lt;&#x2F;code&gt; Distribution (tested on &lt;code&gt;Debian 11&lt;&#x2F;code&gt;) with &lt;code&gt;Wayland Display Manager&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Docker&lt;&#x2F;code&gt; daemon&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;VS Code&lt;&#x2F;code&gt; with &lt;code&gt;Remote Container&lt;&#x2F;code&gt; extension. Or alternatively it can be used &lt;code&gt;Remote SSH&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;run-just-as-follow&quot;&gt;Run Just as Follow&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-just-as-follow&quot; aria-label=&quot;Anchor link for: run-just-as-follow&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clone the repos as follow&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;qt-qml-ai-collection.git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git submodule update --init
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Just open the cloned folder in &lt;code&gt;VS Code&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reopen in the development container&lt;&#x2F;li&gt;
+&lt;li&gt;Build with &lt;code&gt;CMake&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Run any target built by &lt;code&gt;CMake&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For more information including building development containers you can refer the links below&lt;&#x2F;p&gt;
+&lt;p&gt;The repo used for demonstration&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;br &#x2F;&gt;
+Development Container Sources&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;That’s all&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;qt-qml-ai-collection&quot;&gt;The repo used for demonstration&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;dev-containers&quot;&gt;Development Container Sources&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A Collection Related FEMM Magnetic</title>
+        <published>2022-01-05T17:21:33+03:00</published>
+        <updated>2022-01-05T17:21:33+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/a-collection-related-femm-magnetic/" type="text/html"/>
+        <id>https://erturk.me/projects/a-collection-related-femm-magnetic/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;&#x2F;strong&gt; software examples and Libraries can be cloned from as follow.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;femm-magnetic-collection.git
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;FEMM Finite Element Analysis Software&lt;&#x2F;strong&gt; is available freely from here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-collection&quot;&gt;The Collection&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-collection&quot; aria-label=&quot;Anchor link for: the-collection&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BLDC Machine Analysis&lt;&#x2F;li&gt;
+&lt;li&gt;Generating animated images from &lt;code&gt;FEMM&lt;&#x2F;code&gt; solutions&lt;&#x2F;li&gt;
+&lt;li&gt;Java FEMM Link and Java PowerLab integration&lt;&#x2F;li&gt;
+&lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;&#x2F;li&gt;
+&lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;&#x2F;code&gt; is the predecessor of &lt;code&gt;SciLab&#x2F;XCos&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-collection-related-femm-magnetic&#x2F;.&#x2F;a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.femm.info&#x2F;wiki&#x2F;HomePage&quot;&gt;Finite Element Method Magnetics&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>
