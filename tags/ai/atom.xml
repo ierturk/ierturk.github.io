@@ -21,6 +21,7 @@
 &lt;hr &#x2F;&gt;
 &lt;div &gt;
     &lt;iframe
+        width=&quot;560&quot; height=&quot;315&quot;
         src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;mNQ21kzEskE&quot;
         webkitallowfullscreen
         mozallowfullscreen

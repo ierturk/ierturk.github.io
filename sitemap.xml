@@ -10,6 +10,10 @@
         <loc>https://erturk.me/blog/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/blog/a-new-look-and-feel/</loc>
+        <lastmod>2023-11-06T03:05:00+03:00</lastmod>
+    </url>
+    <url>
         <loc>https://erturk.me/blog/a-wall-never-seen-the-sun/</loc>
         <lastmod>2022-01-08T02:28:00+03:00</lastmod>
     </url>
@@ -48,6 +52,10 @@
     <url>
         <loc>https://erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/</loc>
         <lastmod>2022-06-26T12:10:45+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://erturk.me/blog/jodida-pero-contenta-buika/</loc>
+        <lastmod>2023-11-06T03:30:30+03:00</lastmod>
     </url>
     <url>
         <loc>https://erturk.me/blog/june-night/</loc>
@@ -183,6 +191,9 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/embedded/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/general/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/haruki-murakami/</loc>
