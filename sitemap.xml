@@ -154,6 +154,10 @@
         <lastmod>2022-08-20T00:29:04+03:00</lastmod>
     </url>
     <url>
+        <loc>https://erturk.me/projects/working-with-rust-embedded-on-wsl/</loc>
+        <lastmod>2023-11-07T13:29:00+03:00</lastmod>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/</loc>
     </url>
     <url>
@@ -247,6 +251,9 @@
         <loc>https://erturk.me/tags/power-electronics/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/probe-rs/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/python/</loc>
     </url>
     <url>
@@ -268,6 +275,9 @@
         <loc>https://erturk.me/tags/rpi/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/rust/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/sci-power-lab/</loc>
     </url>
     <url>
@@ -283,7 +293,13 @@
         <loc>https://erturk.me/tags/spanish/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/stm32/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/victoria-aveyard/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/wsl/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/xcos/</loc>
