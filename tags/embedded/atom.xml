@@ -42,6 +42,11 @@
 &lt;a href=&quot;https:&#x2F;&#x2F;apps.microsoft.com&#x2F;detail&#x2F;9PN20MSR04DW?hl=en-gb&amp;amp;gl=US&quot;&gt;Ubuntu 22.04.2 LTS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;slint.dev&#x2F;&quot;&gt;Slint UI&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=Slint.slint&quot;&gt;Slint UI Plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cbiffle&#x2F;lilos&quot;&gt;lilos Async RTOS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;
