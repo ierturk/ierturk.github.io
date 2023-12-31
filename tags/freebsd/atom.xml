@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mare Nostrum - freebsd</title>
+    <subtitle>It&#x27;s me!</subtitle>
+    <link href="https://erturk.me/tags/freebsd/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://erturk.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-12-31T13:36:00+03:00</updated>
+    <id>https://erturk.me/tags/freebsd/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Notes on FreeBSD on MacBook Pro</title>
+        <published>2023-12-31T13:36:00+03:00</published>
+        <updated>2023-12-31T13:36:00+03:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/" type="text/html"/>
+        <id>https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/</id>
+        
+        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;a class=&quot;zola-anchor&quot; href=&quot;#introduction&quot; aria-label=&quot;Anchor link for: introduction&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;I own a quite old MacBook Pro, Mid-2012 (9,2). Even though, everything went well until the Apple and the other additional package managers including MacPorts, HomeBrew and Nix cease to support the Catalina. Apple also ceased to update the MacOS on my machine. I won’t able to install a version of the MacOS on my machine. Also Xcode won’t be updated. As a result, my machine stuck on the Catalina.&lt;&#x2F;p&gt;
+&lt;p&gt;I decided to install FreeBSD which is a aclone of UNIX. MacOS is also a clone of UNIX. There are lots of work to install FreeBSD on a MacBook due to hardware driver. The other option is the Windows. But you can not install Windows 11 due to lack of hardware encryption support (TPM).&lt;&#x2F;p&gt;
+&lt;p&gt;In the following sections you can find my experience regarding the installing FreeBSD on a MacBook. &lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;installation-the-base-os&quot;&gt;Installation the Base OS&lt;a class=&quot;zola-anchor&quot; href=&quot;#installation-the-base-os&quot; aria-label=&quot;Anchor link for: installation-the-base-os&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;Installing is a straight forward procedure. It can be downloaded required image from &lt;a href=&quot;https:&#x2F;&#x2F;download.freebsd.org&#x2F;releases&#x2F;amd64&#x2F;amd64&#x2F;ISO-IMAGES&#x2F;14.0&#x2F;&quot;&gt;the download page of the FreeBSD&lt;&#x2F;a&gt;, then write it into a USB flash drive as follow.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# dd if=&#x2F;pat-to-downloaded-image of=&#x2F;path-to-usb-flash-device bs=4m
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You need an ethernet connection for networking. To select boot drive, it needs to be press option-key on MacBook.&lt;br &#x2F;&gt;
+Im my case, if you try to install into same drive which MacOS installed, the installer permits only UFS. So I would like to try ZFS and I selected another drive to install with the ZFS.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;networking&quot;&gt;Networking&lt;a class=&quot;zola-anchor&quot; href=&quot;#networking&quot; aria-label=&quot;Anchor link for: networking&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;There is no way to use built-in wi-fi module Broadcom brcm4331 with FreeBSD. At least I could not found one. I use a USB&#x2F;WiFi module to access internet. Another way is using directly ethernet connection. You can also use a wi-fi extender with an ethernet output.&lt;br &#x2F;&gt;
+If you decided to use USB&#x2F;WiFi module, in my case (this a RaLink module), it needs to be added following lines into the files rc.conf and loader.conf.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# loader.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# USB-WiFi
+&lt;&#x2F;span&gt;&lt;span&gt;if_run_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;runfw_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# rc.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# WiFi
+&lt;&#x2F;span&gt;&lt;span&gt;wlans_run0=&amp;quot;wlan0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;ifconfig_wlan0=&amp;quot;WPA DHCP&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And then run following command&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;wpa_passphrase SSID PASSWORD &amp;gt;&amp;gt; &#x2F;etc&#x2F;wpa_supplicant.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After a reboot you will have internet access through USB&#x2F;Wifi adapter.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;installation-desktop-environment&quot;&gt;Installation Desktop Environment&lt;a class=&quot;zola-anchor&quot; href=&quot;#installation-desktop-environment&quot; aria-label=&quot;Anchor link for: installation-desktop-environment&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;I choose the XFCE as DE due to I need a lightweight one. But it needs to be done some work with the Xorg before installing the DE.&lt;br &#x2F;&gt;
+Install the Xorg as follow.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg install xorg
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To install extra support for the backlights for the display and the keyboard run the following line.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg install asmctl
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then add following lines into the files rc.conf and loader.conf.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# loader.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# MacBook fixes
+&lt;&#x2F;span&gt;&lt;span&gt;asmc_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;acpi_video_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;wsp_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# rc.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# MacBook fixes
+&lt;&#x2F;span&gt;&lt;span&gt;kld_list=&amp;quot;i915kms&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;dbus_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;mousd_port=&amp;quot;wsp0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;webcamd_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After a reboot for the test Xorg support run the follwing line.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# startx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If everything went well, you can use the TrackPad with multiple gesture including drag and right-click by tapping with two fingers. For using FaceTime camera, it needs to be installed libv4l.&lt;br &#x2F;&gt;
+Now we can continue to install the DE with some extras as follow.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg install xfce xfce4-goodies xfce4-power-manager xfce4-pulseaudio-plugin libv4l ungoogled-chromium
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If everything went well, we can start the XFCE DE by issueing following command as regular user. By the way the user needs to be belonged the group video.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;$ startxfce4
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you would like to use  display manager, I recommend the LightDM. I tried tried to use SLIM as a display manager but within the XFCE4, the xfce-terminal won’t respect the bashrc and profile.&lt;br &#x2F;&gt;
+We can install the LightDM as follow.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg install lightdm
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then create a file .xinitrc with the following content&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# .xinitrc
+&lt;&#x2F;span&gt;&lt;span&gt;. &#x2F;usr&#x2F;local&#x2F;etc&#x2F;xdg&#x2F;xfce4&#x2F;xinitrc
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After the reboot you will be greeted by the LightDM.&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;lightdm-ss.png&quot; alt=&quot;LightDM-ScreenShot&quot; &#x2F;&gt;
+After logged in, the mouse is here…
+&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;xfce4-ss.png&quot; alt=&quot;XFCE4-ScreenShot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;jails-and-containers&quot;&gt;Jails and Containers&lt;a class=&quot;zola-anchor&quot; href=&quot;#jails-and-containers&quot; aria-label=&quot;Anchor link for: jails-and-containers&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;In FreeBSD, it can be run the FreeBSD itsel, the other BSD distros and theLinux distros without using the VM. It looks like the Docker or Podman container but mor advanced. You can check &lt;a href=&quot;https:&#x2F;&#x2F;docs.freebsd.org&#x2F;en&#x2F;books&#x2F;handbook&#x2F;jails&#x2F;&quot;&gt;the documentation&lt;&#x2F;a&gt;. Also there are lots of tools to manage the jails. We choose the &lt;a href=&quot;https:&#x2F;&#x2F;bastillebsd.org&#x2F;&quot;&gt;Bastille&lt;&#x2F;a&gt; here. To install the Bastille please refer to &lt;a href=&quot;https:&#x2F;&#x2F;bastillebsd.org&#x2F;getting-started&#x2F;&quot;&gt;the getting started documentation&lt;&#x2F;a&gt;. I tried to to run Linux in FreeBSD. It explained in &lt;a href=&quot;https:&#x2F;&#x2F;bastillebsd.org&#x2F;blog&#x2F;2021&#x2F;08&#x2F;01&#x2F;bastille-experiments-with-ubuntu-and-debian-linux-containers&#x2F;&quot;&gt;this blog entry&lt;&#x2F;a&gt;, and it just works on my configuration.&lt;br &#x2F;&gt;
+My configuration is as follow.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# loader.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# bastille configuration
+&lt;&#x2F;span&gt;&lt;span&gt;fdescfs_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;linprocfs_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;linsysfs_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;tmpfs_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# rc.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# bastille configuration
+&lt;&#x2F;span&gt;&lt;span&gt;bastille_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;bastille_rcorder=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;cloned_interfaces=&amp;quot;lo1&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;ifconfig_lo1_name=&amp;quot;bastille0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;linux_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;pf_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pf.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# bastille configuration
+&lt;&#x2F;span&gt;&lt;span&gt;ext_if=&amp;quot;wlan0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# nat on wlan0 from {192.168.8.0&#x2F;24} to any -&amp;gt; (wlan0)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;set block-policy return
+&lt;&#x2F;span&gt;&lt;span&gt;scrub in on $ext_if all fragment reassemble
+&lt;&#x2F;span&gt;&lt;span&gt;set skip on lo
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;table &amp;lt;jails&amp;gt; persist
+&lt;&#x2F;span&gt;&lt;span&gt;nat on $ext_if from &amp;lt;jails&amp;gt; to any -&amp;gt; ($ext_if:0)
+&lt;&#x2F;span&gt;&lt;span&gt;rdr-anchor &amp;quot;rdr&#x2F;*&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;block in all
+&lt;&#x2F;span&gt;&lt;span&gt;pass out quick keep state
+&lt;&#x2F;span&gt;&lt;span&gt;antispoof for $ext_if inet
+&lt;&#x2F;span&gt;&lt;span&gt;pass in inet proto tcp from any to any port ssh flags S&#x2F;SA keep state
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;virtual-machines-bhyve&quot;&gt;Virtual Machines - BHYVE&lt;a class=&quot;zola-anchor&quot; href=&quot;#virtual-machines-bhyve&quot; aria-label=&quot;Anchor link for: virtual-machines-bhyve&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;I try to VMs to get work the Wi-Fi module by using PCI Pass-Thru. There is a project on FreeBSD &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pgj&#x2F;freebsd-wifibox&quot;&gt;wifibox&lt;&#x2F;a&gt; but it didn’t work on my MacBook. You can refer &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pgj&#x2F;freebsd-wifibox&#x2F;discussions&#x2F;58&quot;&gt;this discussion&lt;&#x2F;a&gt; for more information. So I decided to use &lt;a href=&quot;https:&#x2F;&#x2F;voidlinux.org&#x2F;&quot;&gt;VoidLinux&lt;&#x2F;a&gt; for this purpose. Because the &lt;a href=&quot;https:&#x2F;&#x2F;www.alpinelinux.org&#x2F;&quot;&gt;AlpineLinux&lt;&#x2F;a&gt; which is used in the wifibox project removed the b43 drivers.It didn’t fully work but the VM loads correctly the required kernel module. It needs to be worked on IRQs. You can refer &lt;a href=&quot;https:&#x2F;&#x2F;wireless.wiki.kernel.org&#x2F;en&#x2F;users&#x2F;Drivers&#x2F;b43#devicefirmware&quot;&gt;the wireless linux kernel document&lt;&#x2F;a&gt; for more information. We can extract the reqired file to work withthe BCM4331 (b43&#x2F;ucode29_mimo.fw) by using b43-fw-cutter tool.&lt;br &#x2F;&gt;
+Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a tool. It can be installed required packages as follow. You can refer &lt;a href=&quot;https:&#x2F;&#x2F;wiki.freebsd.org&#x2F;chengcui&#x2F;install_FreeBSD13_VM_via_bhyve&quot;&gt;here&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;wiki.freebsd.org&#x2F;chengcui&#x2F;install_Ubuntu22.04_VM_via_bhyve&quot;&gt;here&lt;&#x2F;a&gt; for more information. &lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg install vm-bhyve grub2-bhyve
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# loader.conf
+&lt;&#x2F;span&gt;&lt;span&gt;# VM config via bhyve
+&lt;&#x2F;span&gt;&lt;span&gt;vmm_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;nmdm_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;if_bridge_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;if_tap_load=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;# the passthru pci device
+&lt;&#x2F;span&gt;&lt;span&gt;pptdevs=&amp;quot;2&#x2F;0&#x2F;0&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# rc.conf
+&lt;&#x2F;span&gt;&lt;span&gt;vm_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;vm_dir=&amp;quot;zfs:zroot&#x2F;bhyve&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;# disable to load broadcom driver and kernel modules to use as PCI Pass-Thru
+&lt;&#x2F;span&gt;&lt;span&gt;devmatch_enable=&amp;quot;YES&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;devmatch_blacklist=&amp;quot;if_bwi if_bwn&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To access internet from within the guest OS, it needs to be an ethernet connection for the FreeBSD host.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;rust-on-stm32-on-freebsd&quot;&gt;Rust on STM32 on FreeBSD&lt;a class=&quot;zola-anchor&quot; href=&quot;#rust-on-stm32-on-freebsd&quot; aria-label=&quot;Anchor link for: rust-on-stm32-on-freebsd&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;It can be build and run our project &lt;a href=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-rust-bsp-package-for-stm32f4-discovery-kit&#x2F;&quot;&gt;A BSP for STM32F4 Discovery Kit&lt;&#x2F;a&gt; on the FreeBSD. For full setup you can also refer &lt;a href=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;&quot;&gt;this post&lt;&#x2F;a&gt;. You need to install additional tools to work with the &lt;a href=&quot;https:&#x2F;&#x2F;probe.rs&#x2F;&quot;&gt;probe-rs&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;slint.dev&#x2F;&quot;&gt;Slint&lt;&#x2F;a&gt;. Rust can be installed straight forward by using the tool &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;rustup&lt;&#x2F;a&gt;. Required tools can be installed as follow&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkg vscode install pkgconf libftdi1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To build probe-rs with the FTDI support&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;cargo install probe-rs --features cli,ftdi
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To add rust-analyzer support into VSCode&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;rustup component add rust-analyzer
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To build Slint on FreeBSD, it needs to export the location of the file fonts.conf as follow. You can refer &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RazrFalcon&#x2F;fontdb&#x2F;issues&#x2F;61&quot;&gt;fontdb discussion&lt;&#x2F;a&gt; for more information.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;export FONTCONFIG_FILE=&#x2F;usr&#x2F;local&#x2F;etc&#x2F;fonts&#x2F;fonts.conf.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Or can be defined within VSCode config file settings.json as follow&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;quot;rust-analyzer.server.path&amp;quot;: &amp;quot;~&#x2F;.cargo&#x2F;bin&#x2F;rust-analyzer&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;quot;rust-analyzer.cargo.extraEnv&amp;quot;: {
+&lt;&#x2F;span&gt;&lt;span&gt;        &amp;quot;FONTCONFIG_FILE&amp;quot;: &amp;quot;&#x2F;usr&#x2F;local&#x2F;etc&#x2F;fonts&#x2F;fonts.conf&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    },
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;quot;terminal.integrated.env.linux&amp;quot;: {
+&lt;&#x2F;span&gt;&lt;span&gt;        &amp;quot;FONTCONFIG_FILE&amp;quot;: &amp;quot;&#x2F;usr&#x2F;local&#x2F;etc&#x2F;fonts&#x2F;fonts.conf&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To use STLink as a regular user we need extra package. It looks like udev-rules in Linux.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# pkgu install u2f-devd
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Add user to the group u2f&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;pw groupmod u2f -m YourUserNameHere
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Config u2f for STLink&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# u2f.conf
+&lt;&#x2F;span&gt;&lt;span&gt;notify 100 {
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;system&amp;quot;		&amp;quot;USB&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;subsystem&amp;quot;	&amp;quot;DEVICE&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;type&amp;quot;		&amp;quot;ATTACH&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;vendor&amp;quot;		&amp;quot;0x0483&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;product&amp;quot;		&amp;quot;0x3752&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	action &amp;quot;chgrp u2f &#x2F;dev&#x2F;$cdev; chmod g+rw &#x2F;dev&#x2F;$cdev&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;};
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;attach 100 {
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;vendor&amp;quot;		&amp;quot;0x0483&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	match &amp;quot;product&amp;quot;		&amp;quot;0x3752&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	action &amp;quot;chgrp u2f &#x2F;dev&#x2F;$device-name; chmod g+rw &#x2F;dev&#x2F;$device-name&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;};
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The remaining procedure is the same as on Linux or WSL.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;Everything works fine on the FreeBSD except for the Wifi.&lt;br &#x2F;&gt;
+I came across notable projects during this works as listed below.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pgj&#x2F;freebsd-wifibox&quot;&gt;wifibox&lt;&#x2F;a&gt; - an inspring project&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bastillebsd.org&#x2F;&quot;&gt;bastille&lt;&#x2F;a&gt; - a jail manager - looks promising&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ungoogled-software&#x2F;ungoogled-chromium&quot;&gt;ungoogled-chromium&lt;&#x2F;a&gt; - for more privacy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;voidlinux.org&#x2F;&quot;&gt;VoidLinux&lt;&#x2F;a&gt; - looks promising&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;raindrop.io&#x2F;&quot;&gt;raindrop.io&lt;&#x2F;a&gt; - a bookmark manager is your friend during switching between the OSes.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Sharing is Caring!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -151,6 +151,10 @@
         <lastmod>2022-06-26T13:57:40+03:00</lastmod>
     </url>
     <url>
+        <loc>https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/</loc>
+        <lastmod>2023-12-31T13:36:00+03:00</lastmod>
+    </url>
+    <url>
         <loc>https://erturk.me/projects/page/1/</loc>
     </url>
     <url>
@@ -195,6 +199,9 @@
         <loc>https://erturk.me/tags/buika/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/catalina/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/demm/</loc>
     </url>
     <url>
@@ -205,6 +212,9 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/embedded/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/freebsd/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/general/</loc>
@@ -226,6 +236,9 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/live-stock-identification/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/macbook/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/made-with-slint/</loc>
