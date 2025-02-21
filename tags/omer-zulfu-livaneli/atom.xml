@@ -2,22 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - omer-zulfu-livaneli</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link href="https://erturk.me/tags/omer-zulfu-livaneli/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/omer-zulfu-livaneli/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-01-14T14:54:59+03:00</updated>
-    <id>https://erturk.me/tags/omer-zulfu-livaneli/atom.xml</id>
+    <id>https://www.erturk.me/tags/omer-zulfu-livaneli/atom.xml</id>
     <entry xml:lang="en">
         <title>Those Who Died Where They Were Born</title>
         <published>2022-01-14T14:54:59+03:00</published>
         <updated>2022-01-14T14:54:59+03:00</updated>
-        <author>
-          <name>Unknown</name>
-        </author>
-        <link rel="alternate" href="https://erturk.me/blog/those-who-died-where-they-were-born/" type="text/html"/>
-        <id>https://erturk.me/blog/those-who-died-where-they-were-born/</id>
         
-        <content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/those-who-died-where-they-were-born/"/>
+        <id>https://www.erturk.me/blog/those-who-died-where-they-were-born/</id>
+        
+        <content type="html" xml:base="https://www.erturk.me/blog/those-who-died-where-they-were-born/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;Those who died where they were born…&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;Zulfu Livaneli&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
