@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - milan-kundera</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/milan-kundera/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/milan-kundera/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-06-26T12:12:30+03:00</updated>
-    <id>https://www.erturk.me/tags/milan-kundera/atom.xml</id>
+    <id>https://erturk.me/tags/milan-kundera/atom.xml</id>
     <entry xml:lang="en">
         <title>The Discreet Shadow</title>
         <published>2022-06-26T12:12:30+03:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/the-discreet-shadow/"/>
-        <id>https://www.erturk.me/blog/the-discreet-shadow/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/the-discreet-shadow/"/>
+        <id>https://erturk.me/blog/the-discreet-shadow/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/blog/the-discreet-shadow/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/blog/the-discreet-shadow/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;All previous crimes of the Russian empire…&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
@@ -42,10 +42,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/i-have-no-mission/"/>
-        <id>https://www.erturk.me/blog/i-have-no-mission/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/i-have-no-mission/"/>
+        <id>https://erturk.me/blog/i-have-no-mission/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/blog/i-have-no-mission/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/blog/i-have-no-mission/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;I have no mission. No one has.&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
@@ -64,10 +64,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/when-the-heart-speaks/"/>
-        <id>https://www.erturk.me/blog/when-the-heart-speaks/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/when-the-heart-speaks/"/>
+        <id>https://erturk.me/blog/when-the-heart-speaks/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/blog/when-the-heart-speaks/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/blog/when-the-heart-speaks/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;When the heart speaks, the mind finds it indecent to object.&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;The Unbearable Lightness of Being, Milan Kundera&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>

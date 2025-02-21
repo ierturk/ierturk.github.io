@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - catalina</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/catalina/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/catalina/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-12-31T13:36:00+03:00</updated>
-    <id>https://www.erturk.me/tags/catalina/atom.xml</id>
+    <id>https://erturk.me/tags/catalina/atom.xml</id>
     <entry xml:lang="en">
         <title>Notes on FreeBSD on MacBook Pro</title>
         <published>2023-12-31T13:36:00+03:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/projects/notes-on-freebsd-on-macbook-pro/"/>
-        <id>https://www.erturk.me/projects/notes-on-freebsd-on-macbook-pro/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/"/>
+        <id>https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/projects/notes-on-freebsd-on-macbook-pro/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;a class=&quot;zola-anchor&quot; href=&quot;#introduction&quot; aria-label=&quot;Anchor link for: introduction&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
@@ -124,9 +124,9 @@ We can install the LightDM as follow.&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;. &#x2F;usr&#x2F;local&#x2F;etc&#x2F;xdg&#x2F;xfce4&#x2F;xinitrc
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;After the reboot you will be greeted by the LightDM.&lt;br &#x2F;&gt;
-&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;lightdm-ss.png&quot; alt=&quot;LightDM-ScreenShot&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;lightdm-ss.png&quot; alt=&quot;LightDM-ScreenShot&quot; &#x2F;&gt;
 After logged in, the mouse is here…
-&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;xfce4-ss.png&quot; alt=&quot;XFCE4-ScreenShot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;notes-on-freebsd-on-macbook-pro&#x2F;xfce4-ss.png&quot; alt=&quot;XFCE4-ScreenShot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;jails-and-containers&quot;&gt;Jails and Containers&lt;a class=&quot;zola-anchor&quot; href=&quot;#jails-and-containers&quot; aria-label=&quot;Anchor link for: jails-and-containers&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;

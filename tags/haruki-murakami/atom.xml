@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - haruki-murakami</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/haruki-murakami/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/haruki-murakami/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-01-08T02:29:46+03:00</updated>
-    <id>https://www.erturk.me/tags/haruki-murakami/atom.xml</id>
+    <id>https://erturk.me/tags/haruki-murakami/atom.xml</id>
     <entry xml:lang="en">
         <title>Because of You</title>
         <published>2022-01-08T02:29:46+03:00</published>
@@ -20,8 +20,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/because-of-you/"/>
-        <id>https://www.erturk.me/blog/because-of-you/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/because-of-you/"/>
+        <id>https://erturk.me/blog/because-of-you/</id>
         
         <summary type="html">&lt;p&gt;my heart still beats with the most distant stars&lt;&#x2F;p&gt;</summary>
         
@@ -39,10 +39,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/words-without-letters/"/>
-        <id>https://www.erturk.me/blog/words-without-letters/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/words-without-letters/"/>
+        <id>https://erturk.me/blog/words-without-letters/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/blog/words-without-letters/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/blog/words-without-letters/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;Words without letters&lt;br &#x2F;&gt;
 Standing in the shadow of the doors&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;1Q84, Haruki Muarakami&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;

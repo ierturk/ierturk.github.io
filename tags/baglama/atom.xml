@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - baglama</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/baglama/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/baglama/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-06-26T13:25:30+03:00</updated>
-    <id>https://www.erturk.me/tags/baglama/atom.xml</id>
+    <id>https://erturk.me/tags/baglama/atom.xml</id>
     <entry xml:lang="en">
         <title>Oylesine</title>
         <published>2022-06-26T13:25:30+03:00</published>
@@ -20,8 +20,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/oylesine/"/>
-        <id>https://www.erturk.me/blog/oylesine/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/oylesine/"/>
+        <id>https://erturk.me/blog/oylesine/</id>
         
         <summary type="html">&lt;p&gt;my heart still beats with the most distant stars&lt;&#x2F;p&gt;</summary>
         
@@ -39,8 +39,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/once-upon-a-time/"/>
-        <id>https://www.erturk.me/blog/once-upon-a-time/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/once-upon-a-time/"/>
+        <id>https://erturk.me/blog/once-upon-a-time/</id>
         
         <summary type="html">&lt;p&gt;my heart still beats with the most distant stars&lt;&#x2F;p&gt;</summary>
         

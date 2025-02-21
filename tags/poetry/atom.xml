@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - poetry</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/poetry/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/poetry/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-09-06T00:35:51+03:00</updated>
-    <id>https://www.erturk.me/tags/poetry/atom.xml</id>
+    <id>https://erturk.me/tags/poetry/atom.xml</id>
     <entry xml:lang="en">
         <title>Angina Pectoris</title>
         <published>2023-09-06T00:35:51+03:00</published>
@@ -20,8 +20,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/angina-pectoris/"/>
-        <id>https://www.erturk.me/blog/angina-pectoris/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/angina-pectoris/"/>
+        <id>https://erturk.me/blog/angina-pectoris/</id>
         
         <summary type="html">&lt;p&gt;my heart still beats with the most distant stars&lt;&#x2F;p&gt;</summary>
         
@@ -39,8 +39,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/gratitude/"/>
-        <id>https://www.erturk.me/blog/gratitude/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/gratitude/"/>
+        <id>https://erturk.me/blog/gratitude/</id>
         
         <summary type="html">&lt;p&gt;Har icinde biten gonca gule minnet eylemem&lt;&#x2F;p&gt;</summary>
         
@@ -58,8 +58,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/if-we-pay-attention/"/>
-        <id>https://www.erturk.me/blog/if-we-pay-attention/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/if-we-pay-attention/"/>
+        <id>https://erturk.me/blog/if-we-pay-attention/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -77,8 +77,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/renegade/"/>
-        <id>https://www.erturk.me/blog/renegade/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/renegade/"/>
+        <id>https://erturk.me/blog/renegade/</id>
         
         <summary type="html">&lt;p&gt;Seyh Bedrettin Destani&lt;&#x2F;p&gt;</summary>
         
@@ -96,8 +96,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/june-night/"/>
-        <id>https://www.erturk.me/blog/june-night/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/june-night/"/>
+        <id>https://erturk.me/blog/june-night/</id>
         
         <summary type="html">&lt;p&gt;They took away the blues&lt;&#x2F;p&gt;</summary>
         
@@ -115,8 +115,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/the-wild-fire/"/>
-        <id>https://www.erturk.me/blog/the-wild-fire/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/the-wild-fire/"/>
+        <id>https://erturk.me/blog/the-wild-fire/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -134,8 +134,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/"/>
-        <id>https://www.erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/"/>
+        <id>https://erturk.me/blog/istanbul-will-appear-if-you-get-out-of-my-way/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -153,8 +153,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/let-the-ships-sail-without-you/"/>
-        <id>https://www.erturk.me/blog/let-the-ships-sail-without-you/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/let-the-ships-sail-without-you/"/>
+        <id>https://erturk.me/blog/let-the-ships-sail-without-you/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -172,8 +172,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/if-i-died-i-would-die-perfectly/"/>
-        <id>https://www.erturk.me/blog/if-i-died-i-would-die-perfectly/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/if-i-died-i-would-die-perfectly/"/>
+        <id>https://erturk.me/blog/if-i-died-i-would-die-perfectly/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -191,8 +191,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/i-already-know/"/>
-        <id>https://www.erturk.me/blog/i-already-know/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/i-already-know/"/>
+        <id>https://erturk.me/blog/i-already-know/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         
@@ -210,10 +210,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/those-who-died-where-they-were-born/"/>
-        <id>https://www.erturk.me/blog/those-who-died-where-they-were-born/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/those-who-died-where-they-were-born/"/>
+        <id>https://erturk.me/blog/those-who-died-where-they-were-born/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/blog/those-who-died-where-they-were-born/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/blog/those-who-died-where-they-were-born/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;Those who died where they were born…&lt;&#x2F;p&gt;
 &lt;p&gt; &lt;em&gt;Zulfu Livaneli&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
@@ -232,8 +232,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/because-of-you/"/>
-        <id>https://www.erturk.me/blog/because-of-you/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/because-of-you/"/>
+        <id>https://erturk.me/blog/because-of-you/</id>
         
         <summary type="html">&lt;p&gt;my heart still beats with the most distant stars&lt;&#x2F;p&gt;</summary>
         
@@ -251,8 +251,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/a-wall-never-seen-the-sun/"/>
-        <id>https://www.erturk.me/blog/a-wall-never-seen-the-sun/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/a-wall-never-seen-the-sun/"/>
+        <id>https://erturk.me/blog/a-wall-never-seen-the-sun/</id>
         
         <summary type="html">&lt;p&gt;an elegant sadness&lt;&#x2F;p&gt;</summary>
         

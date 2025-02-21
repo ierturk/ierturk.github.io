@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - demm</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/demm/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/demm/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-01-05T17:21:33+03:00</updated>
-    <id>https://www.erturk.me/tags/demm/atom.xml</id>
+    <id>https://erturk.me/tags/demm/atom.xml</id>
     <entry xml:lang="en">
         <title>A Collection Related FEMM Magnetic</title>
         <published>2022-01-05T17:21:33+03:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/projects/a-collection-related-femm-magnetic/"/>
-        <id>https://www.erturk.me/projects/a-collection-related-femm-magnetic/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-collection-related-femm-magnetic/"/>
+        <id>https://erturk.me/projects/a-collection-related-femm-magnetic/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;&#x2F;strong&gt; software examples and Libraries can be cloned from as follow.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;femm-magnetic-collection.git
@@ -44,7 +44,7 @@
 &lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;&#x2F;li&gt;
 &lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;&#x2F;code&gt; is the predecessor of &lt;code&gt;SciLab&#x2F;XCos&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;a-collection-related-femm-magnetic&#x2F;.&#x2F;a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-collection-related-femm-magnetic&#x2F;.&#x2F;a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.femm.info&#x2F;wiki&#x2F;HomePage&quot;&gt;Finite Element Method Magnetics&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;

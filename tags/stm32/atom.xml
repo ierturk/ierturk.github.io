@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - stm32</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/stm32/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/stm32/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-11-28T19:51:00+03:00</updated>
-    <id>https://www.erturk.me/tags/stm32/atom.xml</id>
+    <id>https://erturk.me/tags/stm32/atom.xml</id>
     <entry xml:lang="en">
         <title>A Board Support Package for STM32F4 Discovery Kit</title>
         <published>2023-11-28T19:51:00+03:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/"/>
-        <id>https://www.erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/"/>
+        <id>https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-post&quot;&gt;The Tools that Used within this Post&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-post&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-post&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
@@ -90,7 +90,7 @@
 &lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;This is the Slint-UI Carousel Demo runs on the F4 MCU&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;a-rust-bsp-package-for-stm32f4-discovery-kit&#x2F;rust-slint-ui-carousel-demo.jpeg&quot; alt=&quot;Slint UI Carousel Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-rust-bsp-package-for-stm32f4-discovery-kit&#x2F;rust-slint-ui-carousel-demo.jpeg&quot; alt=&quot;Slint UI Carousel Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Happy reading and coding!&lt;&#x2F;p&gt;
 </content>
         
@@ -108,10 +108,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/projects/working-with-rust-embedded-on-wsl/"/>
-        <id>https://www.erturk.me/projects/working-with-rust-embedded-on-wsl/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/projects/working-with-rust-embedded-on-wsl/"/>
+        <id>https://erturk.me/projects/working-with-rust-embedded-on-wsl/</id>
         
-        <content type="html" xml:base="https://www.erturk.me/projects/working-with-rust-embedded-on-wsl/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+        <content type="html" xml:base="https://erturk.me/projects/working-with-rust-embedded-on-wsl/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;In this post, it’ll be tried to explain how to get a working example by using only the tools that provided by Rust community. So let’s start!&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-post&quot;&gt;The Tools that Used within this Post&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-post&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-post&quot;&gt;
@@ -206,7 +206,7 @@ On a windows command line when you issued follwing commad,  a list will be displ
 &lt;li&gt;Hit the play button&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Then it should be displayed following screen
-&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;vscode-debug-wsl.png&quot; alt=&quot;VSCode DEbug Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;vscode-debug-wsl.png&quot; alt=&quot;VSCode DEbug Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
@@ -216,7 +216,7 @@ On a windows command line when you issued follwing commad,  a list will be displ
     &lt;&#x2F;svg&gt;
 &lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;lcd-demo.jpeg&quot; alt=&quot;LCD Demo&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;lcd-demo.jpeg&quot; alt=&quot;LCD Demo&quot; &#x2F;&gt;
 It just woks as you can see. Yo can work on this and modify some parts according to your requirements.&lt;&#x2F;p&gt;
 &lt;p&gt;Hope you enjoyed with the tutorial, found useful.
 Thank you for reading.&lt;&#x2F;p&gt;

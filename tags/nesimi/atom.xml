@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - nesimi</title>
     <subtitle>It&#x27;s me!</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://www.erturk.me/tags/nesimi/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://www.erturk.me"/>
+    <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/nesimi/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-07-24T12:32:02+03:00</updated>
-    <id>https://www.erturk.me/tags/nesimi/atom.xml</id>
+    <id>https://erturk.me/tags/nesimi/atom.xml</id>
     <entry xml:lang="en">
         <title>Gratitude</title>
         <published>2023-07-24T12:32:02+03:00</published>
@@ -20,8 +20,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://www.erturk.me/blog/gratitude/"/>
-        <id>https://www.erturk.me/blog/gratitude/</id>
+        <link rel="alternate" type="text/html" href="https://erturk.me/blog/gratitude/"/>
+        <id>https://erturk.me/blog/gratitude/</id>
         
         <summary type="html">&lt;p&gt;Har icinde biten gonca gule minnet eylemem&lt;&#x2F;p&gt;</summary>
         
