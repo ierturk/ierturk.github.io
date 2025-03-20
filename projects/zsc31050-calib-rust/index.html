@@ -158,7 +158,7 @@
     <div class="content">
         <span id="continue-reading"></span>
 <p>The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.</p>
-<p>There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. Thre are lots of possibility such as gRPC but we don’t wan to use IP addresses but topics. Even though it is not a best practice, this project wıll be an learning by doing project. Our main aim is discovering possibilities.</p>
+<p>There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but we don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. Our main aim is discovering possibilities.</p>
 <p>So let’s start!</p>
 <hr />
 <h3 id="the-tools-that-used-within-this-project">The Tools that Used within this Project<a class="zola-anchor" href="#the-tools-that-used-within-this-project" aria-label="Anchor link for: the-tools-that-used-within-this-project">
@@ -205,7 +205,7 @@
 </a>
 </h3>
 <ul>
-<li>Type just following commads in your faworite terninall app</li>
+<li>Type just following commands in your favorite terminal app</li>
 </ul>
 <pre style="background-color:#2e3440;color:#d8dee9;"><code><span>PS&gt; git clone https://github.com/ierturk/zsc31050-calib-rust.git
 </span><span>PS&gt; cd zsc31050-calib-rust
@@ -221,8 +221,8 @@
 </span><span>PS&gt; cargo build --target x86_64-pc-windows-msvc -p test_gui
 </span></code></pre>
 <p>If you prefer using VS Code to run tasks:<br />
-Use ctrl-shift P then Taks: Run task and selet one</p>
-<p>If everything is fine, you’ll get follwing screen and see the communication.</p>
+Use ctrl-shift P then Tasks: Run task and select one</p>
+<p>If everything is fine, you’ll get following screen and see the communication.</p>
 
     </div>
     
