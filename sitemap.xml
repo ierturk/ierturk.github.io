@@ -166,6 +166,10 @@
         <lastmod>2023-11-07T13:29:00+03:00</lastmod>
     </url>
     <url>
+        <loc>https://erturk.me/projects/zsc31050-calib-rust/</loc>
+        <lastmod>2025-03-20T19:47:00+03:00</lastmod>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/</loc>
     </url>
     <url>
@@ -178,10 +182,16 @@
         <loc>https://erturk.me/tags/asansor/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/async/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/attila-ilhan/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/baglama/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/binding/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/book-photography/</loc>
@@ -200,6 +210,9 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/catalina/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/dds/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/demm/</loc>
@@ -295,6 +308,9 @@
         <loc>https://erturk.me/tags/richard-phillip-feynman/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/rpc/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/rpi/</loc>
     </url>
     <url>
@@ -310,7 +326,13 @@
         <loc>https://erturk.me/tags/scilab/</loc>
     </url>
     <url>
+        <loc>https://erturk.me/tags/serde/</loc>
+    </url>
+    <url>
         <loc>https://erturk.me/tags/slint-ui/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/slint/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/software/</loc>

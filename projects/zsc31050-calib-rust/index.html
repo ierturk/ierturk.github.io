@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust - Mare Nostrum</title>
+    <meta name="description" content="It&#x27;s me!">
+
+    
+    <link rel="stylesheet" href="https://erturk.me/base.css">
+    <link rel="stylesheet" href="https://erturk.me/auto.css">
+
+    <link rel="preload" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.0.0-beta2&#x2F;css&#x2F;all.min.css as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.0.0-beta2&#x2F;css&#x2F;all.min.css></noscript>
+
+    
+
+    
+    
+    <meta property="og:locale" content="en_GB">
+    
+    <meta property="og:title" content="A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://erturk.me/about/">
+    <meta property="article:published_time" content="2025-03-20T19:47:00+03:00">
+    
+    
+    <meta property="article:tag" content="software">
+    
+    <meta property="article:tag" content="rust">
+    
+    <meta property="article:tag" content="dds">
+    
+    <meta property="article:tag" content="rpc">
+    
+    <meta property="article:tag" content="async">
+    
+    <meta property="article:tag" content="binding">
+    
+    <meta property="article:tag" content="slint">
+    
+    <meta property="article:tag" content="serde">
+    
+    
+    
+    
+    <meta property="og:url" content="https://erturk.me/projects/zsc31050-calib-rust/">
+    
+    
+    <meta property="og:image" content="https://erturk.me/projects/zsc31050-calib-rust/zsc31050-calib-rust.png">
+    
+    
+    
+
+
+    
+<link rel="stylesheet" href="https://erturk.me/mn.css">
+
+
+<script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://app.posthog.com'})
+</script>
+
+
+</head>
+<body>
+<div class="container">
+    
+    
+    <header>
+        <h1 class="site-header">
+            <a href="https:&#x2F;&#x2F;erturk.me">Mare Nostrum</a>
+        </h1>
+        <nav>
+            <ul>
+            
+            
+                
+                <li><a class="active" href="https:&#x2F;&#x2F;erturk.me&#x2F;projects">Projects</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;erturk.me&#x2F;blog">Blog</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;erturk.me&#x2F;about&#x2F;">About</a></li>
+            
+            
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<article class="post">
+    
+        
+        
+        
+            
+            
+            
+        
+    <img src="https:&#x2F;&#x2F;erturk.me&#x2F;processed_images&#x2F;zsc31050-calib-rust.64b48e47b9d48c20.png" class="" alt="A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust"/>
+    
+    
+    
+        
+        <header>
+            <h1>A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust</h1>
+        </header>
+        
+    <div class="article-info">
+        
+        
+        <div class="article-date">March 20, 2025 ◦ 2 min ◦ </div>
+        
+        <div class="article-taxonomies">
+            
+                <ul class="article-categories">
+                    
+                    <li><a href="https://erturk.me/categories/software/">software</a></li>
+                    
+                    <li><a href="https://erturk.me/categories/engineering/">engineering</a></li>
+                    
+                </ul>
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://erturk.me/tags/software/">#software</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/rust/">#rust</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/dds/">#dds</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/rpc/">#rpc</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/async/">#async</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/binding/">#binding</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/slint/">#slint</a></li>
+                    
+                    <li><a href="https://erturk.me/tags/serde/">#serde</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+    
+    
+    <div class="content">
+        <span id="continue-reading"></span>
+<p>The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.</p>
+<p>There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. Thre are lots of possibility such as gRPC but we don’t wan to use IP addresses but topics. Even though it is not a best practice, this project wıll be an learning by doing project. Our main aim is discovering possibilities.</p>
+<p>So let’s start!</p>
+<hr />
+<h3 id="the-tools-that-used-within-this-project">The Tools that Used within this Project<a class="zola-anchor" href="#the-tools-that-used-within-this-project" aria-label="Anchor link for: the-tools-that-used-within-this-project">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h3>
+<ul>
+<li>Rust Toolchain with installed i686 and x86_64 target</li>
+<li>MSVC compilers</li>
+<li>DLLs from Renesas</li>
+<li>VS Code and Rust Analyzer plugin</li>
+<li>Git for Windows</li>
+</ul>
+<hr />
+<h3 id="setup">Setup<a class="zola-anchor" href="#setup" aria-label="Anchor link for: setup">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h3>
+<ul>
+<li>Install Rustup</li>
+<li>Install MSVC compilers by using MSVC build tools with C/C++ workload</li>
+<li>the Optionally Make for Windows if you would like to build and run project by GNU Make</li>
+<li>Rest of process is clone project and run with your favorite tool… cargo, make or VS Code (settins included, see .vscode folder)</li>
+</ul>
+<pre style="background-color:#2e3440;color:#d8dee9;"><code><span>### installing required rust toolchains
+</span><span>PS&gt; rustup toolchain install stable-x86_64-pc-windows-msvc
+</span><span>PS&gt; rustup toolchain install stable-i686-pc-windows-msvc
+</span></code></pre>
+<hr />
+<h3 id="running-and-debugging">Running and Debugging<a class="zola-anchor" href="#running-and-debugging" aria-label="Anchor link for: running-and-debugging">
+    <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+            d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+        </path>
+    </svg>
+</a>
+</h3>
+<ul>
+<li>Type just following commads in your faworite terninall app</li>
+</ul>
+<pre style="background-color:#2e3440;color:#d8dee9;"><code><span>PS&gt; git cline https://github.com/ierturk/zsc31050-calib-rust.git
+</span><span>PS&gt; cd zsc31050-calib-rust
+</span><span>
+</span><span>## those commands need to be run on splitted terminals
+</span><span>
+</span><span>## if you prefer GNU Make and you have one on Windows
+</span><span>PS&gt; make run-server
+</span><span>PS&gt; make run-gui
+</span><span>
+</span><span>## if you prefer cargo
+</span><span>PS&gt; cargo build --target i686-pc-windows-msvc --no-default-features -p rbic1_dll_svc --example server
+</span><span>PS&gt; cargo build --target x86_64-pc-windows-msvc -p test_gui
+</span></code></pre>
+<p>If you prefer using VS Code to run tasks:<br />
+Use ctrl-shift P then Taks: Run task and selet one</p>
+<p>If everything is fine, you’ll get follwing screen and see the communication.</p>
+
+    </div>
+    
+
+    
+</article>
+
+
+    <footer>
+        <p>
+            
+<span class="icon-text">
+  
+
+  
+
+  
+  <a href="https://github.com/ierturk" aria-label="Open ierturk GitHub" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-github fa-lg" aria-hidden="true" title="GitHub"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/ierturk" aria-label="Open ierturk LinkedIn" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true" title="LinkedIn"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:me@erturk.me" aria-label="Email me@erturk.me" target="_blank">
+    <span class="icon is-large">
+      <i class="far fa-envelope fa-lg" aria-hidden="true" title="email"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+</span>
+
+        </p>
+        <p>
+            
+            
+        </p>
+    </footer>
+</div>
+</body>
+</html>
