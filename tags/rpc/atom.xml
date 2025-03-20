@@ -72,7 +72,7 @@
 &lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Type just following commands in your favorite terminal app&lt;&#x2F;li&gt;
+&lt;li&gt;Type just following commands in your favourite terminal app&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS&amp;gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;zsc31050-calib-rust.git
 &lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; cd zsc31050-calib-rust
@@ -89,7 +89,7 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;If you prefer using VS Code to run tasks:&lt;br &#x2F;&gt;
 Use ctrl-shift P then Tasks: Run task and select one&lt;&#x2F;p&gt;
-&lt;p&gt;If everything is fine, you’ll get following screen and see the communication.&lt;&#x2F;p&gt;
+&lt;p&gt;If everything is fine, you will obtain results similar to those depicted in the header image.&lt;&#x2F;p&gt;
 </content>
         
     </entry>
