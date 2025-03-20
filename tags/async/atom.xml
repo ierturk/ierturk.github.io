@@ -74,7 +74,7 @@
 &lt;ul&gt;
 &lt;li&gt;Type just following commads in your faworite terninall app&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS&amp;gt; git cline https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;zsc31050-calib-rust.git
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS&amp;gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;zsc31050-calib-rust.git
 &lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; cd zsc31050-calib-rust
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;## those commands need to be run on splitted terminals
