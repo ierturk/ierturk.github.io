@@ -5,8 +5,102 @@
     <link rel="self" type="application/atom+xml" href="https://erturk.me/categories/engineering/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-03-20T19:47:00+03:00</updated>
+    <updated>2025-04-20T18:38:00+03:00</updated>
     <id>https://erturk.me/categories/engineering/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A Fast DDS QML Example with Conan 2 (using conanfile.py)</title>
+        <published>2025-04-20T18:38:00+03:00</published>
+        <updated>2025-04-20T18:38:00+03:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://erturk.me/projects/fastdds-conan-rpc/"/>
+        <id>https://erturk.me/projects/fastdds-conan-rpc/</id>
+        
+        <content type="html" xml:base="https://erturk.me/projects/fastdds-conan-rpc/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;This project demonstrates how to use Fast DDS with a QML GUI, managed by Conan 2 using a conanfile.py recipe. The example also implements a RPC (remote procedure call) over DDS.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;a class=&quot;zola-anchor&quot; href=&quot;#prerequisites&quot; aria-label=&quot;Anchor link for: prerequisites&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FastDDSGen V2 tool from eProsima (included in FastDDS installation for Windows) requires Java Runtime Environment (JRE) installation&lt;&#x2F;li&gt;
+&lt;li&gt;CMake 3.15+&lt;&#x2F;li&gt;
+&lt;li&gt;MSVC C++ compiler supporting C++20&lt;&#x2F;li&gt;
+&lt;li&gt;Conan 2.0+&lt;&#x2F;li&gt;
+&lt;li&gt;Python 3.6+ (for Conan)&lt;&#x2F;li&gt;
+&lt;li&gt;Ninja build&lt;&#x2F;li&gt;
+&lt;li&gt;Clink integration with Cmder for enhancing the Windows &lt;code&gt;cmd&lt;&#x2F;code&gt; shell experience&lt;&#x2F;li&gt;
+&lt;li&gt;GNU Make&lt;&#x2F;li&gt;
+&lt;li&gt;VS Code&lt;&#x2F;li&gt;
+&lt;li&gt;A third-party prebuilt 32-bit library, &lt;code&gt;RBIC1Lib&lt;&#x2F;code&gt;, used for enabling communication between the 32-bit proxy side and the 64-bit invoker side.&lt;&#x2F;li&gt;
+&lt;li&gt;gTest and gMock for test suite for testing and mocking&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;libraries-from-conan-center&quot;&gt;Libraries from Conan center&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries-from-conan-center&quot; aria-label=&quot;Anchor link for: libraries-from-conan-center&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FastDDS&lt;&#x2F;li&gt;
+&lt;li&gt;FastDDS CDR&lt;&#x2F;li&gt;
+&lt;li&gt;Boost asio&lt;&#x2F;li&gt;
+&lt;li&gt;Boost signals2&lt;&#x2F;li&gt;
+&lt;li&gt;Qt 6.5.3 LTS&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;building-on-windows&quot;&gt;Building on Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#building-on-windows&quot; aria-label=&quot;Anchor link for: building-on-windows&quot;&gt;
+    &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;path fill-rule=&quot;evenodd&quot;
+            d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
+        &lt;&#x2F;path&gt;
+    &lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Start a &lt;code&gt;Cmder&lt;&#x2F;code&gt; console&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# For building invoker (64-bit) app
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# clone the repo
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;fastdds-rpc.git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; cd fastdds-rpc
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;#
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; x64
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Note: Adjust the path to match your Visual Studio installation if it differs.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; make all
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; code .
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# ctrl+shift+p
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# CMake: Select Configure Preset
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# select conan-windows-msvc-194-x86_64-debug config
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# For building proxy (32-bit) app
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; x86
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Note: Modify the path above if your Visual Studio installation is in a different location.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; make all
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; code .
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# ctrl+shift+p
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# CMake: Select Configure Preset
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# select conan-windows-msvc-194-x86-debug config
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;All tests will be built for x64; no tests will be built for the x86 build. VS Code tests can be used, or in the console, run under the build directory: &lt;code&gt;build\windows-msvc-194-x86_64-debug&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;λ ctest --verbose
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust</title>
         <published>2025-03-20T19:47:00+03:00</published>
