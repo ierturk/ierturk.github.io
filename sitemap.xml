@@ -190,9 +190,6 @@
         <loc>https://erturk.me/tags/asansor/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/asio/</loc>
-    </url>
-    <url>
         <loc>https://erturk.me/tags/async/</loc>
     </url>
     <url>
@@ -200,9 +197,6 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/baglama/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/binding/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/book-photography/</loc>
@@ -214,9 +208,6 @@
         <loc>https://erturk.me/tags/book/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/boost/</loc>
-    </url>
-    <url>
         <loc>https://erturk.me/tags/bsp/</loc>
     </url>
     <url>
@@ -226,12 +217,6 @@
         <loc>https://erturk.me/tags/catalina/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/clink/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/cmder/</loc>
-    </url>
-    <url>
         <loc>https://erturk.me/tags/conan/</loc>
     </url>
     <url>
@@ -239,9 +224,6 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/dds/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/demm/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/docker/</loc>
@@ -260,12 +242,6 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/general/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/gmock/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/gtest/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/haruki-murakami/</loc>
@@ -289,12 +265,6 @@
         <loc>https://erturk.me/tags/macbook/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/made-with-slint/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/make/</loc>
-    </url>
-    <url>
         <loc>https://erturk.me/tags/milan-kundera/</loc>
     </url>
     <url>
@@ -307,13 +277,7 @@
         <loc>https://erturk.me/tags/nesimi/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/ninja/</loc>
-    </url>
-    <url>
         <loc>https://erturk.me/tags/omer-zulfu-livaneli/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/openembedded/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/photography/</loc>
@@ -335,9 +299,6 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/pytorch/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/qml/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/qt/</loc>
@@ -371,12 +332,6 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/scilab/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/serde/</loc>
-    </url>
-    <url>
-        <loc>https://erturk.me/tags/signals2/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/slint-ui/</loc>
