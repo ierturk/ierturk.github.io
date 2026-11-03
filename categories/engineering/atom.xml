@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - engineering</title>
-    <subtitle>It&#x27;s me!</subtitle>
+    <subtitle>It&#39;s me!</subtitle>
     <link rel="self" type="application/atom+xml" href="https://erturk.me/categories/engineering/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
@@ -13,177 +13,164 @@
         <updated>2025-04-05T18:38:00+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/fastdds-conan-rpc/"/>
         <id>https://erturk.me/projects/fastdds-conan-rpc/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/fastdds-conan-rpc/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;This project demonstrates how to use Fast DDS with a QML GUI, managed by Conan 2 using a conanfile.py recipe. The example also implements a RPC (remote procedure call) over DDS.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://erturk.me/projects/fastdds-conan-rpc/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This project demonstrates how to use Fast DDS with a QML GUI, managed by Conan 2 using a conanfile.py recipe. The example also implements a RPC (remote procedure call) over DDS.&lt;/p&gt;
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;a class=&quot;zola-anchor&quot; href=&quot;#prerequisites&quot; aria-label=&quot;Anchor link for: prerequisites&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h2&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;FastDDSGen V2 tool from eProsima (included in FastDDS installation for Windows) requires Java Runtime Environment (JRE) installation&lt;&#x2F;li&gt;
-&lt;li&gt;CMake 3.15+&lt;&#x2F;li&gt;
-&lt;li&gt;MSVC C++ compiler supporting C++20&lt;&#x2F;li&gt;
-&lt;li&gt;Conan 2.0+&lt;&#x2F;li&gt;
-&lt;li&gt;Python 3.6+ (for Conan)&lt;&#x2F;li&gt;
-&lt;li&gt;Ninja build&lt;&#x2F;li&gt;
-&lt;li&gt;Clink integration with Cmder for enhancing the Windows &lt;code&gt;cmd&lt;&#x2F;code&gt; shell experience&lt;&#x2F;li&gt;
-&lt;li&gt;GNU Make&lt;&#x2F;li&gt;
-&lt;li&gt;VS Code&lt;&#x2F;li&gt;
-&lt;li&gt;A third-party prebuilt 32-bit library, &lt;code&gt;RBIC1Lib&lt;&#x2F;code&gt;, used for enabling communication between the 32-bit proxy side and the 64-bit invoker side.&lt;&#x2F;li&gt;
-&lt;li&gt;gTest and gMock for test suite for testing and mocking&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;FastDDSGen V2 tool from eProsima (included in FastDDS installation for Windows) requires Java Runtime Environment (JRE) installation&lt;/li&gt;
+&lt;li&gt;CMake 3.15+&lt;/li&gt;
+&lt;li&gt;MSVC C++ compiler supporting C++20&lt;/li&gt;
+&lt;li&gt;Conan 2.0+&lt;/li&gt;
+&lt;li&gt;Python 3.6+ (for Conan)&lt;/li&gt;
+&lt;li&gt;Ninja build&lt;/li&gt;
+&lt;li&gt;Clink integration with Cmder for enhancing the Windows &lt;code&gt;cmd&lt;/code&gt; shell experience&lt;/li&gt;
+&lt;li&gt;GNU Make&lt;/li&gt;
+&lt;li&gt;VS Code&lt;/li&gt;
+&lt;li&gt;A third-party prebuilt 32-bit library, &lt;code&gt;RBIC1Lib&lt;/code&gt;, used for enabling communication between the 32-bit proxy side and the 64-bit invoker side.&lt;/li&gt;
+&lt;li&gt;gTest and gMock for test suite for testing and mocking&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;libraries-from-conan-center&quot;&gt;Libraries from Conan center&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries-from-conan-center&quot; aria-label=&quot;Anchor link for: libraries-from-conan-center&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h2&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;FastDDS&lt;&#x2F;li&gt;
-&lt;li&gt;FastDDS CDR&lt;&#x2F;li&gt;
-&lt;li&gt;Boost asio&lt;&#x2F;li&gt;
-&lt;li&gt;Boost signals2&lt;&#x2F;li&gt;
-&lt;li&gt;Qt 6.5.3 LTS&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;FastDDS&lt;/li&gt;
+&lt;li&gt;FastDDS CDR&lt;/li&gt;
+&lt;li&gt;Boost asio&lt;/li&gt;
+&lt;li&gt;Boost signals2&lt;/li&gt;
+&lt;li&gt;Qt 6.5.3 LTS&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;building-on-windows&quot;&gt;Building on Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#building-on-windows&quot; aria-label=&quot;Anchor link for: building-on-windows&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h2&gt;
-&lt;p&gt;Start a &lt;code&gt;Cmder&lt;&#x2F;code&gt; console&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# For building invoker (64-bit) app
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# clone the repo
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;fastdds-rpc.git
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; cd fastdds-rpc
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;#
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; x64
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Note: Adjust the path to match your Visual Studio installation if it differs.
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; make all
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; code .
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# ctrl+shift+p
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# CMake: Select Configure Preset
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# select conan-windows-msvc-194-x86_64-debug config
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# For building proxy (32-bit) app
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; x86
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# Note: Modify the path above if your Visual Studio installation is in a different location.
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; make all
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;λ&lt;&#x2F;span&gt;&lt;span&gt; code .
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# ctrl+shift+p
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# CMake: Select Configure Preset
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#616e88;&quot;&gt;# select conan-windows-msvc-194-x86-debug config
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;All tests will be built for x64; no tests will be built for the x86 build. VS Code tests can be used, or in the console, run under the build directory: &lt;code&gt;build\windows-msvc-194-x86_64-debug&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;λ ctest --verbose
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</content>
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Start a &lt;code&gt;Cmder&lt;/code&gt; console&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# For building invoker (64-bit) app&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# clone the repo&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; git clone https://github.com/ierturk/fastdds-rpc.git&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; cd fastdds-rpc&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;#&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #ECEFF4;&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&lt;/span&gt;&lt;span style=&quot;color: #ECEFF4;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; x64&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# Note: Adjust the path to match your Visual Studio installation if it differs.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; make all&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; code .&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# ctrl+shift+p&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# CMake: Select Configure Preset&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# select conan-windows-msvc-194-x86_64-debug config&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# For building proxy (32-bit) app&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #ECEFF4;&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat&lt;/span&gt;&lt;span style=&quot;color: #ECEFF4;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; x86&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# Note: Modify the path above if your Visual Studio installation is in a different location.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; make all&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;λ&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; code .&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# ctrl+shift+p&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# CMake: Select Configure Preset&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #616E88;&quot;&gt;# select conan-windows-msvc-194-x86-debug config&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All tests will be built for x64; no tests will be built for the x86 build. VS Code tests can be used, or in the console, run under the build directory: &lt;code&gt;build\windows-msvc-194-x86_64-debug&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;λ ctest --verbose&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content>
         
     </entry>
     <entry xml:lang="en">
-        <title>A sample project that uses slint-ui, dust_dds and third party dll C&#x2F;C++ library usage on windows with Rust</title>
+        <title>A sample project that uses slint-ui, dust_dds and third party dll C/C++ library usage on windows with Rust</title>
         <published>2025-03-20T19:47:00+03:00</published>
         <updated>2025-03-20T19:47:00+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/zsc31050-calib-rust/"/>
         <id>https://erturk.me/projects/zsc31050-calib-rust/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/zsc31050-calib-rust/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.&lt;&#x2F;p&gt;
-&lt;p&gt;There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but we don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. Our main aim is discovering possibilities.&lt;&#x2F;p&gt;
-&lt;p&gt;So let’s start!&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/zsc31050-calib-rust/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.&lt;/p&gt;
+&lt;p&gt;There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but we don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. Our main aim is discovering possibilities.&lt;/p&gt;
+&lt;p&gt;So let’s start!&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-project&quot;&gt;The Tools that Used within this Project&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-project&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-project&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Rust Toolchain with installed i686 and x86_64 target&lt;&#x2F;li&gt;
-&lt;li&gt;MSVC compilers&lt;&#x2F;li&gt;
-&lt;li&gt;DLLs from Renesas&lt;&#x2F;li&gt;
-&lt;li&gt;VS Code and Rust Analyzer plugin&lt;&#x2F;li&gt;
-&lt;li&gt;Git for Windows&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;Rust Toolchain with installed i686 and x86_64 target&lt;/li&gt;
+&lt;li&gt;MSVC compilers&lt;/li&gt;
+&lt;li&gt;DLLs from Renesas&lt;/li&gt;
+&lt;li&gt;VS Code and Rust Analyzer plugin&lt;/li&gt;
+&lt;li&gt;Git for Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Install Rustup&lt;&#x2F;li&gt;
-&lt;li&gt;Install MSVC compilers by using MSVC build tools with C&#x2F;C++ workload&lt;&#x2F;li&gt;
-&lt;li&gt;the Optionally Make for Windows if you would like to build and run project by GNU Make&lt;&#x2F;li&gt;
-&lt;li&gt;Rest of process is clone project and run with your favorite tool… cargo, make or VS Code (settins included, see .vscode folder)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;### installing required rust toolchains
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; rustup toolchain install stable-x86_64-pc-windows-msvc
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; rustup toolchain install stable-i686-pc-windows-msvc
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;Install Rustup&lt;/li&gt;
+&lt;li&gt;Install MSVC compilers by using MSVC build tools with C/C++ workload&lt;/li&gt;
+&lt;li&gt;the Optionally Make for Windows if you would like to build and run project by GNU Make&lt;/li&gt;
+&lt;li&gt;Rest of process is clone project and run with your favorite tool… cargo, make or VS Code (settins included, see .vscode folder)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;### installing required rust toolchains&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; rustup toolchain install stable-x86_64-pc-windows-msvc&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; rustup toolchain install stable-i686-pc-windows-msvc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;running-and-debugging&quot;&gt;Running and Debugging&lt;a class=&quot;zola-anchor&quot; href=&quot;#running-and-debugging&quot; aria-label=&quot;Anchor link for: running-and-debugging&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Type just following commands in your favourite terminal app&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS&amp;gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;zsc31050-calib-rust.git
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; cd zsc31050-calib-rust
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;## those commands need to be run on splitted terminals
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;## if you prefer GNU Make and you have one on Windows
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; make run-server
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; make run-gui
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;## if you prefer cargo
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; cargo build --target i686-pc-windows-msvc --no-default-features -p rbic1_dll_svc --example server
-&lt;&#x2F;span&gt;&lt;span&gt;PS&amp;gt; cargo build --target x86_64-pc-windows-msvc -p test_gui
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;If you prefer using VS Code to run tasks:&lt;br &#x2F;&gt;
-Use ctrl-shift P then Tasks: Run task and select one&lt;&#x2F;p&gt;
-&lt;p&gt;If everything is fine, you will obtain results similar to those depicted in the header image.&lt;&#x2F;p&gt;
+&lt;li&gt;Type just following commands in your favourite terminal app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; git clone https://github.com/ierturk/zsc31050-calib-rust.git&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; cd zsc31050-calib-rust&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;## those commands need to be run on splitted terminals&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;## if you prefer GNU Make and you have one on Windows&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; make run-server&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; make run-gui&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;## if you prefer cargo&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; cargo build --target i686-pc-windows-msvc --no-default-features -p rbic1_dll_svc --example server&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS&amp;gt; cargo build --target x86_64-pc-windows-msvc -p test_gui&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you prefer using VS Code to run tasks:&lt;br /&gt;
+Use ctrl-shift P then Tasks: Run task and select one&lt;/p&gt;
+&lt;p&gt;If everything is fine, you will obtain results similar to those depicted in the header image.&lt;/p&gt;
 </content>
         
     </entry>
@@ -193,85 +180,80 @@ Use ctrl-shift P then Tasks: Run task and select one&lt;&#x2F;p&gt;
         <updated>2023-11-28T19:51:00+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/"/>
         <id>https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-post&quot;&gt;The Tools that Used within this Post&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-post&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-post&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Rust Toolchain&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dorssel&#x2F;usbipd-win&quot;&gt;usbpid-win&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;probe.rs&#x2F;docs&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;probe-rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;learn.microsoft.com&#x2F;en-us&#x2F;windows&#x2F;wsl&#x2F;install&quot;&gt;WSL&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=rust-lang.rust-analyzer&quot;&gt;rust-analyzer plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=probe-rs.probe-rs-debugger&quot;&gt;probe-rs plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=ms-vscode-remote.remote-wsl&quot;&gt;WSL plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;rust-on-stm32&quot;&gt;GitHUB repository&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.st.com&#x2F;en&#x2F;evaluation-tools&#x2F;32f429idiscovery.html&quot;&gt;STM32F429ZI Discovery Board&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;apps.microsoft.com&#x2F;detail&#x2F;windows-subsystem-for-linux&#x2F;9P9TQF7MRM4R?hl=en-gb&amp;amp;gl=US&quot;&gt;WSL - Windows Subsystem for Linux&lt;&#x2F;a&gt;
-&lt;a href=&quot;https:&#x2F;&#x2F;apps.microsoft.com&#x2F;detail&#x2F;9PN20MSR04DW?hl=en-gb&amp;amp;gl=US&quot;&gt;Ubuntu 22.04.2 LTS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;slint.dev&#x2F;&quot;&gt;Slint UI&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=Slint.slint&quot;&gt;Slint UI Plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cbiffle&#x2F;lilos&quot;&gt;lilos Async RTOS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.rust-lang.org/learn/get-started&quot;&gt;Rust Toolchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/dorssel/usbipd-win&quot;&gt;usbpid-win&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://probe.rs/docs/getting-started/installation/&quot;&gt;probe-rs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://learn.microsoft.com/en-us/windows/wsl/install&quot;&gt;WSL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer&quot;&gt;rust-analyzer plugin for VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=probe-rs.probe-rs-debugger&quot;&gt;probe-rs plugin for VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl&quot;&gt;WSL plugin for VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/rust-on-stm32&quot;&gt;GitHUB repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.st.com/en/evaluation-tools/32f429idiscovery.html&quot;&gt;STM32F429ZI Discovery Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://apps.microsoft.com/detail/windows-subsystem-for-linux/9P9TQF7MRM4R?hl=en-gb&amp;amp;gl=US&quot;&gt;WSL - Windows Subsystem for Linux&lt;/a&gt;
+&lt;a rel=&quot;external&quot; href=&quot;https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-gb&amp;amp;gl=US&quot;&gt;Ubuntu 22.04.2 LTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://slint.dev/&quot;&gt;Slint UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=Slint.slint&quot;&gt;Slint UI Plugin for VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/cbiffle/lilos&quot;&gt;lilos Async RTOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
-&lt;p&gt;For setup the whole development system on WSL and VSCode please refer to &lt;a href=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;&quot;&gt;this post&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;For setup the whole development system on WSL and VSCode please refer to &lt;a rel=&quot;external&quot; href=&quot;https://erturk.me/projects/working-with-rust-embedded-on-wsl/&quot;&gt;this post&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;running-and-debugging&quot;&gt;Running and Debugging&lt;a class=&quot;zola-anchor&quot; href=&quot;#running-and-debugging&quot; aria-label=&quot;Anchor link for: running-and-debugging&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Clone &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;rust-on-stm32&quot;&gt;the repository&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Open the folder in VSCode&lt;&#x2F;li&gt;
-&lt;li&gt;In terminal&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ cargo run -release
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Or&lt;&#x2F;p&gt;
+&lt;li&gt;Clone &lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/rust-on-stm32&quot;&gt;the repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open the folder in VSCode&lt;/li&gt;
+&lt;li&gt;In terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ cargo run -release&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;It can be run through VSCode menus&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;It can be run through VSCode menus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
-&lt;p&gt;This is the Slint-UI Carousel Demo runs on the F4 MCU&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-rust-bsp-package-for-stm32f4-discovery-kit&#x2F;rust-slint-ui-carousel-demo.jpeg&quot; alt=&quot;Slint UI Carousel Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Happy reading and coding!&lt;&#x2F;p&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This is the Slint-UI Carousel Demo runs on the F4 MCU&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/rust-slint-ui-carousel-demo.jpeg&quot; alt=&quot;Slint UI Carousel Demo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Happy reading and coding!&lt;/p&gt;
 </content>
         
     </entry>
@@ -281,161 +263,152 @@ Use ctrl-shift P then Tasks: Run task and select one&lt;&#x2F;p&gt;
         <updated>2023-11-07T13:29:00+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/working-with-rust-embedded-on-wsl/"/>
         <id>https://erturk.me/projects/working-with-rust-embedded-on-wsl/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/working-with-rust-embedded-on-wsl/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;In this post, it’ll be tried to explain how to get a working example by using only the tools that provided by Rust community. So let’s start!&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/working-with-rust-embedded-on-wsl/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;In this post, it’ll be tried to explain how to get a working example by using only the tools that provided by Rust community. So let’s start!&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-post&quot;&gt;The Tools that Used within this Post&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-post&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-post&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Rust Toolchain&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;usbpid-win&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;probe-rs&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#4&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;WSL&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#5&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;rust-analyzer plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;probe-rs plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;WSL plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;GitHUB repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#9&quot;&gt;9&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;STM32F429ZI Discovery Board&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#10&quot;&gt;10&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;Rust Toolchain&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;usbpid-win&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;probe-rs&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;WSL&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;rust-analyzer plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;probe-rs plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;WSL plugin for VSCode&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;GitHUB repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#9&quot;&gt;9&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;STM32F429ZI Discovery Board&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#10&quot;&gt;10&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Install WSL&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#11&quot;&gt;11&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; and an Ubuntu 22.04.2 LTS&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#12&quot;&gt;12&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; instance from Windows Store&lt;&#x2F;li&gt;
-&lt;li&gt;Download and install usbpid-win from the Github repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Run the WSL instance on a windows commandline as follow&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; wsl ~
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;li&gt;Install WSL&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#11&quot;&gt;11&lt;/a&gt;&lt;/sup&gt; and an Ubuntu 22.04.2 LTS&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#12&quot;&gt;12&lt;/a&gt;&lt;/sup&gt; instance from Windows Store&lt;/li&gt;
+&lt;li&gt;Download and install usbpid-win from the Github repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Run the WSL instance on a windows commandline as follow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; wsl ~&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Install probe-rs within WSL instance as decribed in here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Plugin the Discovery board into a USB port on your Windows PC&lt;br &#x2F;&gt;
-On a windows command line when you issued follwing commad,  a list will be displayed&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; usbipd wsl list
-&lt;&#x2F;span&gt;&lt;span&gt;BUSID  VID:PID    DEVICE                                                        STATE
-&lt;&#x2F;span&gt;&lt;span&gt;3-1    0483:374b  ST-Link Debug, USB Mass Storage Device, STMicroelectronic...  Not attached
-&lt;&#x2F;span&gt;&lt;span&gt;3-2    046d:c52b  Logitech USB Input Device, USB Input Device                   Not attached
-&lt;&#x2F;span&gt;&lt;span&gt;4-1    05ac:8509  FaceTime HD Camera (Built-in), FaceTime HD camera             Not attached
-&lt;&#x2F;span&gt;&lt;span&gt;6-2    05ac:8242  Apple IR Receiver                                             Not attached
-&lt;&#x2F;span&gt;&lt;span&gt;6-3    05ac:0253  Apple Keyboard, Apple Multi-Touch, USB Input Device           Not attached
-&lt;&#x2F;span&gt;&lt;span&gt;7-3    05ac:821d  Apple Broadcom Built-in Bluetooth                             Not attached
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;li&gt;Install probe-rs within WSL instance as decribed in here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Plugin the Discovery board into a USB port on your Windows PC&lt;br /&gt;
+On a windows command line when you issued follwing commad,  a list will be displayed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; usbipd wsl list&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;BUSID  VID:PID    DEVICE                                                        STATE&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;3-1    0483:374b  ST-Link Debug, USB Mass Storage Device, STMicroelectronic...  Not attached&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;3-2    046d:c52b  Logitech USB Input Device, USB Input Device                   Not attached&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;4-1    05ac:8509  FaceTime HD Camera (Built-in), FaceTime HD camera             Not attached&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;6-2    05ac:8242  Apple IR Receiver                                             Not attached&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;6-3    05ac:0253  Apple Keyboard, Apple Multi-Touch, USB Input Device           Not attached&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;7-3    05ac:821d  Apple Broadcom Built-in Bluetooth                             Not attached&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Bind the USB device on an elevated command line as follow&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS C:\Users\root&amp;gt; usbipd bind --busid 3-1
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;li&gt;Bind the USB device on an elevated command line as follow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS C:\Users\root&amp;gt; usbipd bind --busid 3-1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Now you can attach the USB device as standard user as follow&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; usbipd wsl attach --busid 3-1
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;li&gt;Now you can attach the USB device as standard user as follow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PS C:\Users\ierturk&amp;gt; usbipd wsl attach --busid 3-1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Install VSCode and the plugins mentioned here &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
+&lt;li&gt;Install VSCode and the plugins mentioned here &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;running-and-debugging&quot;&gt;Running and Debugging&lt;a class=&quot;zola-anchor&quot; href=&quot;#running-and-debugging&quot; aria-label=&quot;Anchor link for: running-and-debugging&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Open VSCode&lt;&#x2F;li&gt;
-&lt;li&gt;Install WSL plugin&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; in VSCode&lt;&#x2F;li&gt;
-&lt;li&gt;Connect to WSL instance from within VSCode using WSL plugin&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Install rust-analyzer&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; and probe-rs&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; plugins in VSCode in WSL instance&lt;&#x2F;li&gt;
-&lt;li&gt;Open terminal in VSCode&lt;&#x2F;li&gt;
-&lt;li&gt;Create a work directory and clone the repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#9&quot;&gt;9&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; as follow&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ mkdir Work
-&lt;&#x2F;span&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ cd Work
-&lt;&#x2F;span&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ sudo apt-get install git
-&lt;&#x2F;span&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;rust-embedded-wsl-probe-rs.git
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;li&gt;Open VSCode&lt;/li&gt;
+&lt;li&gt;Install WSL plugin&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt; in VSCode&lt;/li&gt;
+&lt;li&gt;Connect to WSL instance from within VSCode using WSL plugin&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Install rust-analyzer&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; and probe-rs&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt; plugins in VSCode in WSL instance&lt;/li&gt;
+&lt;li&gt;Open terminal in VSCode&lt;/li&gt;
+&lt;li&gt;Create a work directory and clone the repository&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#9&quot;&gt;9&lt;/a&gt;&lt;/sup&gt; as follow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ mkdir Work&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ cd Work&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ sudo apt-get install git&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ierturk@DESKTOP-JC8L4M1:~$ git clone https://github.com/ierturk/rust-embedded-wsl-probe-rs.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;Open folder &lt;code&gt;rust-embedded-wsl-probe-rs&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Now just open debug tab and hit the button&lt;&#x2F;li&gt;
-&lt;li&gt;Place breakpoints where you want&lt;&#x2F;li&gt;
-&lt;li&gt;Hit the play button&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Open folder &lt;code&gt;rust-embedded-wsl-probe-rs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Now just open debug tab and hit the button&lt;/li&gt;
+&lt;li&gt;Place breakpoints where you want&lt;/li&gt;
+&lt;li&gt;Hit the play button&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Then it should be displayed following screen
-&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;vscode-debug-wsl.png&quot; alt=&quot;VSCode DEbug Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+&lt;img src=&quot;https://erturk.me/projects/working-with-rust-embedded-on-wsl/vscode-debug-wsl.png&quot; alt=&quot;VSCode DEbug Screen&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;a class=&quot;zola-anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;working-with-rust-embedded-on-wsl&#x2F;lcd-demo.jpeg&quot; alt=&quot;LCD Demo&quot; &#x2F;&gt;
-It just woks as you can see. Yo can work on this and modify some parts according to your requirements.&lt;&#x2F;p&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://erturk.me/projects/working-with-rust-embedded-on-wsl/lcd-demo.jpeg&quot; alt=&quot;LCD Demo&quot; /&gt;
+It just woks as you can see. Yo can work on this and modify some parts according to your requirements.&lt;/p&gt;
 &lt;p&gt;Hope you enjoyed with the tutorial, found useful.
-Thank you for reading.&lt;&#x2F;p&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Rust Getting Started&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dorssel&#x2F;usbipd-win&quot;&gt;usbpid-win&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;3&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;probe.rs&#x2F;docs&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;probe-rs&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;4&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VSCode&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;5&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;5&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;learn.microsoft.com&#x2F;en-us&#x2F;windows&#x2F;wsl&#x2F;install&quot;&gt;WSL&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;6&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;6&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=rust-lang.rust-analyzer&quot;&gt;rust-analyzer plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;7&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;7&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=probe-rs.probe-rs-debugger&quot;&gt;probe-rs plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;8&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;8&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=ms-vscode-remote.remote-wsl&quot;&gt;WSL plugin for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;9&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;9&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;rust-embedded-wsl-probe-rs&quot;&gt;GitHUB repository&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;10&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;10&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.st.com&#x2F;en&#x2F;evaluation-tools&#x2F;32f429idiscovery.html&quot;&gt;STM32F429ZI Discovery Board&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;11&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;11&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;apps.microsoft.com&#x2F;detail&#x2F;windows-subsystem-for-linux&#x2F;9P9TQF7MRM4R?hl=en-gb&amp;amp;gl=US&quot;&gt;WSL - Windows Subsystem for Linux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;12&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;12&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;apps.microsoft.com&#x2F;detail&#x2F;9PN20MSR04DW?hl=en-gb&amp;amp;gl=US&quot;&gt;Ubuntu 22.04.2 LTS&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
+Thank you for reading.&lt;/p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.rust-lang.org/learn/get-started&quot;&gt;Rust Getting Started&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/dorssel/usbipd-win&quot;&gt;usbpid-win&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;3&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://probe.rs/docs/getting-started/installation/&quot;&gt;probe-rs&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;4&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;5&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;5&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://learn.microsoft.com/en-us/windows/wsl/install&quot;&gt;WSL&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;6&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;6&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer&quot;&gt;rust-analyzer plugin for VSCode&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;7&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;7&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=probe-rs.probe-rs-debugger&quot;&gt;probe-rs plugin for VSCode&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;8&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;8&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl&quot;&gt;WSL plugin for VSCode&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;9&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;9&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/rust-embedded-wsl-probe-rs&quot;&gt;GitHUB repository&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;10&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;10&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.st.com/en/evaluation-tools/32f429idiscovery.html&quot;&gt;STM32F429ZI Discovery Board&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;11&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;11&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://apps.microsoft.com/detail/windows-subsystem-for-linux/9P9TQF7MRM4R?hl=en-gb&amp;amp;gl=US&quot;&gt;WSL - Windows Subsystem for Linux&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;12&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;12&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-gb&amp;amp;gl=US&quot;&gt;Ubuntu 22.04.2 LTS&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </content>
         
     </entry>
@@ -445,17 +418,13 @@ Thank you for reading.&lt;&#x2F;p&gt;
         <updated>2022-08-20T00:29:04+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-case-study-on-the-yocto-project/"/>
         <id>https://erturk.me/projects/a-case-study-on-the-yocto-project/</id>
         
-        <summary type="html">&lt;p&gt;Building a Barcode Reader From Beginning to End&lt;&#x2F;p&gt;</summary>
+        <summary type="html">&lt;p&gt;Building a Barcode Reader From Beginning to End&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="en">
@@ -464,92 +433,88 @@ Thank you for reading.&lt;&#x2F;p&gt;
         <updated>2022-08-20T00:29:04+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/sci-power-lab-updated/"/>
         <id>https://erturk.me/projects/sci-power-lab-updated/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/sci-power-lab-updated/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/sci-power-lab-updated/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
 &lt;h1 id=&quot;scipowerlab&quot;&gt;SciPowerLab&lt;a class=&quot;zola-anchor&quot; href=&quot;#scipowerlab&quot; aria-label=&quot;Anchor link for: scipowerlab&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h1&gt;
-&lt;p&gt;Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Scilab Power Electronics ToolBox&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Author&lt;&#x2F;strong&gt; ierturk &lt;a href=&quot;mailto:ierturk@ieee.org&quot;&gt;me [at] erturk.me&lt;&#x2F;a&gt; @ &lt;a href=&quot;http:&#x2F;&#x2F;erturk.me&quot;&gt;ErturkMe&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-&lt;strong&gt;Version&lt;&#x2F;strong&gt; 0.3.0&lt;br &#x2F;&gt;
-&lt;strong&gt;Date&lt;&#x2F;strong&gt; 12-Jul-2022&lt;br &#x2F;&gt;
-&lt;strong&gt;Brief&lt;&#x2F;strong&gt; Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Author&lt;/strong&gt; ierturk &lt;a href=&quot;mailto:ierturk@ieee.org&quot;&gt;me [at] erturk.me&lt;/a&gt; @ &lt;a rel=&quot;external&quot; href=&quot;http://erturk.me&quot;&gt;ErturkMe&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Version&lt;/strong&gt; 0.3.0&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt; 12-Jul-2022&lt;br /&gt;
+&lt;strong&gt;Brief&lt;/strong&gt; Scilab Power Electronics ToolBox&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Module uses Scilab&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Module uses Scilab&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;SciPowerLab Toolbox
-ErturkMe - Power Electronics and Electrical Machines&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+ErturkMe - Power Electronics and Electrical Machines&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;XCPL (0.3) - Update for New Scilab 6 API for Xcos block&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;XCPL (0.3) - Update for New Scilab 6 API for Xcos block&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Usage&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
-Run builder.sce in root folder&lt;br &#x2F;&gt;
-Run loader.sce created by builder macro&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;br /&gt;
+Run builder.sce in root folder&lt;br /&gt;
+Run loader.sce created by builder macro&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Available Blocks&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Blocks&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;xcpl_BLDC&lt;br &#x2F;&gt;
-Brushless DC Machine in abc frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_BLSC&lt;br &#x2F;&gt;
-Brushless DC Machine Sensored Controller&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PMSM&lt;br &#x2F;&gt;
-Permanent Magnet Synchronous Machine in dq frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PMSC&lt;br &#x2F;&gt;
-Permanent Magnet Synchronous Machine FOC Controller&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_IMPU&lt;br &#x2F;&gt;
-Induction Machine Per-Unit Model in dq frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_SVPWM&lt;br &#x2F;&gt;
-Space Vector PWM generator&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PSDINV&lt;br &#x2F;&gt;
-Pseudo Inverter (It does not support three-state switching case)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;xcpl_BLDC&lt;br /&gt;
+Brushless DC Machine in abc frame&lt;/li&gt;
+&lt;li&gt;xcpl_BLSC&lt;br /&gt;
+Brushless DC Machine Sensored Controller&lt;/li&gt;
+&lt;li&gt;xcpl_PMSM&lt;br /&gt;
+Permanent Magnet Synchronous Machine in dq frame&lt;/li&gt;
+&lt;li&gt;xcpl_PMSC&lt;br /&gt;
+Permanent Magnet Synchronous Machine FOC Controller&lt;/li&gt;
+&lt;li&gt;xcpl_IMPU&lt;br /&gt;
+Induction Machine Per-Unit Model in dq frame&lt;/li&gt;
+&lt;li&gt;xcpl_SVPWM&lt;br /&gt;
+Space Vector PWM generator&lt;/li&gt;
+&lt;li&gt;xcpl_PSDINV&lt;br /&gt;
+Pseudo Inverter (It does not support three-state switching case)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Available Demos&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Demos&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Field Oriented Controlling Permanent Magnet Synchronous Machine&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Field Oriented Controlling Permanent Magnet Synchronous Machine&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Links&lt;&#x2F;strong&gt;
-The toolbox can be downloaded from following links or can be installed directly within SciLab.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;
+The toolbox can be downloaded from following links or can be installed directly within SciLab.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;atoms.scilab.org&#x2F;toolboxes&#x2F;XCPL&#x2F;0.3.0&quot;&gt;Scilab ATOMS - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;SciPowerLab&quot;&gt;GitHub - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://atoms.scilab.org/toolboxes/XCPL/0.3.0&quot;&gt;Scilab ATOMS - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/SciPowerLab&quot;&gt;GitHub - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Citation&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+&lt;p&gt;&lt;strong&gt;Citation&lt;/strong&gt;&lt;br /&gt;
 @software{Erturk_Scilab_Xcos_Power_Electronics,
 author = {Erturk, Ibrahim},
-title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
-}&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;COPYRIGHT 2011-2022 ErturkMe&lt;&#x2F;p&gt;
+title = {{Scilab/Xcos Power Electronics and Electric Machines ToolBox}}
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;COPYRIGHT 2011-2022 ErturkMe&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
         
     </entry>
@@ -559,27 +524,24 @@ title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
         <updated>2022-06-26T13:57:40+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/"/>
         <id>https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/identifying-livestock-with-yolo-v3-object-detection-using-pytorch/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
 &lt;div &gt;
     &lt;iframe
         width=&quot;560&quot; height=&quot;315&quot;
-        src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;mNQ21kzEskE&quot;
+        src=&quot;https://www.youtube.com/embed/mNQ21kzEskE&quot;
         webkitallowfullscreen
         mozallowfullscreen
         allowfullscreen&gt;
-    &lt;&#x2F;iframe&gt;
-&lt;&#x2F;div&gt;</content>
+    &lt;/iframe&gt;
+&lt;/div&gt;
+</content>
         
     </entry>
     <entry xml:lang="en">
@@ -588,63 +550,58 @@ title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
         <updated>2022-01-05T17:47:00+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/getting-started-qt-with-vs-code/"/>
         <id>https://erturk.me/projects/getting-started-qt-with-vs-code/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/getting-started-qt-with-vs-code/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;&lt;em&gt;Disclaimer&lt;&#x2F;em&gt; — This is just my humble opinion and maybe there is more convenient way out there for this purpose.&lt;br &#x2F;&gt;
-For this purpose I already prepared a repo on GitHub&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://erturk.me/projects/getting-started-qt-with-vs-code/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer&lt;/em&gt; — This is just my humble opinion and maybe there is more convenient way out there for this purpose.&lt;br /&gt;
+For this purpose I already prepared a repo on GitHub&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The repo is a collection of some experimental works on AI, Image Processing, Qt Qml and embedded RPC. The procedure is is simple as follow.&lt;/p&gt;
 &lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;a class=&quot;zola-anchor&quot; href=&quot;#requirements&quot; aria-label=&quot;Anchor link for: requirements&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Any &lt;code&gt;Linux&lt;&#x2F;code&gt; Distribution (tested on &lt;code&gt;Debian 11&lt;&#x2F;code&gt;) with &lt;code&gt;Wayland Display Manager&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;code&gt;Docker&lt;&#x2F;code&gt; daemon&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;code&gt;VS Code&lt;&#x2F;code&gt; with &lt;code&gt;Remote Container&lt;&#x2F;code&gt; extension. Or alternatively it can be used &lt;code&gt;Remote SSH&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Any &lt;code&gt;Linux&lt;/code&gt; Distribution (tested on &lt;code&gt;Debian 11&lt;/code&gt;) with &lt;code&gt;Wayland Display Manager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Docker&lt;/code&gt; daemon&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VS Code&lt;/code&gt; with &lt;code&gt;Remote Container&lt;/code&gt; extension. Or alternatively it can be used &lt;code&gt;Remote SSH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;run-just-as-follow&quot;&gt;Run Just as Follow&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-just-as-follow&quot; aria-label=&quot;Anchor link for: run-just-as-follow&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Clone the repos as follow&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;qt-qml-ai-collection.git
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git submodule update --init
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Just open the cloned folder in &lt;code&gt;VS Code&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;li&gt;Clone the repos as follow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;$&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; git clone https://github.com/ierturk/qt-qml-ai-collection.git&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;$&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; git submodule update --init&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Just open the cloned folder in &lt;code&gt;VS Code&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Reopen in the development container&lt;&#x2F;li&gt;
-&lt;li&gt;Build with &lt;code&gt;CMake&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Run any target built by &lt;code&gt;CMake&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;For more information including building development containers you can refer the links below&lt;&#x2F;p&gt;
-&lt;p&gt;The repo used for demonstration&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;br &#x2F;&gt;
-Development Container Sources&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;That’s all&lt;&#x2F;p&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;qt-qml-ai-collection&quot;&gt;The repo used for demonstration&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;dev-containers&quot;&gt;Development Container Sources&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
+&lt;li&gt;Reopen in the development container&lt;/li&gt;
+&lt;li&gt;Build with &lt;code&gt;CMake&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run any target built by &lt;code&gt;CMake&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information including building development containers you can refer the links below&lt;/p&gt;
+&lt;p&gt;The repo used for demonstration&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
+Development Container Sources&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;That’s all&lt;/p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/qt-qml-ai-collection&quot;&gt;The repo used for demonstration&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/dev-containers&quot;&gt;Development Container Sources&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </content>
         
     </entry>
@@ -654,41 +611,36 @@ Development Container Sources&lt;sup class=&quot;footnote-reference&quot;&gt;&lt
         <updated>2022-01-05T17:21:33+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-collection-related-femm-magnetic/"/>
         <id>https://erturk.me/projects/a-collection-related-femm-magnetic/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;&#x2F;strong&gt; software examples and Libraries can be cloned from as follow.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;femm-magnetic-collection.git
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;&lt;strong&gt;FEMM Finite Element Analysis Software&lt;&#x2F;strong&gt; is available freely from here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
+&lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;/strong&gt; software examples and Libraries can be cloned from as follow.&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;$&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; git clone https://github.com/ierturk/femm-magnetic-collection.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;FEMM Finite Element Analysis Software&lt;/strong&gt; is available freely from here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;h3 id=&quot;the-collection&quot;&gt;The Collection&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-collection&quot; aria-label=&quot;Anchor link for: the-collection&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BLDC Machine Analysis&lt;&#x2F;li&gt;
-&lt;li&gt;Generating animated images from &lt;code&gt;FEMM&lt;&#x2F;code&gt; solutions&lt;&#x2F;li&gt;
-&lt;li&gt;Java FEMM Link and Java PowerLab integration&lt;&#x2F;li&gt;
-&lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;&#x2F;li&gt;
-&lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;&#x2F;code&gt; is the predecessor of &lt;code&gt;SciLab&#x2F;XCos&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-collection-related-femm-magnetic&#x2F;.&#x2F;a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.femm.info&#x2F;wiki&#x2F;HomePage&quot;&gt;Finite Element Method Magnetics&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
+&lt;li&gt;BLDC Machine Analysis&lt;/li&gt;
+&lt;li&gt;Generating animated images from &lt;code&gt;FEMM&lt;/code&gt; solutions&lt;/li&gt;
+&lt;li&gt;Java FEMM Link and Java PowerLab integration&lt;/li&gt;
+&lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;/li&gt;
+&lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;/code&gt; is the predecessor of &lt;code&gt;SciLab/XCos&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://erturk.me/projects/a-collection-related-femm-magnetic/./a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.femm.info/wiki/HomePage&quot;&gt;Finite Element Method Magnetics&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </content>
         
     </entry>

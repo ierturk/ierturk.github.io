@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Mare Nostrum - scilab</title>
-    <subtitle>It&#x27;s me!</subtitle>
+    <subtitle>It&#39;s me!</subtitle>
     <link rel="self" type="application/atom+xml" href="https://erturk.me/tags/scilab/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://erturk.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
@@ -13,92 +13,88 @@
         <updated>2022-08-20T00:29:04+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/sci-power-lab-updated/"/>
         <id>https://erturk.me/projects/sci-power-lab-updated/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/sci-power-lab-updated/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
+        <content type="html" xml:base="https://erturk.me/projects/sci-power-lab-updated/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
 &lt;h1 id=&quot;scipowerlab&quot;&gt;SciPowerLab&lt;a class=&quot;zola-anchor&quot; href=&quot;#scipowerlab&quot; aria-label=&quot;Anchor link for: scipowerlab&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h1&gt;
-&lt;p&gt;Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Scilab Power Electronics ToolBox&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Author&lt;&#x2F;strong&gt; ierturk &lt;a href=&quot;mailto:ierturk@ieee.org&quot;&gt;me [at] erturk.me&lt;&#x2F;a&gt; @ &lt;a href=&quot;http:&#x2F;&#x2F;erturk.me&quot;&gt;ErturkMe&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-&lt;strong&gt;Version&lt;&#x2F;strong&gt; 0.3.0&lt;br &#x2F;&gt;
-&lt;strong&gt;Date&lt;&#x2F;strong&gt; 12-Jul-2022&lt;br &#x2F;&gt;
-&lt;strong&gt;Brief&lt;&#x2F;strong&gt; Scilab Power Electronics ToolBox&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Author&lt;/strong&gt; ierturk &lt;a href=&quot;mailto:ierturk@ieee.org&quot;&gt;me [at] erturk.me&lt;/a&gt; @ &lt;a rel=&quot;external&quot; href=&quot;http://erturk.me&quot;&gt;ErturkMe&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Version&lt;/strong&gt; 0.3.0&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt; 12-Jul-2022&lt;br /&gt;
+&lt;strong&gt;Brief&lt;/strong&gt; Scilab Power Electronics ToolBox&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Module uses Scilab&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Module uses Scilab&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;SciPowerLab Toolbox
-ErturkMe - Power Electronics and Electrical Machines&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+ErturkMe - Power Electronics and Electrical Machines&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;XCPL (0.3) - Update for New Scilab 6 API for Xcos block&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;XCPL (0.3) - Update for New Scilab 6 API for Xcos block&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Usage&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
-Run builder.sce in root folder&lt;br &#x2F;&gt;
-Run loader.sce created by builder macro&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;br /&gt;
+Run builder.sce in root folder&lt;br /&gt;
+Run loader.sce created by builder macro&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Available Blocks&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Blocks&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;xcpl_BLDC&lt;br &#x2F;&gt;
-Brushless DC Machine in abc frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_BLSC&lt;br &#x2F;&gt;
-Brushless DC Machine Sensored Controller&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PMSM&lt;br &#x2F;&gt;
-Permanent Magnet Synchronous Machine in dq frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PMSC&lt;br &#x2F;&gt;
-Permanent Magnet Synchronous Machine FOC Controller&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_IMPU&lt;br &#x2F;&gt;
-Induction Machine Per-Unit Model in dq frame&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_SVPWM&lt;br &#x2F;&gt;
-Space Vector PWM generator&lt;&#x2F;li&gt;
-&lt;li&gt;xcpl_PSDINV&lt;br &#x2F;&gt;
-Pseudo Inverter (It does not support three-state switching case)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;xcpl_BLDC&lt;br /&gt;
+Brushless DC Machine in abc frame&lt;/li&gt;
+&lt;li&gt;xcpl_BLSC&lt;br /&gt;
+Brushless DC Machine Sensored Controller&lt;/li&gt;
+&lt;li&gt;xcpl_PMSM&lt;br /&gt;
+Permanent Magnet Synchronous Machine in dq frame&lt;/li&gt;
+&lt;li&gt;xcpl_PMSC&lt;br /&gt;
+Permanent Magnet Synchronous Machine FOC Controller&lt;/li&gt;
+&lt;li&gt;xcpl_IMPU&lt;br /&gt;
+Induction Machine Per-Unit Model in dq frame&lt;/li&gt;
+&lt;li&gt;xcpl_SVPWM&lt;br /&gt;
+Space Vector PWM generator&lt;/li&gt;
+&lt;li&gt;xcpl_PSDINV&lt;br /&gt;
+Pseudo Inverter (It does not support three-state switching case)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Available Demos&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Available Demos&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Field Oriented Controlling Permanent Magnet Synchronous Machine&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Field Oriented Controlling Permanent Magnet Synchronous Machine&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Links&lt;&#x2F;strong&gt;
-The toolbox can be downloaded from following links or can be installed directly within SciLab.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;
+The toolbox can be downloaded from following links or can be installed directly within SciLab.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;atoms.scilab.org&#x2F;toolboxes&#x2F;XCPL&#x2F;0.3.0&quot;&gt;Scilab ATOMS - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;SciPowerLab&quot;&gt;GitHub - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://atoms.scilab.org/toolboxes/XCPL/0.3.0&quot;&gt;Scilab ATOMS - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/ierturk/SciPowerLab&quot;&gt;GitHub - SciPowerLab - Toolbox for Power Electronics and Electrical Machines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Citation&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+&lt;p&gt;&lt;strong&gt;Citation&lt;/strong&gt;&lt;br /&gt;
 @software{Erturk_Scilab_Xcos_Power_Electronics,
 author = {Erturk, Ibrahim},
-title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
-}&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;COPYRIGHT 2011-2022 ErturkMe&lt;&#x2F;p&gt;
+title = {{Scilab/Xcos Power Electronics and Electric Machines ToolBox}}
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;COPYRIGHT 2011-2022 ErturkMe&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
         
     </entry>
@@ -108,41 +104,36 @@ title = {{Scilab&#x2F;Xcos Power Electronics and Electric Machines ToolBox}}
         <updated>2022-01-05T17:21:33+03:00</updated>
         
         <author>
-          <name>
-            
-              Unknown
-            
-          </name>
+          <name>Unknown</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://erturk.me/projects/a-collection-related-femm-magnetic/"/>
         <id>https://erturk.me/projects/a-collection-related-femm-magnetic/</id>
         
-        <content type="html" xml:base="https://erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;&#x2F;strong&gt; software examples and Libraries can be cloned from as follow.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;ierturk&#x2F;femm-magnetic-collection.git
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;&lt;strong&gt;FEMM Finite Element Analysis Software&lt;&#x2F;strong&gt; is available freely from here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://erturk.me/projects/a-collection-related-femm-magnetic/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;hr /&gt;
+&lt;p&gt;The collection of &lt;strong&gt;FEMM&lt;/strong&gt; software examples and Libraries can be cloned from as follow.&lt;/p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #88C0D0;&quot;&gt;$&lt;/span&gt;&lt;span style=&quot;color: #A3BE8C;&quot;&gt; git clone https://github.com/ierturk/femm-magnetic-collection.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;FEMM Finite Element Analysis Software&lt;/strong&gt; is available freely from here&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;h3 id=&quot;the-collection&quot;&gt;The Collection&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-collection&quot; aria-label=&quot;Anchor link for: the-collection&quot;&gt;
     &lt;svg class=&quot;zola-anchor-link&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;path fill-rule=&quot;evenodd&quot;
             d=&quot;M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z&quot;&gt;
-        &lt;&#x2F;path&gt;
-    &lt;&#x2F;svg&gt;
-&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
+        &lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;BLDC Machine Analysis&lt;&#x2F;li&gt;
-&lt;li&gt;Generating animated images from &lt;code&gt;FEMM&lt;&#x2F;code&gt; solutions&lt;&#x2F;li&gt;
-&lt;li&gt;Java FEMM Link and Java PowerLab integration&lt;&#x2F;li&gt;
-&lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;&#x2F;li&gt;
-&lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;&#x2F;code&gt; is the predecessor of &lt;code&gt;SciLab&#x2F;XCos&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;erturk.me&#x2F;projects&#x2F;a-collection-related-femm-magnetic&#x2F;.&#x2F;a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.femm.info&#x2F;wiki&#x2F;HomePage&quot;&gt;Finite Element Method Magnetics&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;div&gt;
+&lt;li&gt;BLDC Machine Analysis&lt;/li&gt;
+&lt;li&gt;Generating animated images from &lt;code&gt;FEMM&lt;/code&gt; solutions&lt;/li&gt;
+&lt;li&gt;Java FEMM Link and Java PowerLab integration&lt;/li&gt;
+&lt;li&gt;Java FEMM Link for acces to FEMM from Java programs&lt;/li&gt;
+&lt;li&gt;SciCos FEMM Link. The &lt;code&gt;SciCos&lt;/code&gt; is the predecessor of &lt;code&gt;SciLab/XCos&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://erturk.me/projects/a-collection-related-femm-magnetic/./a-collection-related-femm-magnetic-thumbnail.gif&quot; alt=&quot;FEMM Magnetic Thumbnail&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;/sup&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https://www.femm.info/wiki/HomePage&quot;&gt;Finite Element Method Magnetics&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </content>
         
     </entry>
