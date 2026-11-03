@@ -7,7 +7,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
 
     <title>A Case Study on the Yocto Project - Mare Nostrum</title>
-    <meta name="description" content="It&#39;s me!">
+    <meta name="description" content="Building a barcode reader on a Raspberry Pi to explain the Yocto Project, with Docker containers for the application.">
 
     
     <link rel="stylesheet" href="https://erturk.me/base.css">
@@ -187,7 +187,7 @@
 <blockquote>
 <p>The Yocto Project is a Linux Foundation collaborative open source project whose goal is to produce tools and processes that enable the creation of Linux distributions for embedded and IoT software that are independent of the underlying architecture of the embedded hardware. The project was announced by the Linux Foundation in 2010 and launched in March, 2011, in collaboration with 22 organizations, including OpenEmbedded.<sup class="footnote-reference"><a href="#2">2</a></sup></p>
 </blockquote>
-<p>This directly leads us to OpenEmbedded <sup class="footnote-reference"><a href="#2">2</a></sup> build system. So what is OpenEmbedded and OpenEmbedded build system? Following excerpt is taken from the Wikipedia article <sup class="footnote-reference"><a href="#3">3</a></sup> on the OpenEmbedded.</p>
+<p>This directly leads me to OpenEmbedded <sup class="footnote-reference"><a href="#2">2</a></sup> build system. So what is OpenEmbedded and OpenEmbedded build system? Following excerpt is taken from the Wikipedia article <sup class="footnote-reference"><a href="#3">3</a></sup> on the OpenEmbedded.</p>
 <blockquote>
 <p>OpenEmbedded is a build automation framework and cross-compile environment used to create Linux distributions for embedded devices. The OpenEmbedded framework is developed by the OpenEmbedded community, which was formally established in 2003. OpenEmbedded is the recommended build system of the Yocto Project, which is a Linux Foundation workgroup that assists commercial companies in the development of Linux-based systems for embedded products.</p>
 <p>The build system is based on BitBake “recipes”, which specify how a particular package is built but also include lists of dependencies and source code locations, as well as for instructions on how to install and remove a compiled package. OpenEmbedded tools use these recipes to fetch and patch source code, compile and link binaries, produce binary packages (ipk, deb, rpm), and create bootable images.</p>
@@ -197,7 +197,7 @@
 <p><strong>Yocto is an umbrella project for building your own Linux Embedded distro</strong></p>
 <p><strong>OpenEmbedded is a build system for Yocto</strong></p>
 </blockquote>
-<p>OpenEmbedded utilizes the tool <strong>BitBake</strong> for everthing as can be seen from above excerpt. In the next section, it’ll be tried to explain how to get OpenEmbedded build system <strong>BitBake</strong>.</p>
+<p>OpenEmbedded utilizes the tool <strong>BitBake</strong> for everything as can be seen from above excerpt. In the next section, it’ll be tried to explain how to get OpenEmbedded build system <strong>BitBake</strong>.</p>
 <hr />
 <h3 id="how-to-prepare-the-host-system">How to Prepare the Host System<a class="zola-anchor" href="#how-to-prepare-the-host-system" aria-label="Anchor link for: how-to-prepare-the-host-system">
     <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -207,15 +207,15 @@
     </svg>
 </a>
 </h3>
-<p>Due to target system is Linux OS, the <strong>BitBake</strong> requires a Linux OS as host especially Debian/Ubuntu. A Linux VM On Windows or MacOS, or WSL on Windows can be used as build machine but not recommended due to performance issues and high demand for disk space. In any case, a Linux machine is required even virtual or native one. From now on, we have two options to install the build system on the host Linux machine.</p>
+<p>Due to target system is Linux OS, the <strong>BitBake</strong> requires a Linux OS as host especially Debian/Ubuntu. A Linux VM On Windows or MacOS, or WSL on Windows can be used as build machine but not recommended due to performance issues and high demand for disk space. In any case, a Linux machine is required even virtual or native one. From now on, I have two options to install the build system on the host Linux machine.</p>
 <ul>
 <li>Directly installing the tools on the host.</li>
 <li>Using Docker to get whole build system.</li>
 </ul>
 <p>The later option is used within this tutorial because while the first method mess the host system, the second method provides an isolated system. On Linux, both methods work with same performance because the Docker does not add an additional layer to work. However on Window adn MacOS, the Docker needs an additional Linux VM therefore the performance will be decreased.</p>
-<p>From now on, we assume that we have a Debian/Ubuntu Linux Machine (Native or Virtual) and we have an access to machine over SSH console. If you don’t feel comfortable with the console, you can use teh VS Code Remote SSH plugin <sup class="footnote-reference"><a href="#4">4</a></sup>.</p>
+<p>From now on, I assume that I have a Debian/Ubuntu Linux machine (native or virtual) and access to it over SSH console. If you don’t feel comfortable with the console, you can use the VS Code Remote SSH plugin <sup class="footnote-reference"><a href="#4">4</a></sup>.</p>
 <p>For the first method you can follow the document Yocto Project Quick Build <sup class="footnote-reference"><a href="#5">5</a></sup>.</p>
-<p>For the second method, the Docker engine needs to be installed first. For this, you can follow the document Install Docker Engine on Debian <sup class="footnote-reference"><a href="#6">6</a></sup>. Also we need the <strong>git</strong> versioning tools. It can be installed as follow</p>
+<p>For the second method, the Docker engine needs to be installed first. For this, you can follow the document Install Docker Engine on Debian <sup class="footnote-reference"><a href="#6">6</a></sup>. Also I need the <strong>git</strong> versioning tools. It can be installed as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>$ sudo apt-get update</span></span>
 <span class="giallo-l"><span>$ sudo apt-get install git</span></span></code></pre>
 <hr />
@@ -227,7 +227,7 @@
     </svg>
 </a>
 </h3>
-<p>Now we have all required base tools on host, and we can get the <strong>BitBake</strong> from the <strong>Poky</strong> project as follow</p>
+<p>Now I have all required base tools on host, and I can get the <strong>BitBake</strong> from the <strong>Poky</strong> project as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># Create a working directory</span></span>
 <span class="giallo-l"><span>$ mkdir -p /mnt/Work/PROJs/rpi/yocto/src</span></span>
 <span class="giallo-l"><span>$ cd /mnt/Work/PROJs/rpi/yocto/src</span></span>
@@ -242,7 +242,7 @@
 <span class="giallo-l"><span># exit to return host command prompt</span></span>
 <span class="giallo-l"><span>$ exit</span></span>
 <span class="giallo-l"></span></code></pre>
-<p>After the last command was issued, if the container images could not be found on local it will be downlaoded automatically from the <strong>Docker Hub</strong> and run the container, then you drop into container command line prompt. Now we have a whole build system but no source to build. We will get the sources in next section.</p>
+<p>After the last command was issued, if the container images could not be found on local it will be downloaded automatically from the <strong>Docker Hub</strong> and run the container, then you drop into container command line prompt. Now I have a whole build system but no source to build. I will get the sources in next section.</p>
 <hr />
 <h3 id="how-to-get-the-bitbake-layers">How to Get the BitBake Layers<a class="zola-anchor" href="#how-to-get-the-bitbake-layers" aria-label="Anchor link for: how-to-get-the-bitbake-layers">
     <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -252,7 +252,7 @@
     </svg>
 </a>
 </h3>
-<p>In <strong>BitBake</strong> concept, every group of source provides same functionality is called as <strong>Layer</strong> or <strong>Meta-Layer</strong>. Indeed, they are not a regular source code to build. They are some script in <strong>BitBake</strong> language that defines how to get sources, patch them, build them, their dependencies, and integrate into final target image. We need following Layers for our project.</p>
+<p>In <strong>BitBake</strong> concept, every group of source provides same functionality is called as <strong>Layer</strong> or <strong>Meta-Layer</strong>. Indeed, they are not a regular source code to build. They are some script in <strong>BitBake</strong> language that defines how to get sources, patch them, build them, their dependencies, and integrate into final target image. I need following Layers for my project.</p>
 <ul>
 <li><strong>meta-extra</strong> - a custom layer to add a regular sudo user</li>
 <li><strong>meta-raspberrypi</strong> - the RPI board support package</li>
@@ -274,7 +274,7 @@
 <span class="giallo-l"></span>
 <span class="giallo-l"><span># meta-virtualization</span></span>
 <span class="giallo-l"><span>$ git clone https://git.yoctoproject.org/meta-virtualization -b kirkstone</span></span></code></pre>
-<p>Now we have all the source to build the target image.</p>
+<p>Now I have all the source to build the target image.</p>
 <hr />
 <h3 id="configuring-and-building-target-image">Configuring and Building Target Image<a class="zola-anchor" href="#configuring-and-building-target-image" aria-label="Anchor link for: configuring-and-building-target-image">
     <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -284,13 +284,13 @@
     </svg>
 </a>
 </h3>
-<p>Our target images will be used for developing, it will have lots of tools which will not have an productions image, therefore it will be larger then a production image. However we will follow a different appraching to develop an application. We will use the Docker for the applications and all the required packages which are not included in base image will be included within the Docker containers.</p>
-<p>Now we can start to configure and build the image</p>
+<p>My target images will be used for developing, it will have lots of tools which will not have an productions image, therefore it will be larger then a production image. However I will follow a different appraching to develop an application. I will use the Docker for the applications and all the required packages which are not included in base image will be included within the Docker containers.</p>
+<p>Now I can start to configure and build the image</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># goto yocto directory and run Docker</span></span>
 <span class="giallo-l"><span>$ cd /mnt/Work/PROJs/rpi/yocto/src</span></span>
 <span class="giallo-l"><span>$ docker run --rm -it -v $(pwd):/workspace --workdir /workspace crops/poky:latest</span></span>
 <span class="giallo-l"></span>
-<span class="giallo-l"><span># We will drop into container command promt.</span></span>
+<span class="giallo-l"><span># We will drop into container command prompt.</span></span>
 <span class="giallo-l"><span># Now the directory /mnt/Work/PROJs/rpi/yocto/src will be mounted</span></span>
 <span class="giallo-l"><span># as /workspace within the container, and we are in this directory.</span></span>
 <span class="giallo-l"></span>
@@ -327,7 +327,7 @@
 <span class="giallo-l"><span>    |-- meta-raspberrypi</span></span>
 <span class="giallo-l"><span>    |-- meta-virtualization</span></span>
 <span class="giallo-l"><span>    `-- poky</span></span></code></pre>
-<p>Now we need to edit the files <strong>bblayers.conf</strong> and <strong>local.conf</strong>. They are created with the contents, and needs to be applied following patches.</p>
+<p>Now I need to edit the files <strong>bblayers.conf</strong> and <strong>local.conf</strong>. They are created with the contents, and needs to be applied following patches.</p>
 <p>The patch for <strong>bblayers.conf</strong></p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>diff initial/bblayers.conf final/bblayers.conf </span></span>
 <span class="giallo-l"><span>11a12,19</span></span>
@@ -530,7 +530,7 @@
 <span class="giallo-l"><span>WARNING: No blkio throttle.write_bps_device support</span></span>
 <span class="giallo-l"><span>WARNING: No blkio throttle.read_iops_device support</span></span>
 <span class="giallo-l"><span>WARNING: No blkio throttle.write_iops_device support</span></span></code></pre>
-<p>Now we have a base system without any <strong>Desktop</strong> to develop an application using <strong>Docker</strong>.</p>
+<p>Now I have a base system without any <strong>Desktop</strong> to develop an application using <strong>Docker</strong>.</p>
 <hr />
 <h3 id="developing-a-simple-barcode-reader-application-using-the-docker-containers-and-docker-compose-without-modifying-the-base-system">Developing a Simple Barcode Reader Application using the Docker Containers and Docker Compose without Modifying the Base System<a class="zola-anchor" href="#developing-a-simple-barcode-reader-application-using-the-docker-containers-and-docker-compose-without-modifying-the-base-system" aria-label="Anchor link for: developing-a-simple-barcode-reader-application-using-the-docker-containers-and-docker-compose-without-modifying-the-base-system">
     <svg class="zola-anchor-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -540,13 +540,13 @@
     </svg>
 </a>
 </h3>
-<p>We’ll use two Docker container for the application as follow</p>
+<p>I’ll use two Docker container for the application as follow</p>
 <ul>
 <li>Window manager with VNC support as wayland server</li>
 <li>Application server as wayland client</li>
 </ul>
-<p>Now we need to build them. For this purpose, the container images can be built locally by using the <strong>Docker build</strong> <sup class="footnote-reference"><a href="#7">7</a></sup> or for multiple architecture by using <strong>the Docker buildx</strong> <sup class="footnote-reference"><a href="#8">8</a></sup>.</p>
-<p>In this tutorial, we’ll follow another approacging for building the containers. We’ll use <strong>GitHub</strong> actions to build and push the containers to the HubDocker automatically as CI/CD. We need a recipe file which is called <strong>Dockerfile</strong> to build a container image. The <strong>Alpine Linux</strong> <sup class="footnote-reference"><a href="#9">9</a></sup> is used for the containers to get smaller container images here. Following Dockerfile is for the container that contains a windows manager SwayWm <sup class="footnote-reference"><a href="#10">10</a></sup> (a wayland compositor) with VNC support. It’s just looks like a <strong>bash script</strong>.</p>
+<p>Now I need to build them. For this purpose, the container images can be built locally by using the <strong>Docker build</strong> <sup class="footnote-reference"><a href="#7">7</a></sup> or for multiple architecture by using <strong>the Docker buildx</strong> <sup class="footnote-reference"><a href="#8">8</a></sup>.</p>
+<p>In this tutorial, I’ll follow another approach for for building the containers. I’ll use <strong>GitHub</strong> actions to build and push the containers to the Docker Hub automatically as CI/CD. I need a recipe file which is called <strong>Dockerfile</strong> to build a container image. The <strong>Alpine Linux</strong> <sup class="footnote-reference"><a href="#9">9</a></sup> is used for the containers to get smaller container images here. Following Dockerfile is for the container that contains a windows manager SwayWm <sup class="footnote-reference"><a href="#10">10</a></sup> (a wayland compositor) with VNC support. It’s just looks like a <strong>bash script</strong>.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># Dockerfile SwayWM</span></span>
 <span class="giallo-l"><span>ARG ALPINE_VERSION=3.16</span></span>
 <span class="giallo-l"><span>FROM alpine:${ALPINE_VERSION}</span></span>
@@ -662,7 +662,7 @@
 <span class="giallo-l"><span>             -p${LISTEN_ADDRESS}:7023:7023 ierturk/alpine-swayvnc</span></span></code></pre>
 <p>Then you’ll see your Desktop for the first time. This is not a regular Desktop but a lightweight one.
 <img src="https://erturk.me/projects/a-case-study-on-the-yocto-project/./swaywm-vnc-on-rpi3.png" alt="SwayWm-Vnc" /></p>
-<p>However, it is not a proper way to start containers by typing a long commandline. Fortunately there is another tool for doing this with more convenient way. We’ll use to run containers by using the tool <strong>Docker-Compose</strong> <sup class="footnote-reference"><a href="#14">14</a></sup>. The Docker-Compose uses a YML file to run the containers. This is another recipe to run multiple containers at once. It looks like as follow</p>
+<p>However, it is not a proper way to start containers by typing a long commandline. Fortunately there is another tool for doing this with more convenient way. I’ll use to run containers by using the tool <strong>Docker-Compose</strong> <sup class="footnote-reference"><a href="#14">14</a></sup>. The Docker-Compose uses a YML file to run the containers. This is another recipe to run multiple containers at once. It looks like as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>version: &#39;2.4&#39;</span></span>
 <span class="giallo-l"></span>
 <span class="giallo-l"><span>services:</span></span>
@@ -770,9 +770,9 @@
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>$ docker-compose -f Alpine/swayvnc-dc.yml up -d</span></span>
 <span class="giallo-l"><span>Creating alpine_swayvnc_1 ... done</span></span>
 <span class="giallo-l"><span>Creating alpine_app_1     ... done</span></span></code></pre>
-<p>Now they are all up and running and connected to each other and the base system resources. From now on, we can login to app container as follow</p>
+<p>Now they are all up and running and connected to each other and the base system resources. From now on, I can login to app container as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>$ docker exec -it alpine_app_1 ash</span></span></code></pre>
-<p>And we can run any arbitrary application here, we’ll try a Barcode Reader - ZXing-C++ <sup class="footnote-reference"><a href="#15">15</a></sup>. For sample UI we’ll use <strong>OpenCV</strong> <sup class="footnote-reference"><a href="#16">16</a></sup> and <strong>Qt5 - QuickControl 2</strong> <sup class="footnote-reference"><a href="#17">17</a></sup> (QML Types) and a <strong>USB Camera</strong>. The Barcode Reader Library sources can be downloaded and build by <strong>CMake</strong> <sup class="footnote-reference"><a href="#18">18</a></sup> as follow</p>
+<p>And I can run any arbitrary application here, I’ll try a Barcode Reader - ZXing-C++ <sup class="footnote-reference"><a href="#15">15</a></sup>. For sample UI I’ll use <strong>OpenCV</strong> <sup class="footnote-reference"><a href="#16">16</a></sup> and <strong>Qt5 - QuickControl 2</strong> <sup class="footnote-reference"><a href="#17">17</a></sup> (QML Types) and a <strong>USB Camera</strong>. The Barcode Reader Library sources can be downloaded and build by <strong>CMake</strong> <sup class="footnote-reference"><a href="#18">18</a></sup> as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>$ git clone https://github.com/nu-book/zxing-cpp.git</span></span>
 <span class="giallo-l"></span>
 <span class="giallo-l"><span># then go into zxing-cpp directory and craete a build folder</span></span>
@@ -787,7 +787,7 @@
 <p>You may get some screen looks like following images
 <img src="https://erturk.me/projects/a-case-study-on-the-yocto-project/./barcode-omar-khayyam.png" alt="Omar Khayyam - Rubailer" />
 <img src="https://erturk.me/projects/a-case-study-on-the-yocto-project/./barcode-anne-frank.png" alt="Anne Frank - Diary" /></p>
-<p>If everthing went well we can exit the container commandline, the shut down all the containers as follow</p>
+<p>If everything went well I can exit the container commandline, the shut down all the containers as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># close app application</span></span>
 <span class="giallo-l"><span># just press CTRL-C</span></span>
 <span class="giallo-l"><span>$ exit</span></span>
@@ -808,7 +808,7 @@
     </svg>
 </a>
 </h3>
-<p>Until now, we developed the whole system from scratch. And it woks as you can see. Yo can work on this and modify some parts according to your requirements.</p>
+<p>Until now, I developed the whole system from scratch. And it works as you can see. You can work on this and modify some parts according to your requirements.</p>
 <p>Hope you enjoyed with the tutorial, found useful.
 Thank you for reading.</p>
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>

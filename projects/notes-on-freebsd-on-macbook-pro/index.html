@@ -7,7 +7,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
 
     <title>Notes on FreeBSD on MacBook Pro - Mare Nostrum</title>
-    <meta name="description" content="It&#39;s me!">
+    <meta name="description" content="My notes on running FreeBSD on a MacBook Pro: desktop, jails, VMs and Rust embedded tools.">
 
     
     <link rel="stylesheet" href="https://erturk.me/base.css">
@@ -214,12 +214,12 @@ Install the Xorg as follow.</p>
 <p>After a reboot for the test Xorg support run the follwing line.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># startx</span></span></code></pre>
 <p>If everything went well, you can use the TrackPad with multiple gesture including drag and right-click by tapping with two fingers. For using FaceTime camera, it needs to be installed libv4l.<br />
-Now we can continue to install the DE with some extras as follow.</p>
+Now I can continue to install the DE with some extras as follow.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># pkg install xfce xfce4-goodies xfce4-power-manager xfce4-pulseaudio-plugin libv4l ungoogled-chromium</span></span></code></pre>
-<p>If everything went well, we can start the XFCE DE by issueing following command as regular user. By the way the user needs to be belonged the group video.</p>
+<p>If everything went well, I can start the XFCE DE by issuing following command as regular user. By the way the user needs to be belonged the group video.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>$ startxfce4</span></span></code></pre>
 <p>If you would like to use  display manager, I recommend the LightDM. I tried tried to use SLIM as a display manager but within the XFCE4, the xfce-terminal won’t respect the bashrc and profile.<br />
-We can install the LightDM as follow.</p>
+I can install the LightDM as follow.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># pkg install lightdm</span></span></code></pre>
 <p>Then create a file .xinitrc with the following content</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># .xinitrc</span></span>
@@ -237,7 +237,7 @@ After logged in, the mouse is here…
     </svg>
 </a>
 </h3>
-<p>In FreeBSD, it can be run the FreeBSD itsel, the other BSD distros and theLinux distros without using the VM. It looks like the Docker or Podman container but mor advanced. You can check <a rel="external" href="https://docs.freebsd.org/en/books/handbook/jails/">the documentation</a>. Also there are lots of tools to manage the jails. We choose the <a rel="external" href="https://bastillebsd.org/">Bastille</a> here. To install the Bastille please refer to <a rel="external" href="https://bastillebsd.org/getting-started/">the getting started documentation</a>. I tried to to run Linux in FreeBSD. It explained in <a rel="external" href="https://bastillebsd.org/blog/2021/08/01/bastille-experiments-with-ubuntu-and-debian-linux-containers/">this blog entry</a>, and it just works on my configuration.<br />
+<p>In FreeBSD, it can be run the FreeBSD itself, the other BSD distros and theLinux distros without using the VM. It looks like the Docker or Podman container but more advanced. You can check <a rel="external" href="https://docs.freebsd.org/en/books/handbook/jails/">the documentation</a>. Also there are lots of tools to manage the jails. I chose the <a rel="external" href="https://bastillebsd.org/">Bastille</a> here. To install the Bastille please refer to <a rel="external" href="https://bastillebsd.org/getting-started/">the getting started documentation</a>. I tried to run Linux in FreeBSD. It explained in <a rel="external" href="https://bastillebsd.org/blog/2021/08/01/bastille-experiments-with-ubuntu-and-debian-linux-containers/">this blog entry</a>, and it just works on my configuration.<br />
 My configuration is as follow.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># loader.conf</span></span>
 <span class="giallo-l"><span># bastille configuration</span></span>
@@ -278,8 +278,8 @@ My configuration is as follow.</p>
     </svg>
 </a>
 </h3>
-<p>I try to VMs to get work the Wi-Fi module by using PCI Pass-Thru. There is a project on FreeBSD <a rel="external" href="https://github.com/pgj/freebsd-wifibox">wifibox</a> but it didn’t work on my MacBook. You can refer <a rel="external" href="https://github.com/pgj/freebsd-wifibox/discussions/58">this discussion</a> for more information. So I decided to use <a rel="external" href="https://voidlinux.org/">VoidLinux</a> for this purpose. Because the <a rel="external" href="https://www.alpinelinux.org/">AlpineLinux</a> which is used in the wifibox project removed the b43 drivers.It didn’t fully work but the VM loads correctly the required kernel module. It needs to be worked on IRQs. You can refer <a rel="external" href="https://wireless.wiki.kernel.org/en/users/Drivers/b43#devicefirmware">the wireless linux kernel document</a> for more information. We can extract the reqired file to work withthe BCM4331 (b43/ucode29_mimo.fw) by using b43-fw-cutter tool.<br />
-Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a tool. It can be installed required packages as follow. You can refer <a rel="external" href="https://wiki.freebsd.org/chengcui/install_FreeBSD13_VM_via_bhyve">here</a> and <a rel="external" href="https://wiki.freebsd.org/chengcui/install_Ubuntu22.04_VM_via_bhyve">here</a> for more information.</p>
+<p>I tried VMs to get the Wi-Fi module working by using PCI Pass-Thru. There is a project on FreeBSD <a rel="external" href="https://github.com/pgj/freebsd-wifibox">wifibox</a> but it didn’t work on my MacBook. You can refer <a rel="external" href="https://github.com/pgj/freebsd-wifibox/discussions/58">this discussion</a> for more information. So I decided to use <a rel="external" href="https://voidlinux.org/">VoidLinux</a> for this purpose. Because the <a rel="external" href="https://www.alpinelinux.org/">AlpineLinux</a> which is used in the wifibox project removed the b43 drivers.It didn’t fully work but the VM loads correctly the required kernel module. It needs to be worked on IRQs. You can refer <a rel="external" href="https://wireless.wiki.kernel.org/en/users/Drivers/b43#devicefirmware">the wireless linux kernel document</a> for more information. I can extract the reqired file to work withthe BCM4331 (b43/ucode29_mimo.fw) by using b43-fw-cutter tool.<br />
+Anyway the final configs for the VMs as follow. I use the vm-bhyve manager as a tool. It can be installed required packages as follow. You can refer <a rel="external" href="https://wiki.freebsd.org/chengcui/install_FreeBSD13_VM_via_bhyve">here</a> and <a rel="external" href="https://wiki.freebsd.org/chengcui/install_Ubuntu22.04_VM_via_bhyve">here</a> for more information.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># pkg install vm-bhyve grub2-bhyve</span></span></code></pre><pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># loader.conf</span></span>
 <span class="giallo-l"><span># VM config via bhyve</span></span>
 <span class="giallo-l"><span>vmm_load=&quot;YES&quot;</span></span>
@@ -303,7 +303,7 @@ Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a
     </svg>
 </a>
 </h3>
-<p>It can be build and run our project <a rel="external" href="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">A BSP for STM32F4 Discovery Kit</a> on the FreeBSD. For full setup you can also refer <a rel="external" href="https://erturk.me/projects/working-with-rust-embedded-on-wsl/">this post</a>. You need to install additional tools to work with the <a rel="external" href="https://probe.rs/">probe-rs</a> and <a rel="external" href="https://slint.dev/">Slint</a>. Rust can be installed straight forward by using the tool <a rel="external" href="https://www.rust-lang.org/learn/get-started">rustup</a>. Required tools can be installed as follow</p>
+<p>I can build and run my project <a rel="external" href="https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/">A BSP for STM32F4 Discovery Kit</a> on the FreeBSD. For full setup you can also refer <a rel="external" href="https://erturk.me/projects/working-with-rust-embedded-on-wsl/">this post</a>. You need to install additional tools to work with the <a rel="external" href="https://probe.rs/">probe-rs</a> and <a rel="external" href="https://slint.dev/">Slint</a>. Rust can be installed straight forward by using the tool <a rel="external" href="https://www.rust-lang.org/learn/get-started">rustup</a>. Required tools can be installed as follow</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># pkg vscode install pkgconf libftdi1</span></span></code></pre>
 <p>To build probe-rs with the FTDI support</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>cargo install probe-rs --features cli,ftdi</span></span></code></pre>
@@ -321,7 +321,7 @@ Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a
 <span class="giallo-l"><span>        &quot;FONTCONFIG_FILE&quot;: &quot;/usr/local/etc/fonts/fonts.conf&quot;</span></span>
 <span class="giallo-l"><span>    }</span></span>
 <span class="giallo-l"><span>}</span></span></code></pre>
-<p>To use STLink as a regular user we need extra package. It looks like udev-rules in Linux.</p>
+<p>To use STLink as a regular user I need an extra package. It looks like udev-rules in Linux.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span># pkgu install u2f-devd</span></span></code></pre>
 <p>Add user to the group u2f</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="plain"><span class="giallo-l"><span>pw groupmod u2f -m YourUserNameHere</span></span></code></pre>

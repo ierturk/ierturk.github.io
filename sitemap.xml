@@ -253,7 +253,7 @@
         <loc>https://erturk.me/tags/historical-places/</loc>
     </url>
     <url>
-        <loc>https://erturk.me/tags/improvision/</loc>
+        <loc>https://erturk.me/tags/improvisation/</loc>
     </url>
     <url>
         <loc>https://erturk.me/tags/istanbul/</loc>
@@ -365,5 +365,8 @@
     </url>
     <url>
         <loc>https://erturk.me/tags/yolo-v3/</loc>
+    </url>
+    <url>
+        <loc>https://erturk.me/tags/zola/</loc>
     </url>
 </urlset>

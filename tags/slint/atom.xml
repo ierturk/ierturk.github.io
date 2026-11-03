@@ -21,7 +21,7 @@
         
         <content type="html" xml:base="https://erturk.me/projects/zsc31050-calib-rust/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.&lt;/p&gt;
-&lt;p&gt;There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but we don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. Our main aim is discovering possibilities.&lt;/p&gt;
+&lt;p&gt;There is a specific requirement for this project: I have a 32-bit legacy DLL, and my application should be 64-bit. In this case I need to develop at least two modules, one of them 32-bit and the other one is 64-bit. Consequently, I have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but I don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. My main aim is discovering possibilities.&lt;/p&gt;
 &lt;p&gt;So let’s start!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-project&quot;&gt;The Tools that Used within this Project&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-project&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-project&quot;&gt;

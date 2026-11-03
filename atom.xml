@@ -123,7 +123,7 @@
         
         <content type="html" xml:base="https://erturk.me/projects/zsc31050-calib-rust/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.&lt;/p&gt;
-&lt;p&gt;There is a specific requirement for this project: we have a 32-bit legacy DLL, and our application should be 64-bit. In this case at least we need to develop two modules, one of them 32-bit and the other one is 64-bit. Consequently, we have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but we don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. Our main aim is discovering possibilities.&lt;/p&gt;
+&lt;p&gt;There is a specific requirement for this project: I have a 32-bit legacy DLL, and my application should be 64-bit. In this case I need to develop at least two modules, one of them 32-bit and the other one is 64-bit. Consequently, I have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but I don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. My main aim is discovering possibilities.&lt;/p&gt;
 &lt;p&gt;So let’s start!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id=&quot;the-tools-that-used-within-this-project&quot;&gt;The Tools that Used within this Project&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-tools-that-used-within-this-project&quot; aria-label=&quot;Anchor link for: the-tools-that-used-within-this-project&quot;&gt;
@@ -276,12 +276,12 @@ Install the Xorg as follow.&lt;/p&gt;
 &lt;p&gt;After a reboot for the test Xorg support run the follwing line.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# startx&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If everything went well, you can use the TrackPad with multiple gesture including drag and right-click by tapping with two fingers. For using FaceTime camera, it needs to be installed libv4l.&lt;br /&gt;
-Now we can continue to install the DE with some extras as follow.&lt;/p&gt;
+Now I can continue to install the DE with some extras as follow.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# pkg install xfce xfce4-goodies xfce4-power-manager xfce4-pulseaudio-plugin libv4l ungoogled-chromium&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If everything went well, we can start the XFCE DE by issueing following command as regular user. By the way the user needs to be belonged the group video.&lt;/p&gt;
+&lt;p&gt;If everything went well, I can start the XFCE DE by issuing following command as regular user. By the way the user needs to be belonged the group video.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ startxfce4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you would like to use  display manager, I recommend the LightDM. I tried tried to use SLIM as a display manager but within the XFCE4, the xfce-terminal won’t respect the bashrc and profile.&lt;br /&gt;
-We can install the LightDM as follow.&lt;/p&gt;
+I can install the LightDM as follow.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# pkg install lightdm&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then create a file .xinitrc with the following content&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# .xinitrc&lt;/span&gt;&lt;/span&gt;
@@ -299,7 +299,7 @@ After logged in, the mouse is here…
     &lt;/svg&gt;
 &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;In FreeBSD, it can be run the FreeBSD itsel, the other BSD distros and theLinux distros without using the VM. It looks like the Docker or Podman container but mor advanced. You can check &lt;a rel=&quot;external&quot; href=&quot;https://docs.freebsd.org/en/books/handbook/jails/&quot;&gt;the documentation&lt;/a&gt;. Also there are lots of tools to manage the jails. We choose the &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/&quot;&gt;Bastille&lt;/a&gt; here. To install the Bastille please refer to &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/getting-started/&quot;&gt;the getting started documentation&lt;/a&gt;. I tried to to run Linux in FreeBSD. It explained in &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/blog/2021/08/01/bastille-experiments-with-ubuntu-and-debian-linux-containers/&quot;&gt;this blog entry&lt;/a&gt;, and it just works on my configuration.&lt;br /&gt;
+&lt;p&gt;In FreeBSD, it can be run the FreeBSD itself, the other BSD distros and theLinux distros without using the VM. It looks like the Docker or Podman container but more advanced. You can check &lt;a rel=&quot;external&quot; href=&quot;https://docs.freebsd.org/en/books/handbook/jails/&quot;&gt;the documentation&lt;/a&gt;. Also there are lots of tools to manage the jails. I chose the &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/&quot;&gt;Bastille&lt;/a&gt; here. To install the Bastille please refer to &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/getting-started/&quot;&gt;the getting started documentation&lt;/a&gt;. I tried to run Linux in FreeBSD. It explained in &lt;a rel=&quot;external&quot; href=&quot;https://bastillebsd.org/blog/2021/08/01/bastille-experiments-with-ubuntu-and-debian-linux-containers/&quot;&gt;this blog entry&lt;/a&gt;, and it just works on my configuration.&lt;br /&gt;
 My configuration is as follow.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# loader.conf&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# bastille configuration&lt;/span&gt;&lt;/span&gt;
@@ -340,8 +340,8 @@ My configuration is as follow.&lt;/p&gt;
     &lt;/svg&gt;
 &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;I try to VMs to get work the Wi-Fi module by using PCI Pass-Thru. There is a project on FreeBSD &lt;a rel=&quot;external&quot; href=&quot;https://github.com/pgj/freebsd-wifibox&quot;&gt;wifibox&lt;/a&gt; but it didn’t work on my MacBook. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://github.com/pgj/freebsd-wifibox/discussions/58&quot;&gt;this discussion&lt;/a&gt; for more information. So I decided to use &lt;a rel=&quot;external&quot; href=&quot;https://voidlinux.org/&quot;&gt;VoidLinux&lt;/a&gt; for this purpose. Because the &lt;a rel=&quot;external&quot; href=&quot;https://www.alpinelinux.org/&quot;&gt;AlpineLinux&lt;/a&gt; which is used in the wifibox project removed the b43 drivers.It didn’t fully work but the VM loads correctly the required kernel module. It needs to be worked on IRQs. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://wireless.wiki.kernel.org/en/users/Drivers/b43#devicefirmware&quot;&gt;the wireless linux kernel document&lt;/a&gt; for more information. We can extract the reqired file to work withthe BCM4331 (b43/ucode29_mimo.fw) by using b43-fw-cutter tool.&lt;br /&gt;
-Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a tool. It can be installed required packages as follow. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://wiki.freebsd.org/chengcui/install_FreeBSD13_VM_via_bhyve&quot;&gt;here&lt;/a&gt; and &lt;a rel=&quot;external&quot; href=&quot;https://wiki.freebsd.org/chengcui/install_Ubuntu22.04_VM_via_bhyve&quot;&gt;here&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;I tried VMs to get the Wi-Fi module working by using PCI Pass-Thru. There is a project on FreeBSD &lt;a rel=&quot;external&quot; href=&quot;https://github.com/pgj/freebsd-wifibox&quot;&gt;wifibox&lt;/a&gt; but it didn’t work on my MacBook. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://github.com/pgj/freebsd-wifibox/discussions/58&quot;&gt;this discussion&lt;/a&gt; for more information. So I decided to use &lt;a rel=&quot;external&quot; href=&quot;https://voidlinux.org/&quot;&gt;VoidLinux&lt;/a&gt; for this purpose. Because the &lt;a rel=&quot;external&quot; href=&quot;https://www.alpinelinux.org/&quot;&gt;AlpineLinux&lt;/a&gt; which is used in the wifibox project removed the b43 drivers.It didn’t fully work but the VM loads correctly the required kernel module. It needs to be worked on IRQs. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://wireless.wiki.kernel.org/en/users/Drivers/b43#devicefirmware&quot;&gt;the wireless linux kernel document&lt;/a&gt; for more information. I can extract the reqired file to work withthe BCM4331 (b43/ucode29_mimo.fw) by using b43-fw-cutter tool.&lt;br /&gt;
+Anyway the final configs for the VMs as follow. I use the vm-bhyve manager as a tool. It can be installed required packages as follow. You can refer &lt;a rel=&quot;external&quot; href=&quot;https://wiki.freebsd.org/chengcui/install_FreeBSD13_VM_via_bhyve&quot;&gt;here&lt;/a&gt; and &lt;a rel=&quot;external&quot; href=&quot;https://wiki.freebsd.org/chengcui/install_Ubuntu22.04_VM_via_bhyve&quot;&gt;here&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# pkg install vm-bhyve grub2-bhyve&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# loader.conf&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# VM config via bhyve&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;vmm_load=&amp;quot;YES&amp;quot;&lt;/span&gt;&lt;/span&gt;
@@ -365,7 +365,7 @@ Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a
     &lt;/svg&gt;
 &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;It can be build and run our project &lt;a rel=&quot;external&quot; href=&quot;https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/&quot;&gt;A BSP for STM32F4 Discovery Kit&lt;/a&gt; on the FreeBSD. For full setup you can also refer &lt;a rel=&quot;external&quot; href=&quot;https://erturk.me/projects/working-with-rust-embedded-on-wsl/&quot;&gt;this post&lt;/a&gt;. You need to install additional tools to work with the &lt;a rel=&quot;external&quot; href=&quot;https://probe.rs/&quot;&gt;probe-rs&lt;/a&gt; and &lt;a rel=&quot;external&quot; href=&quot;https://slint.dev/&quot;&gt;Slint&lt;/a&gt;. Rust can be installed straight forward by using the tool &lt;a rel=&quot;external&quot; href=&quot;https://www.rust-lang.org/learn/get-started&quot;&gt;rustup&lt;/a&gt;. Required tools can be installed as follow&lt;/p&gt;
+&lt;p&gt;I can build and run my project &lt;a rel=&quot;external&quot; href=&quot;https://erturk.me/projects/a-rust-bsp-package-for-stm32f4-discovery-kit/&quot;&gt;A BSP for STM32F4 Discovery Kit&lt;/a&gt; on the FreeBSD. For full setup you can also refer &lt;a rel=&quot;external&quot; href=&quot;https://erturk.me/projects/working-with-rust-embedded-on-wsl/&quot;&gt;this post&lt;/a&gt;. You need to install additional tools to work with the &lt;a rel=&quot;external&quot; href=&quot;https://probe.rs/&quot;&gt;probe-rs&lt;/a&gt; and &lt;a rel=&quot;external&quot; href=&quot;https://slint.dev/&quot;&gt;Slint&lt;/a&gt;. Rust can be installed straight forward by using the tool &lt;a rel=&quot;external&quot; href=&quot;https://www.rust-lang.org/learn/get-started&quot;&gt;rustup&lt;/a&gt;. Required tools can be installed as follow&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# pkg vscode install pkgconf libftdi1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To build probe-rs with the FTDI support&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;cargo install probe-rs --features cli,ftdi&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -383,7 +383,7 @@ Anyway the final configs for the VMs as follow. We use the vm-bhyve manager as a
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        &amp;quot;FONTCONFIG_FILE&amp;quot;: &amp;quot;/usr/local/etc/fonts/fonts.conf&amp;quot;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    }&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To use STLink as a regular user we need extra package. It looks like udev-rules in Linux.&lt;/p&gt;
+&lt;p&gt;To use STLink as a regular user I need an extra package. It looks like udev-rules in Linux.&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# pkgu install u2f-devd&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Add user to the group u2f&lt;/p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #D8DEE9; background-color: #2E3440;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;pw groupmod u2f -m YourUserNameHere&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -888,7 +888,7 @@ title = {{Scilab/Xcos Power Electronics and Electric Machines ToolBox}}
         
     </entry>
     <entry xml:lang="en">
-        <title>Oylesine</title>
+        <title>Öylesine</title>
         <published>2022-06-26T13:25:30+03:00</published>
         <updated>2022-06-26T13:25:30+03:00</updated>
         
@@ -944,7 +944,7 @@ title = {{Scilab/Xcos Power Electronics and Electric Machines ToolBox}}
         <link rel="alternate" type="text/html" href="https://erturk.me/blog/the-vagabond-istanbul/"/>
         <id>https://erturk.me/blog/the-vagabond-istanbul/</id>
         
-        <summary type="html">&lt;p&gt;if this city is beautiful it id because of you&lt;/p&gt;</summary>
+        <summary type="html">&lt;p&gt;if this city is beautiful it’s because of you&lt;/p&gt;</summary>
         
     </entry>
     <entry xml:lang="en">
@@ -1191,7 +1191,7 @@ When you win, you win. When you lose, you learn.&lt;/p&gt;
         <content type="html" xml:base="https://erturk.me/blog/words-without-letters/">&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;Words without letters&lt;br /&gt;
 Standing in the shadow of the doors&lt;/p&gt;
-&lt;p&gt; &lt;em&gt;1Q84, Haruki Muarakami&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; &lt;em&gt;1Q84, Haruki Murakami&lt;/em&gt;&lt;/p&gt;
 </content>
         
     </entry>
