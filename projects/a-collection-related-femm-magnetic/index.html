@@ -80,7 +80,27 @@
 
 <script>
   !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-  posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'})
+  window.addEventListener('load', function () {
+    var init = function () { posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'}) };
+    if ('requestIdleCallback' in window) { requestIdleCallback(init, { timeout: 3000 }) } else { setTimeout(init, 1500) }
+  });
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A Collection Related FEMM Magnetic",
+  "description": "A collection of FEMM magnetic examples and libraries, with Scilab and Xcos tooling.",
+  "datePublished": "2022-01-05T17:21:33+03:00",
+  
+  "url": "https://erturk.me/projects/a-collection-related-femm-magnetic/",
+  "inLanguage": "en",
+  "keywords": "scilab, xcos, electrical-machines, power-electronics, sci-power-lab",
+  "author": { "@type": "Person", "name": "Ibrahim Erturk", "url": "https://erturk.me/about/" }
+}
 </script>
 
 
@@ -97,6 +117,7 @@
         <nav>
             <ul>
             
+
             
                 
                 <li><a class="active" href="https://erturk.me/projects">Projects</a></li>
@@ -111,6 +132,13 @@
                 <li><a  href="https://erturk.me/resume/">Resume</a></li>
             
             
+<li class="site-search">
+    <form role="search" id="site-search-form" action="/search/" method="get">
+        <label class="visually-hidden" for="site-search-input">Search the site</label>
+        <input type="search" id="site-search-input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+</li>
+
             </ul>
         </nav>
     </header>
@@ -171,8 +199,8 @@
 
     
     
-    <div class="content">
-        <span id="continue-reading"></span>
+<div class="content">
+    <span id="continue-reading"></span>
 <hr />
 <p>The collection of <strong>FEMM</strong> software examples and Libraries can be cloned from as follow.</p>
 <pre class="giallo" style="color: #D8DEE9; background-color: #2E3440;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #88C0D0;">$</span><span style="color: #A3BE8C;"> git clone https://github.com/ierturk/femm-magnetic-collection.git</span></span></code></pre>
@@ -197,8 +225,17 @@
 <p><a rel="external" href="https://www.femm.info/wiki/HomePage">Finite Element Method Magnetics</a></p>
 </div>
 
-    </div>
-    
+</div>
+
+<nav class="post-nav" aria-label="More posts">
+    <span></span>
+    <span><a href="https://erturk.me/projects/getting-started-qt-with-vs-code/" rel="next">Getting Started Developing Qt with VS Code Development Containers as Simple as Possible &raquo;</a></span>
+</nav>
+<aside class="author-box">
+    <p><strong>Ibrahim Erturk</strong>. I write about embedded systems, Rust, Qt and Yocto, and share poetry and book photography. More <a href="/about/">about me</a>, my <a href="/resume/">resume</a>, or email me at <a href="mailto:me@erturk.me">me@erturk.me</a>. My code is on <a href="https://github.com/ierturk">GitHub</a>.</p>
+</aside>
+
+
 
     
 </article>

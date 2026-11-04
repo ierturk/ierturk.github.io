@@ -80,7 +80,27 @@
 
 <script>
   !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-  posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'})
+  window.addEventListener('load', function () {
+    var init = function () { posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'}) };
+    if ('requestIdleCallback' in window) { requestIdleCallback(init, { timeout: 3000 }) } else { setTimeout(init, 1500) }
+  });
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Not Even Your Own",
+  "description": "A quote from Victoria Aveyard's Red Queen, with a photo of the book.",
+  "datePublished": "2022-01-08T02:31:22+03:00",
+  
+  "url": "https://erturk.me/blog/not-even-your-own/",
+  "inLanguage": "en",
+  "keywords": "victoria-aveyard, red-queen, book, izmir, asansör",
+  "author": { "@type": "Person", "name": "Ibrahim Erturk", "url": "https://erturk.me/about/" }
+}
 </script>
 
 
@@ -97,6 +117,7 @@
         <nav>
             <ul>
             
+
             
                 
                 <li><a  href="https://erturk.me/projects">Projects</a></li>
@@ -111,6 +132,13 @@
                 <li><a  href="https://erturk.me/resume/">Resume</a></li>
             
             
+<li class="site-search">
+    <form role="search" id="site-search-form" action="/search/" method="get">
+        <label class="visually-hidden" for="site-search-input">Search the site</label>
+        <input type="search" id="site-search-input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+</li>
+
             </ul>
         </nav>
     </header>
@@ -163,13 +191,22 @@
 
     
     
-    <div class="content">
-        <span id="continue-reading"></span>
+<div class="content">
+    <span id="continue-reading"></span>
 <p>No heart can ever be truly understood. Not even your own.</p>
 <p> <em>Red Queen, Victoria Aveyard</em></p>
 
-    </div>
-    
+</div>
+
+<nav class="post-nav" aria-label="More posts">
+    <span><a href="https://erturk.me/blog/because-of-you/" rel="prev">&laquo; Because of You</a></span>
+    <span><a href="https://erturk.me/blog/those-who-died-where-they-were-born/" rel="next">Those Who Died Where They Were Born &raquo;</a></span>
+</nav>
+<aside class="author-box">
+    <p><strong>Ibrahim Erturk</strong>. I write about embedded systems, Rust, Qt and Yocto, and share poetry and book photography. More <a href="/about/">about me</a>, my <a href="/resume/">resume</a>, or email me at <a href="mailto:me@erturk.me">me@erturk.me</a>. My code is on <a href="https://github.com/ierturk">GitHub</a>.</p>
+</aside>
+
+
 
     
 </article>

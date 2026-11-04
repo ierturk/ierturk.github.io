@@ -78,7 +78,27 @@
 
 <script>
   !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-  posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'})
+  window.addEventListener('load', function () {
+    var init = function () { posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'}) };
+    if ('requestIdleCallback' in window) { requestIdleCallback(init, { timeout: 3000 }) } else { setTimeout(init, 1500) }
+  });
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Yuki, Baby and Now",
+  "description": "Meet Yuki, my phantom toy poodle, then and now.",
+  "datePublished": "2026-11-03T09:00:00+03:00",
+  
+  "url": "https://erturk.me/blog/yuki/",
+  "inLanguage": "en",
+  "keywords": "yuki, poodle, dogs, pets",
+  "author": { "@type": "Person", "name": "Ibrahim Erturk", "url": "https://erturk.me/about/" }
+}
 </script>
 
 
@@ -95,6 +115,7 @@
         <nav>
             <ul>
             
+
             
                 
                 <li><a  href="https://erturk.me/projects">Projects</a></li>
@@ -109,6 +130,13 @@
                 <li><a  href="https://erturk.me/resume/">Resume</a></li>
             
             
+<li class="site-search">
+    <form role="search" id="site-search-form" action="/search/" method="get">
+        <label class="visually-hidden" for="site-search-input">Search the site</label>
+        <input type="search" id="site-search-input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+</li>
+
             </ul>
         </nav>
     </header>
@@ -162,19 +190,28 @@
         
     
     
-    <div class="content">
-        
+<div class="content">
+    <p>This is Yuki. He is a phantom toy poodle, which means a black coat with tan markings on his eyebrows, muzzle and paws.</p>
 <span id="continue-reading"></span>
 <p>Yuki joined me in October 2025, when he was about three months old, as in the photo above. He keeps close to me wherever I go.</p>
 <p>And this is Yuki now, grown up, curled up on the bed by the window.</p>
 <figure >
-    <img src="https://erturk.me/processed_images/yuki-curled-up.62463afc34c8ac6b.jpg"  alt="Yuki, grown up, curled into a black and tan ball on a bed next to a window with white curtains, one eye looking at the camera"/>
+    <img src="https://erturk.me/processed_images/yuki-curled-up.62463afc34c8ac6b.jpg" loading="lazy" decoding="async" width="592" height="444"  alt="Yuki, grown up, curled into a black and tan ball on a bed next to a window with white curtains, one eye looking at the camera"/>
     <figcaption>Yuki, now.</figcaption>
 </figure>
 <p>Baby and now. I will share more about him here from time to time.</p>
 
-    </div>
-    
+</div>
+
+<nav class="post-nav" aria-label="More posts">
+    <span><a href="https://erturk.me/blog/if-by-rudyard-kipling/" rel="prev">&laquo; If by Rudyard Kipling - Read by Sir Michael Caine</a></span>
+    <span></span>
+</nav>
+<aside class="author-box">
+    <p><strong>Ibrahim Erturk</strong>. I write about embedded systems, Rust, Qt and Yocto, and share poetry and book photography. More <a href="/about/">about me</a>, my <a href="/resume/">resume</a>, or email me at <a href="mailto:me@erturk.me">me@erturk.me</a>. My code is on <a href="https://github.com/ierturk">GitHub</a>.</p>
+</aside>
+
+
 
     
 </article>

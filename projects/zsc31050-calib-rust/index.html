@@ -80,7 +80,27 @@
 
 <script>
   !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-  posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'})
+  window.addEventListener('load', function () {
+    var init = function () { posthog.init('phc_k5Lrqb8gFFitvYEZRHMzhGYtEpxlGgIYt2rG8AzX9Sw',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only'}) };
+    if ('requestIdleCallback' in window) { requestIdleCallback(init, { timeout: 3000 }) } else { setTimeout(init, 1500) }
+  });
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A sample project that uses slint-ui, dust_dds and third party dll C/C++ library usage on windows with Rust",
+  "description": "A Rust app with Slint UI and dust_dds that talks to a 32-bit legacy DLL from a 64-bit process, without IP addresses.",
+  "datePublished": "2025-03-20T19:47:00+03:00",
+  
+  "url": "https://erturk.me/projects/zsc31050-calib-rust/",
+  "inLanguage": "en",
+  "keywords": "rust, dds, rpc, slint, async",
+  "author": { "@type": "Person", "name": "Ibrahim Erturk", "url": "https://erturk.me/about/" }
+}
 </script>
 
 
@@ -97,6 +117,7 @@
         <nav>
             <ul>
             
+
             
                 
                 <li><a class="active" href="https://erturk.me/projects">Projects</a></li>
@@ -111,6 +132,13 @@
                 <li><a  href="https://erturk.me/resume/">Resume</a></li>
             
             
+<li class="site-search">
+    <form role="search" id="site-search-form" action="/search/" method="get">
+        <label class="visually-hidden" for="site-search-input">Search the site</label>
+        <input type="search" id="site-search-input" name="q" placeholder="Search" autocomplete="off">
+    </form>
+</li>
+
             </ul>
         </nav>
     </header>
@@ -171,8 +199,8 @@
 
     
     
-    <div class="content">
-        <span id="continue-reading"></span>
+<div class="content">
+    <span id="continue-reading"></span>
 <p>The aim of the project is to develop a comprehensive system that runs on Windows 11 and is capable of communicating with remote systems using topics, such as in ROS2, instead of IP addresses.</p>
 <p>There is a specific requirement for this project: I have a 32-bit legacy DLL, and my application should be 64-bit. In this case I need to develop at least two modules, one of them 32-bit and the other one is 64-bit. Consequently, I have to employ an IPC to exchange data between modules. There are lots of possibility such as gRPC but I don’t want to use IP addresses but topics. Even though it is not a best practice, this project will be a learning by doing project. My main aim is discovering possibilities.</p>
 <p>So let’s start!</p>
@@ -238,8 +266,17 @@
 Use ctrl-shift P then Tasks: Run task and select one</p>
 <p>If everything is fine, you will obtain results similar to those depicted in the header image.</p>
 
-    </div>
-    
+</div>
+
+<nav class="post-nav" aria-label="More posts">
+    <span><a href="https://erturk.me/projects/notes-on-freebsd-on-macbook-pro/" rel="prev">&laquo; Notes on FreeBSD on MacBook Pro</a></span>
+    <span><a href="https://erturk.me/projects/fastdds-conan-rpc/" rel="next">A Fast DDS QML Example with Conan 2 (using conanfile.py) &raquo;</a></span>
+</nav>
+<aside class="author-box">
+    <p><strong>Ibrahim Erturk</strong>. I write about embedded systems, Rust, Qt and Yocto, and share poetry and book photography. More <a href="/about/">about me</a>, my <a href="/resume/">resume</a>, or email me at <a href="mailto:me@erturk.me">me@erturk.me</a>. My code is on <a href="https://github.com/ierturk">GitHub</a>.</p>
+</aside>
+
+
 
     
 </article>
